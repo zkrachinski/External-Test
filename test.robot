@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation    Suite description
-Documentation    Suite description
 Library     ExcelLibrary
 Library     Selenium2Library     20
 
