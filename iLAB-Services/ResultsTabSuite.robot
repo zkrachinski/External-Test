@@ -16,18 +16,21 @@ Services Tab
     assert services page
 
 Consulting Services Tab
+    [Tags]  Debug   Consulting Services
     maximize browser window
     wait for page to load
     click consulting services tab
     assert consulting services page
 
 Software Testing and Automation Tab
+    [Tags]  Debug   Software Testing and Automation
     maximize browser window
     wait for page to load
     click software testing and automation tab
     assert software testing and automation page
 
 Performance Testing Tab
+    [Tags]  Debug   Performance Testing
     maximize browser window
     wait for page to load
     click performance testing tab
