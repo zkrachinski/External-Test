@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170622 11:12:30.928" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<robot generated="20170622 13:01:01.166" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
 <suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\AboutUs" id="s1" name="AboutUs">
 <suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\AboutUs\test.robot" id="s1-s1" name="Test">
-<test id="s1-s1-t1" name="About Us Tab">
+<test id="s1-s1-t1" name="Enagagement Models Tab">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${Website}</arg>
 <arg>firefox</arg>
 </arguments>
-<msg timestamp="20170622 11:12:31.751" level="INFO">Opening browser 'firefox' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
-<status status="PASS" endtime="20170622 11:13:02.848" starttime="20170622 11:12:31.750"></status>
+<msg timestamp="20170622 13:01:04.155" level="INFO">Opening browser 'firefox' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170622 13:01:34.510" starttime="20170622 13:01:04.155"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170622 11:13:03.164" starttime="20170622 11:13:02.848"></status>
+<status status="PASS" endtime="20170622 13:01:34.867" starttime="20170622 13:01:34.510"></status>
 </kw>
 <kw name="Wait for Page to Load">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -22,46 +22,58 @@
 <arguments>
 <arg>css=#menu-item-388&gt;a</arg>
 </arguments>
-<status status="PASS" endtime="20170622 11:13:03.651" starttime="20170622 11:13:03.165"></status>
+<status status="PASS" endtime="20170622 13:01:35.298" starttime="20170622 13:01:34.868"></status>
 </kw>
-<status status="PASS" endtime="20170622 11:13:03.651" starttime="20170622 11:13:03.164"></status>
+<status status="PASS" endtime="20170622 13:01:35.298" starttime="20170622 13:01:34.867"></status>
 </kw>
-<kw name="Click About Us">
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by locator.</doc>
+<kw name="Hover Over About Us">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
 <arguments>
-<arg>http://ilabquality.staging.wpengine.com/about-us/</arg>
+<arg>css=#menu-item-388&gt;a</arg>
 </arguments>
-<msg timestamp="20170622 11:13:03.652" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/about-us/'.</msg>
-<status status="PASS" endtime="20170622 11:13:05.921" starttime="20170622 11:13:03.652"></status>
+<msg timestamp="20170622 13:01:35.299" level="INFO">Simulating Mouse Over on element 'css=#menu-item-388&gt;a'</msg>
+<status status="PASS" endtime="20170622 13:01:35.769" starttime="20170622 13:01:35.299"></status>
 </kw>
-<status status="PASS" endtime="20170622 11:13:05.921" starttime="20170622 11:13:03.651"></status>
+<status status="PASS" endtime="20170622 13:01:35.770" starttime="20170622 13:01:35.298"></status>
 </kw>
-<kw name="Assert About Us Page Is Correct">
+<kw name="Click Engagement Models">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1412&gt;a</arg>
+</arguments>
+<msg timestamp="20170622 13:01:35.773" level="INFO">Clicking element 'css=#menu-item-1412&gt;a'.</msg>
+<status status="PASS" endtime="20170622 13:01:37.808" starttime="20170622 13:01:35.773"></status>
+</kw>
+<status status="PASS" endtime="20170622 13:01:37.808" starttime="20170622 13:01:35.771"></status>
+</kw>
+<kw name="Assert Engagement Models Page">
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
-<arg>INNOVATION IN QUALITY &amp; TESTING</arg>
+<arg>ENGAGEMENT</arg>
 </arguments>
-<msg timestamp="20170622 11:13:05.943" level="INFO">Current page contains text 'INNOVATION IN QUALITY &amp; TESTING'.</msg>
-<status status="PASS" endtime="20170622 11:13:05.943" starttime="20170622 11:13:05.922"></status>
+<msg timestamp="20170622 13:01:37.835" level="INFO">Current page contains text 'ENGAGEMENT'.</msg>
+<status status="PASS" endtime="20170622 13:01:37.835" starttime="20170622 13:01:37.809"></status>
 </kw>
-<status status="PASS" endtime="20170622 11:13:05.943" starttime="20170622 11:13:05.922"></status>
+<status status="PASS" endtime="20170622 13:01:37.836" starttime="20170622 13:01:37.809"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170622 11:13:06.567" starttime="20170622 11:13:05.944"></status>
+<status status="PASS" endtime="20170622 13:01:38.431" starttime="20170622 13:01:37.836"></status>
 </kw>
 <tags>
 <tag>About Us</tag>
-<tag>DEBUG</tag>
+<tag>Debug</tag>
+<tag>Engagement Models</tag>
 </tags>
-<status status="PASS" endtime="20170622 11:13:06.567" critical="yes" starttime="20170622 11:12:31.750"></status>
+<status status="PASS" endtime="20170622 13:01:38.432" critical="yes" starttime="20170622 13:01:04.154"></status>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" endtime="20170622 11:13:06.568" starttime="20170622 11:12:30.968"></status>
+<status status="PASS" endtime="20170622 13:01:38.433" starttime="20170622 13:01:01.277"></status>
 </suite>
-<status status="PASS" endtime="20170622 11:13:06.570" starttime="20170622 11:12:30.934"></status>
+<status status="PASS" endtime="20170622 13:01:38.440" starttime="20170622 13:01:01.174"></status>
 </suite>
 <statistics>
 <total>
@@ -70,7 +82,8 @@
 </total>
 <tag>
 <stat fail="0" pass="1">About Us</stat>
-<stat fail="0" pass="1">DEBUG</stat>
+<stat fail="0" pass="1">Debug</stat>
+<stat fail="0" pass="1">Engagement Models</stat>
 </tag>
 <suite>
 <stat fail="0" id="s1" name="AboutUs" pass="1">AboutUs</stat>
