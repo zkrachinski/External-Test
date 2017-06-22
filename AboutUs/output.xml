@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170622 11:03:09.331" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\AboutUs" id="s1" name="AboutUs">
+<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\AboutUs\test.robot" id="s1-s1" name="Test">
+<test id="s1-s1-t1" name="About Us Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170622 11:03:12.185" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170622 11:03:40.078" starttime="20170622 11:03:12.184"></status>
+</kw>
+<kw name="Wait for Page to Load">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#menu-item-388&gt;a</arg>
+</arguments>
+<status status="PASS" endtime="20170622 11:03:40.271" starttime="20170622 11:03:40.079"></status>
+</kw>
+<status status="PASS" endtime="20170622 11:03:40.271" starttime="20170622 11:03:40.079"></status>
+</kw>
+<kw name="Click About Us">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>http://ilabquality.staging.wpengine.com/about-us/</arg>
+</arguments>
+<msg timestamp="20170622 11:03:40.272" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/about-us/'.</msg>
+<status status="PASS" endtime="20170622 11:03:41.845" starttime="20170622 11:03:40.272"></status>
+</kw>
+<status status="PASS" endtime="20170622 11:03:41.846" starttime="20170622 11:03:40.272"></status>
+</kw>
+<kw name="Assert About Us Page Is Correct">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>INNOVATION IN QUALITY &amp; TESTING</arg>
+</arguments>
+<msg timestamp="20170622 11:03:41.882" level="INFO">Current page contains text 'INNOVATION IN QUALITY &amp; TESTING'.</msg>
+<status status="PASS" endtime="20170622 11:03:41.882" starttime="20170622 11:03:41.846"></status>
+</kw>
+<status status="PASS" endtime="20170622 11:03:41.883" starttime="20170622 11:03:41.846"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170622 11:03:45.177" starttime="20170622 11:03:41.883"></status>
+</kw>
+<tags>
+<tag>About Us</tag>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" endtime="20170622 11:03:45.177" critical="yes" starttime="20170622 11:03:12.183"></status>
+</test>
+<test id="s1-s1-t2" name="The iLab Story Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170622 11:03:45.179" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170622 11:04:13.008" starttime="20170622 11:03:45.178"></status>
+</kw>
+<kw name="Wait for Page to Load">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#menu-item-388&gt;a</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170622 11:04:33.810" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170622 11:04:33.811" starttime="20170622 11:04:33.116"></status>
+</kw>
+<msg timestamp="20170622 11:04:33.849" level="FAIL">Element 'css=#menu-item-388&gt;a' was not visible in 20 seconds</msg>
+<status status="FAIL" endtime="20170622 11:04:33.849" starttime="20170622 11:04:13.009"></status>
+</kw>
+<status status="FAIL" endtime="20170622 11:04:33.849" starttime="20170622 11:04:13.008"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170622 11:04:37.052" starttime="20170622 11:04:33.850"></status>
+</kw>
+<status status="FAIL" endtime="20170622 11:04:37.052" critical="yes" starttime="20170622 11:03:45.178">Element 'css=#menu-item-388&gt;a' was not visible in 20 seconds</status>
+</test>
+<test id="s1-s1-t3" name="The Our Process Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170622 11:04:37.054" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170622 11:05:04.227" starttime="20170622 11:04:37.054"></status>
+</kw>
+<kw name="Wait for Page to Load">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=#menu-item-388&gt;a</arg>
+</arguments>
+<status status="PASS" endtime="20170622 11:05:04.408" starttime="20170622 11:05:04.228"></status>
+</kw>
+<status status="PASS" endtime="20170622 11:05:04.408" starttime="20170622 11:05:04.228"></status>
+</kw>
+<kw name="Hover Over About Us">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-388&gt;a</arg>
+</arguments>
+<msg timestamp="20170622 11:05:04.409" level="INFO">Simulating Mouse Over on element 'css=#menu-item-388&gt;a'</msg>
+<status status="PASS" endtime="20170622 11:05:04.669" starttime="20170622 11:05:04.409"></status>
+</kw>
+<status status="PASS" endtime="20170622 11:05:04.670" starttime="20170622 11:05:04.408"></status>
+</kw>
+<kw name="Click Our Process">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1288&gt;a</arg>
+</arguments>
+<msg timestamp="20170622 11:05:04.671" level="INFO">Clicking element 'css=#menu-item-1288&gt;a'.</msg>
+<status status="PASS" endtime="20170622 11:05:06.863" starttime="20170622 11:05:04.670"></status>
+</kw>
+<status status="PASS" endtime="20170622 11:05:06.863" starttime="20170622 11:05:04.670"></status>
+</kw>
+<kw name="Assert Our Process Page Is Correct">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>THE INDEPENDENT DIFFERENCE</arg>
+</arguments>
+<msg timestamp="20170622 11:05:06.902" level="INFO">Current page contains text 'THE INDEPENDENT DIFFERENCE'.</msg>
+<status status="PASS" endtime="20170622 11:05:06.902" starttime="20170622 11:05:06.864"></status>
+</kw>
+<status status="PASS" endtime="20170622 11:05:06.902" starttime="20170622 11:05:06.863"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170622 11:05:10.137" starttime="20170622 11:05:06.903"></status>
+</kw>
+<status status="PASS" endtime="20170622 11:05:10.137" critical="yes" starttime="20170622 11:04:37.053"></status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" endtime="20170622 11:05:10.139" starttime="20170622 11:03:09.437"></status>
+</suite>
+<status status="FAIL" endtime="20170622 11:05:10.146" starttime="20170622 11:03:09.336"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">About Us</stat>
+<stat fail="0" pass="1">DEBUG</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="AboutUs" pass="2">AboutUs</stat>
+<stat fail="1" id="s1-s1" name="Test" pass="2">AboutUs.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
