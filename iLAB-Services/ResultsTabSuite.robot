@@ -9,40 +9,42 @@ ${Website}      http://ilabquality.staging.wpengine.com/
 
 *** Test Cases ***
 Services Tab
-    [Tags]    DEBUG     Services
+    [Tags]    DEBUG     Services Tab
     maximize browser window
     wait for page to load
     click services tab
     assert services page
 
 Consulting Services Tab
-    [Tags]  Debug   Consulting Services
+    [Tags]  Debug   Consulting Services Tab
     maximize browser window
     wait for page to load
     click consulting services tab
     assert consulting services page
 
 Software Testing and Automation Tab
-    [Tags]  Debug   Software Testing and Automation
+    [Tags]  Debug   Software Testing and Automation Tab
     maximize browser window
     wait for page to load
     click software testing and automation tab
     assert software testing and automation page
 
 Performance Testing Tab
-    [Tags]  Debug   Performance Testing
+    [Tags]  Debug   Performance Testing Tab
     maximize browser window
     wait for page to load
     click performance testing tab
     assert performance testing page
 
 Security Testing Tab
+    [Tags]  Debug  Security Testing Tab
     maximize browser window
     wait for page to load
     click security testing tab
     assert security testing page
 
 Mobile Tab
+    [Tags]  Debug  Mobile Tab
     maximize browser window
     wait for page to load
     click mobile tab
