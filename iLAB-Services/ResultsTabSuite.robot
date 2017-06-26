@@ -36,6 +36,18 @@ Performance Testing Tab
     click performance testing tab
     assert performance testing page
 
+Security Testing Tab
+    maximize browser window
+    wait for page to load
+    click security testing tab
+    assert security testing page
+
+Mobile Tab
+    maximize browser window
+    wait for page to load
+    click mobile tab
+    assert security testing page
+
 *** Keywords ***
 Wait for Page to Load
     wait until element is visible  css=#menu-item-388>a
@@ -51,6 +63,12 @@ Click Software Testing and Automation Tab
 
 Click Performance Testing Tab
     click element  css=#menu-item-1989>a
+
+Click Security Testing Tab
+    click element  css=#menu-item-2055>a
+
+Click Mobile Tab
+    click element  css=#menu-item-1990>a
 
 Assert Services Page
     wait until element is visible   css=.vc_single_image-img.attachment-full
@@ -71,4 +89,15 @@ Assert Performance Testing Page
     wait until element is visible   css=.wpb_wrapper>h3
     page should contain  PERFORMANCE TESTING CASE STUDY
     page should contain image  css=.fa.fa-check-circle
+
+Assert Security Testing Page
+    wait until element is visible   .fa.fa-check-circle
+    page should contain  Security Testing: Know Your Enemy, Know Yourself
+    page should contain image  css=.vc_single_image-img.attachment-full
+
+Assert Mobile Page
+    wait until element is visible  .fa.fa-check-circle
+    page should contain  CONTACT FORM TITLE
+    page should contain image  .vc_single_image-img.attachment-full
+
 
