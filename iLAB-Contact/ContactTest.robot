@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Suite description
-Library     ExcelLibrary
-Library     Selenium2Library     20
+Library     Selenium2Library     30
 Test Setup  open browser    ${Website}   chrome
 Test Teardown   close browser
 
@@ -11,8 +10,9 @@ ${Website}      http://ilabquality.staging.wpengine.com/
 *** Test Cases ***
 #Validate Contact page loads correctly
 Contact Tab
-    [Tags]    Debug     Contact
+    [Tags]    Debug  Contact Tab
     Maximize Browser Window
+    Wait For Page To Load
     Click Contact Link
     Assert Contact Page
 
@@ -25,6 +25,9 @@ Click Contact Link
 
 Assert Contact Page
     page should contain link    mailto:info.sa@ilabquality.com
+
+Wait For Page To Load
+    wait until page contains element  css=.site-logo>a>img
 
 
 

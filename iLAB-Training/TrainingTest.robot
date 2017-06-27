@@ -1,7 +1,5 @@
 *** Settings ***
-Documentation    Suite description
-Library     ExcelLibrary
-Library     Selenium2Library     20
+Library     Selenium2Library     30
 Test Setup  open browser    ${Website}   chrome
 Test Teardown   close browser
 
@@ -13,19 +11,22 @@ ${Website}      http://ilabquality.staging.wpengine.com/
 Training Tab
     [Tags]    Debug     Training
     Maximize Browser Window
+    Wait For Page To Load
     Click Training Link
     Assert Training Page
 
 Training Course Tab
-    [Tags]    Debug   Training    Training Course
+    [Tags]    Debug   Training  Training Course
     Maximize Browser Window
+    Wait For Page To Load
     Hover Over Training
     Click Training Link
     Assert Training Page
 
 Training Schedule Tab
-    [Tags]    Debug   Training    Training Schedule
+    [Tags]    Debug   Training  Training Schedule
     Maximize Browser Window
+    Wait For Page To Load
     Hover Over Training
     Click Training Schedule Link
 
@@ -44,6 +45,9 @@ Hover Over Training
 
 Assert Training Page
     page should contain     INTERNATIONALLY ACCREDITED TRAINING
+
+Wait For Page To Load
+    wait until page contains element  css=.site-logo>a>img
 
 
 
