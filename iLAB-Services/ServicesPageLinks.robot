@@ -9,7 +9,7 @@ ${Website}      http://ilabquality.staging.wpengine.com/
 
 *** Test Cases ***
 Consulting Services Page - Read More Links
-    [Tags]    Debug  Consulting Services Page
+    [Tags]    Debug  Consulting Services Page Links
     maximize browser window
     wait for main page to load
     hover over services
@@ -31,7 +31,7 @@ Consulting Services Page - Read More Links
     assert case study page
 
 Software Testing and Automation Page - Read More Links
-    [Tags]    Debug  Software Testing and Automation Page
+    [Tags]    Debug  Software Testing and Automation Page Links
     maximize browser window
     wait for main page to load
     hover over services
@@ -52,6 +52,71 @@ Software Testing and Automation Page - Read More Links
     click case study link
     assert case study page
 
+Performance Testing Page - Read More Links
+    [Tags]    Debug  Performance Testing Page Links
+    maximize browser window
+    wait for main page to load
+    hover over services
+    click performance testing tab
+    wait for performance testing page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for performance testing page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for performance testing page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for performance testing page to load
+    click case study link
+    assert case study page
+
+Security Testing Page - Read More Links
+    [Tags]    Debug  Security Testing Page Links
+    maximize browser window
+    wait for main page to load
+    hover over services
+    click security testing tab
+    wait for security testing page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for security testing page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for security testing page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for security testing page to load
+    click case study link
+    assert case study page
+
+Mobile Testing Page - Read More Links
+    [Tags]    Debug  Mobile Page Links
+    maximize browser window
+    wait for main page to load
+    hover over services
+    click mobile tab
+    wait for mobile testing page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for mobile testing page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for mobile testing page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for mobile testing page to load
+    click case study link
+    assert case study page
 
 Consulting Services Page - Contact Form
     [Tags]  Debug  Contact Form  Consulting Services Page
@@ -72,6 +137,37 @@ Software Testing and Automation Page - Contact Form
     wait for software testing and automation page to load
     move to form
     fill out form
+
+Performance Testing Page - Contact Form
+    [Tags]  Debug  Contact Form  Performance Testing Page
+    maximize browser window
+    wait for main page to load
+    hover over services
+    click performance testing tab
+    wait for performance testing page to load
+    move to form
+    fill out form
+
+Security Testing Page - Contact Form
+    [Tags]  Debug  Contact Form  Security Testing Page
+    maximize browser window
+    wait for main page to load
+    hover over services
+    click security testing tab
+    wait for security testing page to load
+    move to form
+    fill out form
+
+Mobile Page - Contact Form
+    [Tags]  Debug  Contact Form  Mobile Page
+    maximize browser window
+    wait for main page to load
+    hover over services
+    click mobile tab
+    wait for mobile testing page to load
+    move to form
+    fill out form
+
 
 *** Keywords ***
 Hover Over Services
@@ -99,11 +195,32 @@ Wait for Software Testing and Automation Page to Load
     wait until page contains  Software Testing: Foresight, Not Hindsight
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
 
+Wait for Performance Testing Page to Load
+    wait until page contains  Performance Testing: Build Rugged Software
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+
+Wait for Security Testing Page to Load
+    wait until page contains  Security Testing: Know Your Enemy, Know Yourself
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+
+Wait For Mobile Testing Page to Load
+    wait until page contains  Mobile Testing: Ensure Cross-Platform Excellence
+    page should contain element  css=.vc_single_image-img.attachment-full
+
 Click Consulting Services Tab
     click element  css=#menu-item-1992>a
 
 Click Software Testing and Automation Tab
     click element  css=#menu-item-1991>a
+
+Click Performance Testing Tab
+    click element  css=#menu-item-1989>a
+
+Click Security Testing Tab
+    click element  css=#menu-item-2055>a
+
+Click Mobile Tab
+    click element  css=#menu-item-1990>a
 
 Click First Read More
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
@@ -136,3 +253,7 @@ Assert HPE Page
 Assert Case Study Page
     wait until page contains  Case Study Title
     page should contain image  css=.vc_single_image-img.attachment-full
+
+Assert Mobile Page
+    wait until page contains  Mobile Testing: Ensure Cross-Platform Excellence
+    page should contain element  css=.vc_single_image-img.attachment-full
