@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170626 12:24:31.000" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\iLAB-Services" id="s1" name="iLAB-Services">
+<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\iLAB-Services\ServicesTabSuite.robot" id="s1-s1" name="ServicesTabSuite">
+<test id="s1-s1-t1" name="Services Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170626 12:24:31.142" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170626 12:24:58.372" starttime="20170626 12:24:31.142"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170626 12:24:59.569" starttime="20170626 12:24:58.373"></status>
+</kw>
+<kw name="Wait for Page to Load">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.site-logo&gt;a&gt;img</arg>
+</arguments>
+<status status="PASS" endtime="20170626 12:24:59.712" starttime="20170626 12:24:59.570"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:24:59.713" starttime="20170626 12:24:59.569"></status>
+</kw>
+<kw name="Click Services Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1233&gt;a</arg>
+</arguments>
+<msg timestamp="20170626 12:24:59.714" level="INFO">Clicking element 'css=#menu-item-1233&gt;a'.</msg>
+<status status="PASS" endtime="20170626 12:25:00.972" starttime="20170626 12:24:59.714"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:25:00.972" starttime="20170626 12:24:59.713"></status>
+</kw>
+<kw name="Assert Services Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.vc_single_image-img.attachment-full</arg>
+</arguments>
+<status status="PASS" endtime="20170626 12:25:01.015" starttime="20170626 12:25:00.973"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Essential Services for Modern Industries</arg>
+</arguments>
+<msg timestamp="20170626 12:25:01.040" level="INFO">Current page contains text 'Essential Services for Modern Industries'.</msg>
+<status status="PASS" endtime="20170626 12:25:01.040" starttime="20170626 12:25:01.016"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>css=.vc_single_image-img.attachment-thumbnail</arg>
+</arguments>
+<msg timestamp="20170626 12:25:01.088" level="INFO">Current page contains image 'css=.vc_single_image-img.attachment-thumbnail'.</msg>
+<status status="PASS" endtime="20170626 12:25:01.088" starttime="20170626 12:25:01.041"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:25:01.089" starttime="20170626 12:25:00.973"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170626 12:25:04.417" starttime="20170626 12:25:01.089"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+<tag>Services Tab</tag>
+</tags>
+<status status="PASS" endtime="20170626 12:25:04.417" critical="yes" starttime="20170626 12:24:31.141"></status>
+</test>
+<test id="s1-s1-t2" name="Consulting Services Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170626 12:25:04.422" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170626 12:25:32.063" starttime="20170626 12:25:04.421"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170626 12:25:33.245" starttime="20170626 12:25:32.064"></status>
+</kw>
+<kw name="Wait for Page to Load">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.site-logo&gt;a&gt;img</arg>
+</arguments>
+<status status="PASS" endtime="20170626 12:25:33.371" starttime="20170626 12:25:33.246"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:25:33.372" starttime="20170626 12:25:33.246"></status>
+</kw>
+<kw name="Hover Over Services">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1233&gt;a</arg>
+</arguments>
+<msg timestamp="20170626 12:25:33.373" level="INFO">Simulating Mouse Over on element 'css=#menu-item-1233&gt;a'</msg>
+<status status="PASS" endtime="20170626 12:25:33.546" starttime="20170626 12:25:33.373"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:25:33.546" starttime="20170626 12:25:33.372"></status>
+</kw>
+<kw name="Click Consulting Services Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1992&gt;a</arg>
+</arguments>
+<msg timestamp="20170626 12:25:33.549" level="INFO">Clicking element 'css=#menu-item-1992&gt;a'.</msg>
+<status status="PASS" endtime="20170626 12:25:35.950" starttime="20170626 12:25:33.548"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:25:35.950" starttime="20170626 12:25:33.546"></status>
+</kw>
+<kw name="Assert Consulting Services Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.fa.fa-check-circle</arg>
+</arguments>
+<status status="PASS" endtime="20170626 12:25:36.040" starttime="20170626 12:25:35.951"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Consulting Services: You Hold the Compass</arg>
+</arguments>
+<msg timestamp="20170626 12:25:36.082" level="INFO">Current page contains text 'Consulting Services: You Hold the Compass'.</msg>
+<status status="PASS" endtime="20170626 12:25:36.083" starttime="20170626 12:25:36.040"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>css=.vc_single_image-img.attachment-full</arg>
+</arguments>
+<msg timestamp="20170626 12:25:36.161" level="INFO">Current page contains image 'css=.vc_single_image-img.attachment-full'.</msg>
+<status status="PASS" endtime="20170626 12:25:36.161" starttime="20170626 12:25:36.083"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:25:36.161" starttime="20170626 12:25:35.951"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170626 12:25:39.380" starttime="20170626 12:25:36.162"></status>
+</kw>
+<tags>
+<tag>Consulting Services Tab</tag>
+<tag>Debug</tag>
+</tags>
+<status status="PASS" endtime="20170626 12:25:39.381" critical="yes" starttime="20170626 12:25:04.419"></status>
+</test>
+<test id="s1-s1-t3" name="Software Testing and Automation Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170626 12:25:39.386" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170626 12:26:07.175" starttime="20170626 12:25:39.385"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170626 12:26:08.351" starttime="20170626 12:26:07.175"></status>
+</kw>
+<kw name="Wait for Page to Load">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.site-logo&gt;a&gt;img</arg>
+</arguments>
+<status status="PASS" endtime="20170626 12:26:08.471" starttime="20170626 12:26:08.351"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:26:08.471" starttime="20170626 12:26:08.351"></status>
+</kw>
+<kw name="Hover Over Services">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1233&gt;a</arg>
+</arguments>
+<msg timestamp="20170626 12:26:08.473" level="INFO">Simulating Mouse Over on element 'css=#menu-item-1233&gt;a'</msg>
+<status status="PASS" endtime="20170626 12:26:08.613" starttime="20170626 12:26:08.472"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:26:08.613" starttime="20170626 12:26:08.472"></status>
+</kw>
+<kw name="Click Software Testing and Automation Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1991&gt;a</arg>
+</arguments>
+<msg timestamp="20170626 12:26:08.614" level="INFO">Clicking element 'css=#menu-item-1991&gt;a'.</msg>
+<status status="PASS" endtime="20170626 12:26:11.011" starttime="20170626 12:26:08.614"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:26:11.013" starttime="20170626 12:26:08.613"></status>
+</kw>
+<kw name="Assert Software Testing and Automation Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.wpb_wrapper&gt;h3</arg>
+</arguments>
+<status status="PASS" endtime="20170626 12:26:11.109" starttime="20170626 12:26:11.015"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Software Testing: Foresight, Not Hindsight</arg>
+</arguments>
+<msg timestamp="20170626 12:26:11.153" level="INFO">Current page contains text 'Software Testing: Foresight, Not Hindsight'.</msg>
+<status status="PASS" endtime="20170626 12:26:11.153" starttime="20170626 12:26:11.109"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>css=.vc_single_image-img.attachment-full</arg>
+</arguments>
+<msg timestamp="20170626 12:26:11.217" level="INFO">Current page contains image 'css=.vc_single_image-img.attachment-full'.</msg>
+<status status="PASS" endtime="20170626 12:26:11.217" starttime="20170626 12:26:11.153"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:26:11.217" starttime="20170626 12:26:11.013"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170626 12:26:14.421" starttime="20170626 12:26:11.218"></status>
+</kw>
+<tags>
+<tag>Debug</tag>
+<tag>Software Testing and Automation Tab</tag>
+</tags>
+<status status="PASS" endtime="20170626 12:26:14.421" critical="yes" starttime="20170626 12:25:39.383"></status>
+</test>
+<test id="s1-s1-t4" name="Performance Testing Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170626 12:26:14.426" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170626 12:26:41.930" starttime="20170626 12:26:14.425"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170626 12:26:43.102" starttime="20170626 12:26:41.930"></status>
+</kw>
+<kw name="Wait for Page to Load">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.site-logo&gt;a&gt;img</arg>
+</arguments>
+<status status="PASS" endtime="20170626 12:26:43.232" starttime="20170626 12:26:43.103"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:26:43.232" starttime="20170626 12:26:43.102"></status>
+</kw>
+<kw name="Hover Over Services">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1233&gt;a</arg>
+</arguments>
+<msg timestamp="20170626 12:26:43.234" level="INFO">Simulating Mouse Over on element 'css=#menu-item-1233&gt;a'</msg>
+<status status="PASS" endtime="20170626 12:26:43.356" starttime="20170626 12:26:43.233"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:26:43.356" starttime="20170626 12:26:43.233"></status>
+</kw>
+<kw name="Click Performance Testing Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1989&gt;a</arg>
+</arguments>
+<msg timestamp="20170626 12:26:43.357" level="INFO">Clicking element 'css=#menu-item-1989&gt;a'.</msg>
+<status status="PASS" endtime="20170626 12:26:45.658" starttime="20170626 12:26:43.357"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:26:45.660" starttime="20170626 12:26:43.357"></status>
+</kw>
+<kw name="Assert Performance Testing Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.wpb_wrapper&gt;h3</arg>
+</arguments>
+<status status="PASS" endtime="20170626 12:26:45.788" starttime="20170626 12:26:45.662"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>PERFORMANCE TESTING CASE STUDY</arg>
+</arguments>
+<msg timestamp="20170626 12:26:45.871" level="INFO">Current page contains text 'PERFORMANCE TESTING CASE STUDY'.</msg>
+<status status="PASS" endtime="20170626 12:26:45.872" starttime="20170626 12:26:45.789"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>css=.fa.fa-check-circle</arg>
+</arguments>
+<msg timestamp="20170626 12:26:46.002" level="INFO">&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="js_active  vc_desktop  vc_transform  vc_transform skrollr skrollr-desktop"&gt;&lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" /&gt;
+    &lt;meta name="format-detection" content="telephone=no" /&gt;
+    &lt;link rel="profile" href="http://gmpg.org/xfn/11" /&gt;
+    &lt;link rel="pingback" href="http://ilabquality.staging.wpengine.com/xmlrpc.php" /&gt;
+
+    
+    &lt;title&gt;PERFORMANCE TESTING – iLAB&lt;/title&gt;
+&lt;meta name="robots" content="noindex,follow" /&gt;
+&lt;link rel="dns-prefetch" href="//fonts.googleapis.com" /&gt;
+&lt;link rel="dns-prefetch" href="//s.w.org" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="iLAB » Feed" href="http://ilabquality.staging.wpengine.com/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="iLAB » Comments Feed" href="http://ilabquality.staging.wpengine.com/comments/feed/" /&gt;
+		&lt;script async="" src="https://www.google-analytics.com/analytics.js"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ilabquality.staging.wpengine.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length&amp;lt;3e3)&amp;amp;&amp;amp;(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&amp;amp;&amp;amp;j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h&amp;lt;i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&amp;amp;&amp;amp;c.supports[i[h]],"flag"!==i[h]&amp;amp;&amp;amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;amp;&amp;amp;c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;amp;&amp;amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;amp;&amp;amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;amp;&amp;amp;f.twemoji&amp;amp;&amp;amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;&lt;script src="http://ilabquality.staging.wpengine.com/wp-includes/js/wp-emoji-release.min.js?ver=4.7.2" type="text/javascript" defer=""&gt;&lt;/script&gt;
+		&lt;style type="text/css"&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+&lt;link rel="stylesheet" id="dashicons-css" href="http://ilabquality.staging.wpengine.com/wp-includes/css/dashicons.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="wp-jquery-ui-dialog-css" href="http://ilabquality.staging.wpengine.com/wp-includes/css/jquery-ui-dialog.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="google-web-fonts-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;amp;ver=4.7.2#038;subset=greek%2Ccyrillic%2Cgreek-ext%2Clatin%2Ccyrillic-ext%2Cvietnamese%2Clatin-ext" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="contact-form-7-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.8" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="rs-plugin-settings-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.1.6" type="text/css" media="all" /&gt;
+&lt;style id="rs-plugin-settings-inline-css" type="text/css"&gt;
+#rs-demo-id {}
+&lt;/style&gt;
+&lt;link rel="stylesheet" id="tt-theme-fonts-css" href="//fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Vollkorn:400,400italic&amp;amp;subset=latin%2Clatin-ext" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="bootstrap-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/bootstrap/css/bootstrap.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="bootstrap-theme-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/bootstrap/css/bootstrap-theme.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="fontawesome-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/font-awesome/css/font-awesome.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="owl-carousel-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/owl-carousel/owl.carousel.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="owl-carousel-theme-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/owl-carousel/owl.theme.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="ionicons-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/ionicons/css/ionicons.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="kwicks-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/css/jquery.kwicks.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="tt-theme-stylesheet-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/style.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="sucarouselmergedcss-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/supercarousel/css/supercarouselmerged.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="js_composer_front-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="js_composer_custom_css-css" href="//ilabquality.staging.wpengine.com/wp-content/uploads/js_composer/custom.css?ver=5.1.1" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="wpjb-glyphs-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=4.5.0" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="wpjb-css-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=4.5.0" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="themeton-stylesheet-css" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/themeton/iLAB.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.1.6"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.1.6"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &amp;lt;![CDATA[ */
+var WpjbData = {"AjaxRequest":"http:\/\/ilabquality.staging.wpengine.com\/services\/performance-testing\/plain\/discount","Protection":"pr0t3ct1on","no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
+/* ]]&amp;gt; */
+&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=4.5.0"&gt;&lt;/script&gt;
+&lt;link rel="https://api.w.org/" href="http://ilabquality.staging.wpengine.com/wp-json/" /&gt;
+&lt;link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ilabquality.staging.wpengine.com/xmlrpc.php?rsd" /&gt;
+&lt;link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ilabquality.staging.wpengine.com/wp-includes/wlwmanifest.xml" /&gt; 
+&lt;link rel="canonical" href="http://ilabquality.staging.wpengine.com/services/performance-testing/" /&gt;
+&lt;link rel="shortlink" href="http://ilabquality.staging.wpengine.com/?p=1960" /&gt;
+&lt;link rel="alternate" type="application/json+oembed" href="http://ilabquality.staging.wpengine.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Filabquality.staging.wpengine.com%2Fservices%2Fperformance-testing%2F" /&gt;
+&lt;link rel="alternate" type="text/xml+oembed" href="http://ilabquality.staging.wpengine.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Filabquality.staging.wpengine.com%2Fservices%2Fperformance-testing%2F&amp;amp;format=xml" /&gt;
+&lt;script&gt;
+                var theme_options = { ajax_url: "http://ilabquality.staging.wpengine.com/wp-admin/admin-ajax.php" };
+          &lt;/script&gt;&lt;meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." /&gt;
+&lt;!--[if lte IE 9]&gt;&lt;link rel="stylesheet" type="text/css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"&gt;&lt;![endif]--&gt;&lt;meta name="generator" content="Powered by Slider Revolution 5.1.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." /&gt;
+&lt;link rel="icon" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-32x32.png" sizes="32x32" /&gt;
+&lt;link rel="icon" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-192x192.png" sizes="192x192" /&gt;
+&lt;link rel="apple-touch-icon-precomposed" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-180x180.png" /&gt;
+&lt;meta name="msapplication-TileImage" content="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-270x270.png" /&gt;
+&lt;style type="text/css" data-type="vc_shortcodes-custom-css"&gt;.vc_custom_1492784880814{margin-top: -70px !important;padding-top: 100px !important;padding-bottom: 70px !important;}.vc_custom_1492627668307{padding-bottom: 20px !important;}.vc_custom_1498057980920{margin-bottom: 10px !important;}.vc_custom_1498058007744{margin-top: 20px !important;}.vc_custom_1492627786889{margin-bottom: 10px !important;}.vc_custom_1492628139742{margin-bottom: 10px !important;}&lt;/style&gt;&lt;noscript&gt;&amp;lt;style type="text/css"&amp;gt; .wpb_animate_when_almost_visible { opacity: 1; }&amp;lt;/style&amp;gt;&lt;/noscript&gt;&lt;style type="text/css" id="theme-customize-css"&gt;
+            .detail-wrr{ min-height:;}
+            .single-job em.wpjb-top-header-subtitle {
+    display: none;
+}
+.wpjb-job-list .wpjb-grid-col-last .wpjb-line-major {
+    display: none;
+    width: 0;
+}
+
+            .footer-top svg path,
+            .footer-top svg rect {
+                fill: #2c2c2c;
+            }
+        &lt;/style&gt;
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86318273-1', 'auto');
+  ga('send', 'pageview');
+
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+
+&lt;body class="page-template-default page page-id-1960 page-parent page-child parent-pageid-380 wpb-js-composer js-comp-ver-5.1.1 vc_responsive"&gt;
+
+    &lt;div class="nav-menu-icon"&gt;
+        &lt;a href="javascript:;"&gt;&lt;i&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Site logo --&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="site-logo"&gt;
+            &lt;a href="http://ilabquality.staging.wpengine.com/"&gt;
+                &lt;img src="http://ilabquality.wpengine.com/wp-content/uploads/2017/02/logoweb-1.png" alt="iLAB" /&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- Mouse icon --&gt;
+    &lt;/div&gt;
+
+    
+    &lt;header id="header"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-sm-5"&gt;
+
+                    &lt;nav class="navigation-left"&gt;
+                        &lt;ul id="menu-primary-left-menu" class="menu"&gt;&lt;li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-386"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/"&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li id="menu-item-388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-388"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;ABOUT US&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li id="menu-item-848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;THE iLAB STORY&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1288"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/our-process/"&gt;OUR PROCESS&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/engagement-models/"&gt;ENGAGEMENT MODELS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id="menu-item-1233" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1233"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/"&gt;SERVICES&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li id="menu-item-1992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1992"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/consulting-services/"&gt;CONSULTING SERVICES&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1991"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/software-testing-automation/"&gt;SOFTWARE TESTING &amp;amp; AUTOMATION&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1989" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1960 current_page_item menu-item-1989"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/performance-testing/"&gt;PERFORMANCE TESTING&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-2055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2055"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/security-testing/"&gt;SECURITY TESTING&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1990"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/mobile/"&gt;MOBILE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id="menu-item-838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-838"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/"&gt;INDUSTRIES&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/banking-finance/"&gt;BANKING &amp;amp; FINANCE&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-2000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2000"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/healthcare/"&gt;HEALTHCARE&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1998"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/human-resources/"&gt;HUMAN RESOURCES&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1997"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/insurance/"&gt;INSURANCE&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1996"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/public-sector/"&gt;PUBLIC SECTOR&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/retail/"&gt;RETAIL&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1994"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/telecom/"&gt;TELECOM&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1993"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/tourism-gaming/"&gt;TOURISM &amp;amp; GAMING&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;                    &lt;/nav&gt;
+
+                &lt;/div&gt;
+                &lt;div class="col-sm-2 curved-shape"&gt;
+                    &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="325px" height="90px" viewBox="0 0 325 90" preserveAspectRatio="xMinYMid" enable-background="new 0 0 325 90" xml:space="preserve"&gt; &lt;path fill="#ffffff" d="M162.635,49.333C204.638,49.333,233.143,90,266.511,90s10.385,0,10.385,0V30h-228v60c0,0-16.127,0,12.378,0 S120.632,49.333,162.635,49.333z"/&gt; &lt;rect fill="#ffffff" width="50" height="90"/&gt; &lt;rect x="275.801" fill="#ffffff" width="50" height="90"/&gt; &lt;rect x="48.823" y="0.005" fill="#ffffff" width="228.541" height="30.5"/&gt; &lt;/svg&gt;&lt;a href="http://ilabquality.com"&gt;&lt;img src="http://ilabquality.com/wp-content/uploads/2016/02/iLABwebsiteCenter.png" alt="iLABwebsiteCenter" width="130" height="56" class="aligncenter size-full wp-image-1047" /&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="col-sm-5"&gt;
+                    &lt;nav class="navigation-right text-right"&gt;
+                        &lt;ul id="menu-primary-right-menu" class="menu"&gt;&lt;li id="menu-item-1856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/resources/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-847"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li id="menu-item-1640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING COURSES&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1641"&gt;&lt;a href="/wp-content/uploads/2016/10/Training_Schedule_Template_Final.pdf"&gt;TRAINING SCHEDULE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id="menu-item-389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/contact/"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+&lt;li id="menu-item-1373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1373"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/careers/"&gt;CAREERS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;                    &lt;/nav&gt;                        
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class="mobile"&gt;
+            &lt;ul id="menu-primary-left-menu-1" class="menu"&gt;&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-386"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/"&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-388"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;ABOUT US&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;THE iLAB STORY&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1288"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/our-process/"&gt;OUR PROCESS&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/engagement-models/"&gt;ENGAGEMENT MODELS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1233"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/"&gt;SERVICES&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1992"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/consulting-services/"&gt;CONSULTING SERVICES&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1991"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/software-testing-automation/"&gt;SOFTWARE TESTING &amp;amp; AUTOMATION&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1960 current_page_item menu-item-1989"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/performance-testing/"&gt;PERFORMANCE TESTING&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2055"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/security-testing/"&gt;SECURITY TESTING&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1990"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/mobile/"&gt;MOBILE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-838"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/"&gt;INDUSTRIES&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/banking-finance/"&gt;BANKING &amp;amp; FINANCE&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2000"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/healthcare/"&gt;HEALTHCARE&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1998"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/human-resources/"&gt;HUMAN RESOURCES&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1997"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/insurance/"&gt;INSURANCE&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1996"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/public-sector/"&gt;PUBLIC SECTOR&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/retail/"&gt;RETAIL&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1994"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/telecom/"&gt;TELECOM&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1993"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/tourism-gaming/"&gt;TOURISM &amp;amp; GAMING&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;            &lt;ul id="menu-primary-right-menu-1" class="menu"&gt;&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/resources/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-847"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING COURSES&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1641"&gt;&lt;a href="/wp-content/uploads/2016/10/Training_Schedule_Template_Final.pdf"&gt;TRAINING SCHEDULE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/contact/"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1373"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/careers/"&gt;CAREERS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;        &lt;/nav&gt;
+
+    &lt;/header&gt;
+
+
+
+
+&lt;section class="content-area "&gt;
+    &lt;div class="clip"&gt;
+        &lt;div class="bg bg-bg-chrome act" style=""&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="section-content" style=""&gt;
+
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-12"&gt;
+                    
+                    &lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" data-vc-parallax="1.5" data-vc-parallax-image="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance.jpg" class="vc_row wpb_row vc_row-fluid vc_custom_1492784880814 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px;"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_single_image wpb_content_element vc_align_left"&gt;
+		
+		&lt;figure class="wpb_wrapper vc_figure"&gt;
+			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="2197" height="342" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance.png 2197w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance-300x47.png 300w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance-768x120.png 768w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance-1024x159.png 1024w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance-848x132.png 848w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance-875x136.png 875w" sizes="(max-width: 2197px) 100vw, 2197px" /&gt;&lt;/div&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_parallax-inner skrollable skrollable-between" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; background-image: url(&amp;quot;http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance.jpg&amp;quot;); top: -20.4902%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-12"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_text_column wpb_content_element "&gt;
+		&lt;div class="wpb_wrapper"&gt;
+			&lt;h3&gt;Performance Testing: Build Rugged Software&lt;/h3&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-12"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_text_column wpb_content_element "&gt;
+		&lt;div class="wpb_wrapper"&gt;
+			&lt;p&gt;When it comes to testing the performance of software, really, the point is to see what it takes to break it. For mobile solutions especially, a high number of concurrent users can be the downfall of functionality or accessibility. Our performance testing process evaluates software under conditions of extreme traffic or usage to ensure you know the new system’s limits. Any clear bottlenecks will reveal themselves during the examination and can be addressed before launch. Don’t wake up to find you’re the newest trending Twitter hashtag for all the wrong reasons: put your software through testing while you still have the opportunity.&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class="vc_row wpb_row vc_inner vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="service-box style-left "&gt;
+                        &lt;div class="service-icon"&gt;&lt;i class="fa fa-check-circle" style="color: #a10001;"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;h3&gt;
+                            ASKING QUESTIONS
+                            
+                        &lt;/h3&gt;
+                        &lt;p&gt;Before testing your brainchild, we’ll get to know it through your eyes. What exactly did you want it to do? What challenges did you face, and what challenges do you think the software faces in real-time?&lt;/p&gt;
+                    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="service-box style-left "&gt;
+                        &lt;div class="service-icon"&gt;&lt;i class="fa fa-check-circle" style="color: #a10001;"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;h3&gt;
+                            SHARING INSIGHTS AND FINDINGS
+                            
+                        &lt;/h3&gt;
+                        &lt;p&gt;After we’ve finished testing the software, we’ll compile our findings into a detailed, data-driven report of the program’s performance under a wide spectrum of conditions.&lt;/p&gt;
+                    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_inner vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="service-box style-left "&gt;
+                        &lt;div class="service-icon"&gt;&lt;i class="fa fa-check-circle" style="color: #a10001;"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;h3&gt;
+                            SUCCESS THROUGH PROCESS
+                            
+                        &lt;/h3&gt;
+                        &lt;p&gt;We strategize a unique testing approach for each new project after establishing baselines of performance and defining key metrics by which its success will be evaluated. &lt;/p&gt;
+                    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="service-box style-left "&gt;
+                        &lt;div class="service-icon"&gt;&lt;i class="fa fa-check-circle" style="color: #a10001;"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;h3&gt;
+                            RECOMMENDATIONS FOR NEXT STEPS
+                            
+                        &lt;/h3&gt;
+                        &lt;p&gt;In the report, we also include our thoughts on how to address performance failures and what configuration changes might lead to greater success. &lt;/p&gt;
+                    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_inner vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="service-box style-left "&gt;
+                        &lt;div class="service-icon"&gt;&lt;i class="fa fa-check-circle" style="color: #a10001;"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;h3&gt;
+                            RUNNING THE GAUNTLET
+                            
+                        &lt;/h3&gt;
+                        &lt;p&gt;We test your software solution to verify its performance under heavy traffic or use and during resource bottlenecks. Every limit in the software’s performance that can be pushed, is pushed. &lt;/p&gt;
+                    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-12"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;!-- vc_grid start --&gt;
+&lt;div class="vc_grid-container-wrapper vc_clearfix"&gt;
+	&lt;div class="vc_grid-container vc_clearfix wpb_content_element vc_basic_grid" data-initial-loading-animation="none" data-vc-grid-settings="{&amp;quot;page_id&amp;quot;:1960,&amp;quot;style&amp;quot;:&amp;quot;load-more&amp;quot;,&amp;quot;action&amp;quot;:&amp;quot;vc_get_vc_grid_data&amp;quot;,&amp;quot;shortcode_id&amp;quot;:&amp;quot;1498057950389-af6335fc-4a3b-8&amp;quot;,&amp;quot;items_per_page&amp;quot;:&amp;quot;3&amp;quot;,&amp;quot;btn_data&amp;quot;:{&amp;quot;title&amp;quot;:&amp;quot;Load more&amp;quot;,&amp;quot;style&amp;quot;:&amp;quot;flat&amp;quot;,&amp;quot;gradient_color_1&amp;quot;:&amp;quot;flat&amp;quot;,&amp;quot;gradient_color_2&amp;quot;:&amp;quot;flat&amp;quot;,&amp;quot;gradient_custom_color_1&amp;quot;:&amp;quot;flat&amp;quot;,&amp;quot;gradient_custom_color_2&amp;quot;:&amp;quot;flat&amp;quot;,&amp;quot;gradient_text_color&amp;quot;:&amp;quot;flat&amp;quot;,&amp;quot;custom_background&amp;quot;:&amp;quot;#ededed&amp;quot;,&amp;quot;custom_text&amp;quot;:&amp;quot;#666&amp;quot;,&amp;quot;outline_custom_color&amp;quot;:&amp;quot;#666&amp;quot;,&amp;quot;outline_custom_hover_background&amp;quot;:&amp;quot;#666&amp;quot;,&amp;quot;outline_custom_hover_text&amp;quot;:&amp;quot;#fff&amp;quot;,&amp;quot;shape&amp;quot;:&amp;quot;rounded&amp;quot;,&amp;quot;color&amp;quot;:&amp;quot;blue&amp;quot;,&amp;quot;size&amp;quot;:&amp;quot;md&amp;quot;,&amp;quot;align&amp;quot;:&amp;quot;inline&amp;quot;,&amp;quot;button_block&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;add_icon&amp;quot;:&amp;quot;true&amp;quot;,&amp;quot;i_align&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;i_type&amp;quot;:&amp;quot;fontawesome&amp;quot;,&amp;quot;i_icon_fontawesome&amp;quot;:&amp;quot;fa fa-adjust&amp;quot;,&amp;quot;i_icon_openiconic&amp;quot;:&amp;quot;vc-oi vc-oi-dial&amp;quot;,&amp;quot;i_icon_typicons&amp;quot;:&amp;quot;typcn typcn-adjust-brightness&amp;quot;,&amp;quot;i_icon_entypo&amp;quot;:&amp;quot;entypo-icon entypo-icon-note&amp;quot;,&amp;quot;i_icon_linecons&amp;quot;:&amp;quot;vc_li vc_li-heart&amp;quot;,&amp;quot;i_icon_monosocial&amp;quot;:&amp;quot;vc_li vc_li-heart&amp;quot;,&amp;quot;i_icon_material&amp;quot;:&amp;quot;vc_li vc_li-heart&amp;quot;,&amp;quot;i_icon_pixelicons&amp;quot;:&amp;quot;vc_pixel_icon vc_pixel_icon-alert&amp;quot;,&amp;quot;el_id&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;custom_onclick&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;custom_onclick_code&amp;quot;:&amp;quot;&amp;quot;},&amp;quot;tag&amp;quot;:&amp;quot;vc_basic_grid&amp;quot;}" data-vc-request="http://ilabquality.staging.wpengine.com/wp-admin/admin-ajax.php" data-vc-post-id="1960" data-vc-public-nonce="1e38322076"&gt;
+	&lt;style type="text/css" data-type="vc_shortcodes-custom-css"&gt;.vc_custom_1419328663991{background-color: #f4f4f4 !important;}&lt;/style&gt;&lt;style type="text/css"&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+&lt;link rel="stylesheet" id="wpe-common-css" href="http://ilabquality.staging.wpengine.com/wp-content/mu-plugins/wpengine-common/css/wpe-common.css?ver=3.2.1" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="dashicons-css" href="http://ilabquality.staging.wpengine.com/wp-includes/css/dashicons.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="wp-jquery-ui-dialog-css" href="http://ilabquality.staging.wpengine.com/wp-includes/css/jquery-ui-dialog.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;div class="vc_grid vc_row vc_grid-gutter-30px vc_pageable-wrapper vc_hook_hover" data-vc-pageable-content="true"&gt;&lt;div class="vc_pageable-slide-wrapper vc_clearfix" data-vc-grid-content="true"&gt;&lt;div class="vc_grid-item vc_clearfix vc_col-sm-4 vc_grid-item-zone-c-bottom vc_grid_filter-item vc_visible-item none animated"&gt;&lt;div class="vc_grid-item-mini vc_clearfix "&gt;&lt;div class="vc_gitem-animated-block "&gt;&lt;div class="vc_gitem-zone vc_gitem-zone-a vc_gitem-is-link" style="height: 160px;background-image: url('http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/chains.jpg') !important;"&gt;
+	&lt;a href="http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/" title="The Ins and Outs of Stress Testing Web &amp;amp; Mobile Applications" class="vc_gitem-link vc-zone-link"&gt;&lt;/a&gt;	&lt;img src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/chains.jpg" class="vc_gitem-zone-img" alt="" /&gt;	&lt;div class="vc_gitem-zone-mini"&gt;
+			&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="vc_gitem-zone vc_gitem-zone-c vc_custom_1419328663991"&gt;
+	&lt;div class="vc_gitem-zone-mini"&gt;
+		&lt;div class="vc_gitem_row vc_row vc_gitem-row-position-top"&gt;&lt;div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"&gt;&lt;div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"&gt;&lt;h4 style="text-align: left"&gt;The Ins and Outs of Stress Testing Web &amp;amp; Mobile Applications&lt;/h4&gt;&lt;/div&gt;&lt;div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_excerpt"&gt;&lt;p style="text-align: left"&gt;&lt;/p&gt;&lt;p&gt;From our partners at Neotys Falling beneath the umbrella of performance testing, both load and stress testing play an important …&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="vc_btn3-container vc_btn3-left"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/" class="vc_gitem-link vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-juicy-pink" title="Read more"&gt;Read more&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="vc_clearfix"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_grid-item vc_clearfix vc_col-sm-4 vc_grid-item-zone-c-bottom vc_grid_filter-item vc_visible-item none animated"&gt;&lt;div class="vc_grid-item-mini vc_clearfix "&gt;&lt;div class="vc_gitem-animated-block "&gt;&lt;div class="vc_gitem-zone vc_gitem-zone-a vc_gitem-is-link" style="height: 160px;background-image: url('http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/clouds-792x320.jpg') !important;"&gt;
+	&lt;a href="http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/" title="The 5 Cloud-Based Load Testing Tool Must-Haves" class="vc_gitem-link vc-zone-link"&gt;&lt;/a&gt;	&lt;img src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/clouds-792x320.jpg" class="vc_gitem-zone-img" alt="" /&gt;	&lt;div class="vc_gitem-zone-mini"&gt;
+			&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="vc_gitem-zone vc_gitem-zone-c vc_custom_1419328663991"&gt;
+	&lt;div class="vc_gitem-zone-mini"&gt;
+		&lt;div class="vc_gitem_row vc_row vc_gitem-row-position-top"&gt;&lt;div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"&gt;&lt;div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"&gt;&lt;h4 style="text-align: left"&gt;The 5 Cloud-Based Load Testing Tool Must-Haves&lt;/h4&gt;&lt;/div&gt;&lt;div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_excerpt"&gt;&lt;p style="text-align: left"&gt;&lt;/p&gt;&lt;p&gt;From our friends at Neotys One of the most dangerous moves software developers and testers can make is being lulled …&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="vc_btn3-container vc_btn3-left"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/" class="vc_gitem-link vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-juicy-pink" title="Read more"&gt;Read more&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="vc_clearfix"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_grid-item vc_clearfix vc_col-sm-4 vc_grid-item-zone-c-bottom vc_grid_filter-item vc_visible-item none animated"&gt;&lt;div class="vc_grid-item-mini vc_clearfix "&gt;&lt;div class="vc_gitem-animated-block "&gt;&lt;div class="vc_gitem-zone vc_gitem-zone-a vc_gitem-is-link" style="height: 160px;background-image: url('http://ilabquality.staging.wpengine.com/wp-content/uploads/2017/04/keyboard-720-320-1.jpg') !important;"&gt;
+	&lt;a href="http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/" title="What Should The Software Testing Industry Watch For as the HPE–Micro Focus Merger Plays Out?" class="vc_gitem-link vc-zone-link"&gt;&lt;/a&gt;	&lt;img src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2017/04/keyboard-720-320-1.jpg" class="vc_gitem-zone-img" alt="" /&gt;	&lt;div class="vc_gitem-zone-mini"&gt;
+			&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="vc_gitem-zone vc_gitem-zone-c vc_custom_1419328663991"&gt;
+	&lt;div class="vc_gitem-zone-mini"&gt;
+		&lt;div class="vc_gitem_row vc_row vc_gitem-row-position-top"&gt;&lt;div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"&gt;&lt;div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title"&gt;&lt;h4 style="text-align: left"&gt;What Should The Software Testing Industry Watch For as the HPE–Micro Focus Merger Plays Out?&lt;/h4&gt;&lt;/div&gt;&lt;div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_excerpt"&gt;&lt;p style="text-align: left"&gt;&lt;/p&gt;&lt;p&gt;From our partners at SmartBear With HPE’s decision to spin off and sell its software assets, Micro Focus has continued …&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="vc_btn3-container vc_btn3-left"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/" class="vc_gitem-link vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-juicy-pink" title="Read more"&gt;Read more&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class="vc_clearfix"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_pageable-load-more-btn" data-vc-grid-load-more-btn="true"&gt;&lt;div class="vc_btn3-container  vc_grid-btn-load_more vc_btn3-inline"&gt;&lt;a href="javascript:;" class="vc_general vc_btn3  vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-icon-left vc_btn3-color-blue " style="display: none;"&gt;&lt;i class="vc_btn3-icon fa fa-adjust"&gt;&lt;/i&gt; Load more&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!-- vc_grid end --&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="1.5" data-vc-parallax-image="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance.jpg" data-overlay="#303030" data-overlay-alpha=".9" class="vc_row wpb_row vc_row-fluid vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="vc-row-overlay" style="background-color:#303030; opacity:.9;"&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-12"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h2 style="color: #ffffff;text-align: center;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading vc_custom_1498057980920"&gt;PERFORMANCE TESTING CASE STUDY&lt;/h2&gt;&lt;div class="vc_btn3-container vc_btn3-center vc_custom_1498058007744"&gt;
+	&lt;a onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'" onmouseenter="this.style.borderColor='#303030'; this.style.backgroundColor='#303030'; this.style.color='#ffffff';" style="border-color:#ffffff; color:#ffffff;" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom" href="/services/performance-testing/case-study-performance-testing/" title=""&gt;Link to Case Study&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_parallax-inner skrollable skrollable-before" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; background-image: url(&amp;quot;http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/performance.jpg&amp;quot;); top: -50%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="1.5" class="vc_row wpb_row vc_row-fluid vc_custom_1492627668307 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-2"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-8"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: center;font-family:Open Sans;font-weight:600;font-style:normal" class="vc_custom_heading vc_custom_1492627786889"&gt;CONTACT FORM TITLE&lt;/h3&gt;&lt;p style="color: #afafaf;text-align: center;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1492628139742"&gt;Fill out the form below and you will receive further information.(Place Holder Text)&lt;/p&gt;
+	&lt;div class="wpb_text_column wpb_content_element "&gt;
+		&lt;div class="wpb_wrapper"&gt;
+			&lt;div class="salesforce_w2l_lead"&gt;&lt;form id="sf_form_salesforce_w2l_lead_12" class="w2llead top-aligned" method="post" action="#sf_form_salesforce_w2l_lead_12"&gt;&lt;div class="sf_field sf_field_first_name sf_type_text"&gt;	&lt;label class="w2llabel required  text" for="sf_first_name"&gt;First name: &lt;sup&gt;&lt;span class="required"&gt;*&lt;/span&gt;&lt;/sup&gt;&lt;/label&gt;	&lt;input type="text" placeholder="" value="" id="sf_first_name" class="w2linput text" name="first_name" /&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="sf_field sf_field_last_name sf_type_text"&gt;	&lt;label class="w2llabel required  text" for="sf_last_name"&gt;Last name: &lt;sup&gt;&lt;span class="required"&gt;*&lt;/span&gt;&lt;/sup&gt;&lt;/label&gt;	&lt;input type="text" placeholder="" value="" id="sf_last_name" class="w2linput text" name="last_name" /&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="sf_field sf_field_company sf_type_text"&gt;	&lt;label class="w2llabel required  text" for="sf_company"&gt;Company: &lt;sup&gt;&lt;span class="required"&gt;*&lt;/span&gt;&lt;/sup&gt;&lt;/label&gt;	&lt;input type="text" placeholder="" value="" id="sf_company" class="w2linput text" name="company" /&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="sf_field sf_field_email sf_type_email"&gt;	&lt;label class="w2llabel required  email" for="sf_email"&gt;Email: &lt;sup&gt;&lt;span class="required"&gt;*&lt;/span&gt;&lt;/sup&gt;&lt;/label&gt;	&lt;input type="email" placeholder="" value="" id="sf_email" class="w2linput text" name="email" /&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="sf_field sf_field_phone sf_type_text"&gt;	&lt;label class="w2llabel   text" for="sf_phone"&gt;Phone:&lt;/label&gt;	&lt;input type="text" placeholder="" value="" id="sf_phone" class="w2linput text" name="phone" /&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/div&gt;		&lt;input type="hidden" id="sf_description" class="w2linput hidden" name="description" value="Performance" /&gt;	&lt;input type="text" name="message" class="w2linput" value="" style="display: none;" /&gt;	&lt;input type="hidden" name="form_id" class="w2linput" value="12" /&gt;	&lt;div class="w2lsubmit"&gt;&lt;input type="submit" name="w2lsubmit" class="w2linput submit" value="Submit" /&gt;&lt;/div&gt;&lt;/form&gt;&lt;p class="sf_required_fields_msg" id="requiredfieldsmsg"&gt;&lt;sup&gt;&lt;span class="required"&gt;*&lt;/span&gt;&lt;/sup&gt; These fields are required.&lt;/p&gt;&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-2"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_parallax-inner skrollable skrollable-before" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; top: -50%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-12"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_text_column wpb_content_element "&gt;
+		&lt;div class="wpb_wrapper"&gt;
+			&lt;p class="text-LEFT" style="font-size: 22px; color: #393939; letter-spacing: 4px; padding: 30px 0px;"&gt;BRANDS TRUST &lt;span class="brand-color"&gt;iLAB&lt;/span&gt;&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class="vc_row wpb_row vc_inner vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_single_image wpb_content_element vc_align_center"&gt;
+		
+		&lt;figure class="wpb_wrapper vc_figure"&gt;
+			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="320" height="130" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/neotys1.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/neotys1.png 320w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/neotys1-300x122.png 300w" sizes="(max-width: 320px) 100vw, 320px" /&gt;&lt;/div&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_single_image wpb_content_element vc_align_center"&gt;
+		
+		&lt;figure class="wpb_wrapper vc_figure"&gt;
+			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="320" height="130" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/hp1.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/hp1.png 320w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/hp1-300x122.png 300w" sizes="(max-width: 320px) 100vw, 320px" /&gt;&lt;/div&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_single_image wpb_content_element vc_align_center"&gt;
+		
+		&lt;figure class="wpb_wrapper vc_figure"&gt;
+			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="320" height="130" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/itpeers.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/itpeers.png 320w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/itpeers-300x122.png 300w" sizes="(max-width: 320px) 100vw, 320px" /&gt;&lt;/div&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_single_image wpb_content_element vc_align_center"&gt;
+		
+		&lt;figure class="wpb_wrapper vc_figure"&gt;
+			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="266" height="130" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/experitest.png" class="vc_single_image-img attachment-full" alt="" /&gt;&lt;/div&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+	&lt;div id="footer-top" class="footer-top"&gt;
+		&lt;div class="container"&gt;
+	        &lt;div class="col-md-5"&gt;&lt;/div&gt;
+	        &lt;div class="col-md-2"&gt;
+	            &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="325.37px" height="90px" viewBox="347.802 0 325.37 90" enable-background="new 347.802 0 325.37 90" xml:space="preserve"&gt; &lt;path fill="#2c2c2c" d="M510.968,40.667C468.966,40.667,440.46,0,407.093,0c-33.369,0-10.385,0-10.385,0v60h228V0 c0,0,16.127,0-12.379,0C583.825,0,552.972,40.667,510.968,40.667z"/&gt; &lt;rect x="623.604" fill="#2c2c2c" width="50" height="90"/&gt; &lt;rect x="347.802" fill="#2c2c2c" width="50" height="90"/&gt; &lt;rect x="396.239" y="59.495" fill="#2c2c2c" width="228.541" height="30.5"/&gt; &lt;/svg&gt;
+	        &lt;/div&gt;
+	        &lt;div class="col-md-5"&gt;&lt;/div&gt;
+	    &lt;/div&gt;
+	    &lt;span class="back-to-top"&gt;Back to top&lt;/span&gt;
+	&lt;/div&gt;
+
+	&lt;footer id="footer"&gt;
+		&lt;div class="container" style="background-image: url( http://ilabquality.staging.wpengine.com/wp-content/uploads/2015/10/footer-map.png)"&gt;
+			&lt;div class="row"&gt;
+				&lt;div class="col-md-3 col-sm-6 footer-column-1"&gt;&lt;div id="text-1" class="footer_widget widget widget_text"&gt;			&lt;div class="textwidget"&gt;&lt;img src="http://ilabquality.com/wp-content/uploads/2016/02/iLABwebsite.png" /&gt;
+&lt;p&gt;iLAB is the worldwide leader in software quality assurance.  With over 2 decades of experience, trust iLAB when the future of your organization is on the line. &lt;/p&gt;&lt;/div&gt;
+		&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-3 col-sm-6 footer-column-2"&gt;&lt;/div&gt;&lt;div class="col-md-3 col-sm-6 footer-column-3"&gt;&lt;div id="tt_recentpostswidget-1" class="footer_widget widget recent-posts"&gt;&lt;h3 class="widget-title"&gt;Recent Articles&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/chains-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
+                    &lt;span&gt;The Ins and Outs of…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
+                    &lt;a href="http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/clouds-792x320-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
+                    &lt;span&gt;The 5 Cloud-Based Load Testing…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
+                    &lt;a href="http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2017/04/keyboard-720-320-1-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
+                    &lt;span&gt;What Should The Software Testing…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
+                    &lt;a href="http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2017/04/caution-internet-post-pic-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
+                    &lt;span&gt;6 Requirements For Synthetic User…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
+                    &lt;a href="http://ilabquality.staging.wpengine.com/6-requirements-for-synthetic-user-management-violate-at-your-own-risk/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-3 col-sm-6 footer-column-4"&gt;&lt;div id="tt_sociallinkswidget-1" class="footer_widget widget widget_social"&gt;&lt;h3 class="widget-title"&gt; Stay Connected &lt;/h3&gt;&lt;div class="social-links"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="http://www.twitter.com/ilabquality"&gt;&lt;i class="social-twitter fa fa-twitter"&gt;&lt;/i&gt; @iLAB&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.linkedin.com/company/829111?trk=tyah&amp;amp;trkInfo=clickedVerticalcompanyclickedEntityId829111idx2-1-4tarId1467726348363tasilab"&gt;&lt;i class="social-linkedin fa fa-linkedin"&gt;&lt;/i&gt; iLAB on LinkedIn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="text-2" class="footer_widget widget widget_text"&gt;			&lt;div class="textwidget"&gt;&lt;a href="https://www.gsa.gov" target="_blank"&gt;&lt;img class="alignnone size-medium wp-image-1969" src="/wp-content/uploads/2017/04/Schedule_StarMark_Color_w_Contract_Number_Arial-1-300x70.png" alt="" width="300" height="70" /&gt;&lt;/a&gt;&lt;/div&gt;
+		&lt;/div&gt;&lt;/div&gt;			&lt;/div&gt;
+		&lt;/div&gt;
+
+	&lt;/footer&gt;
+	&lt;div class="sub-footer"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-sm-12"&gt;
+				&lt;div class="entry-footer"&gt;
+					COPYRIGHT © iLAB				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+if (typeof ajaxurl === 'undefined') {
+ajaxurl = "http://ilabquality.staging.wpengine.com/wp-admin/admin-ajax.php";
+}
+&lt;/script&gt;
+&lt;link rel="stylesheet" id="prettyphoto-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css?ver=5.1.1" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="font-awesome-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.1.1" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="vc_pageable_owl-carousel-css-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=5.1.1" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="animate-css-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=5.1.1" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="vc_google_fonts_open_sans300300italicregularitalic600600italic700700italic800800italic-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;amp;ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="sfwp2lcss-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/salesforce-wordpress-to-lead/assets/css/sfwp2l.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/wpdialog.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &amp;lt;![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/ilabquality.staging.wpengine.com\/wp-json\/","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]&amp;gt; */
+&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.8"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &amp;lt;![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Download File":"Download File","Download Video":"Download Video","Play":"Play","Pause":"Pause","Captions\/Subtitles":"Captions\/Subtitles","None":"None","Time Slider":"Time Slider","Skip back %1 seconds":"Skip back %1 seconds","Video Player":"Video Player","Audio Player":"Audio Player","Volume Slider":"Volume Slider","Mute Toggle":"Mute Toggle","Unmute":"Unmute","Mute":"Mute","Use Up\/Down Arrow keys to increase or decrease volume.":"Use Up\/Down Arrow keys to increase or decrease volume.","Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds."}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]&amp;gt; */
+&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.22.0"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/bootstrap/js/bootstrap.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/js/jquery.kwicks.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/js/jquery.counterup.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/owl-carousel/owl.carousel.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/js/scripts.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/supercarousel/js/supercarouselmerged.js?ver=2.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &amp;lt;![CDATA[ */
+var daq_selectlist_lang = {"hint":"Select options ..."};
+/* ]]&amp;gt; */
+&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/application/vendor/select-list/jquery.selectlist.pack.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/wp-embed.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/underscore.min.js?ver=1.8.3"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170626 12:26:46.454" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170626 12:26:46.454" starttime="20170626 12:26:46.005"></status>
+</kw>
+<msg timestamp="20170626 12:26:46.457" level="FAIL">Page should have contained image 'css=.fa.fa-check-circle' but did not</msg>
+<status status="FAIL" endtime="20170626 12:26:46.457" starttime="20170626 12:26:45.872"></status>
+</kw>
+<status status="FAIL" endtime="20170626 12:26:46.457" starttime="20170626 12:26:45.661"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170626 12:26:49.643" starttime="20170626 12:26:46.458"></status>
+</kw>
+<tags>
+<tag>Debug</tag>
+<tag>Performance Testing Tab</tag>
+</tags>
+<status status="FAIL" endtime="20170626 12:26:49.643" critical="yes" starttime="20170626 12:26:14.423">Page should have contained image 'css=.fa.fa-check-circle' but did not</status>
+</test>
+<test id="s1-s1-t5" name="Security Testing Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170626 12:26:49.649" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170626 12:27:16.976" starttime="20170626 12:26:49.648"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170626 12:27:18.177" starttime="20170626 12:27:16.976"></status>
+</kw>
+<kw name="Wait for Page to Load">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.site-logo&gt;a&gt;img</arg>
+</arguments>
+<status status="PASS" endtime="20170626 12:27:18.330" starttime="20170626 12:27:18.178"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:27:18.330" starttime="20170626 12:27:18.177"></status>
+</kw>
+<kw name="Hover Over Services">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1233&gt;a</arg>
+</arguments>
+<msg timestamp="20170626 12:27:18.332" level="INFO">Simulating Mouse Over on element 'css=#menu-item-1233&gt;a'</msg>
+<status status="PASS" endtime="20170626 12:27:18.462" starttime="20170626 12:27:18.331"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:27:18.462" starttime="20170626 12:27:18.331"></status>
+</kw>
+<kw name="Click Security Testing Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-2055&gt;a</arg>
+</arguments>
+<msg timestamp="20170626 12:27:18.463" level="INFO">Clicking element 'css=#menu-item-2055&gt;a'.</msg>
+<status status="PASS" endtime="20170626 12:27:20.664" starttime="20170626 12:27:18.463"></status>
+</kw>
+<status status="PASS" endtime="20170626 12:27:20.665" starttime="20170626 12:27:18.462"></status>
+</kw>
+<kw name="Assert Security Testing Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>.fa.fa-check-circle</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170626 12:27:51.275" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170626 12:27:51.276" starttime="20170626 12:27:50.820"></status>
+</kw>
+<msg timestamp="20170626 12:27:51.277" level="FAIL">Element locator '.fa.fa-check-circle' did not match any elements after 30 seconds</msg>
+<status status="FAIL" endtime="20170626 12:27:51.277" starttime="20170626 12:27:20.665"></status>
+</kw>
+<status status="FAIL" endtime="20170626 12:27:51.277" starttime="20170626 12:27:20.665"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170626 12:27:54.440" starttime="20170626 12:27:51.278"></status>
+</kw>
+<tags>
+<tag>Debug</tag>
+<tag>Security Testing Tab</tag>
+</tags>
+<status status="FAIL" endtime="20170626 12:27:54.440" critical="yes" starttime="20170626 12:26:49.645">Element locator '.fa.fa-check-circle' did not match any elements after 30 seconds</status>
+</test>
+<test id="s1-s1-t6" name="Mobile Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170626 12:27:54.443" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170626 12:27:59.232" starttime="20170626 12:27:54.443"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170626 12:28:03.281" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</msg>
+<status status="FAIL" endtime="20170626 12:28:03.282" starttime="20170626 12:28:03.263"></status>
+</kw>
+<msg timestamp="20170626 12:28:03.282" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</msg>
+<msg timestamp="20170626 12:28:03.287" level="FAIL">WebDriverException: Message: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</msg>
+<status status="FAIL" endtime="20170626 12:28:03.287" starttime="20170626 12:27:59.233"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170626 12:28:06.304" starttime="20170626 12:28:03.288"></status>
+</kw>
+<tags>
+<tag>Debug</tag>
+<tag>Mobile Tab</tag>
+</tags>
+<status status="FAIL" endtime="20170626 12:28:06.305" critical="yes" starttime="20170626 12:27:54.441">WebDriverException: Message: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</status>
+</test>
+<doc>Tests the Services Tab and Services dropdown tab menu</doc>
+<status status="FAIL" endtime="20170626 12:28:06.308" starttime="20170626 12:24:31.026"></status>
+</suite>
+<status status="FAIL" endtime="20170626 12:28:06.322" starttime="20170626 12:24:31.003"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="3">Critical Tests</stat>
+<stat fail="3" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Consulting Services Tab</stat>
+<stat fail="3" pass="3">DEBUG</stat>
+<stat fail="1" pass="0">Mobile Tab</stat>
+<stat fail="1" pass="0">Performance Testing Tab</stat>
+<stat fail="1" pass="0">Security Testing Tab</stat>
+<stat fail="0" pass="1">Services Tab</stat>
+<stat fail="0" pass="1">Software Testing and Automation Tab</stat>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="iLAB-Services" pass="3">iLAB-Services</stat>
+<stat fail="3" id="s1-s1" name="ServicesTabSuite" pass="3">iLAB-Services.ServicesTabSuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170626 12:28:03.282" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+</msg>
+</errors>
+</robot>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170627 08:44:03.179" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\iLAB-Industries\IndustriesTabSuite.robot" id="s1" name="IndustriesTabSuite">
+<test id="s1-t1" name="Telecom Tab">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Website}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170627 08:44:03.330" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170627 08:44:30.383" starttime="20170627 08:44:03.330"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170627 08:44:31.597" starttime="20170627 08:44:30.383"></status>
+</kw>
+<kw name="Wait for Page to Load">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.site-logo&gt;a&gt;img</arg>
+</arguments>
+<status status="PASS" endtime="20170627 08:44:31.877" starttime="20170627 08:44:31.598"></status>
+</kw>
+<status status="PASS" endtime="20170627 08:44:31.877" starttime="20170627 08:44:31.598"></status>
+</kw>
+<kw name="Hover Over Industries">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-838&gt;a</arg>
+</arguments>
+<msg timestamp="20170627 08:44:31.878" level="INFO">Simulating Mouse Over on element 'css=#menu-item-838&gt;a'</msg>
+<status status="PASS" endtime="20170627 08:44:32.081" starttime="20170627 08:44:31.878"></status>
+</kw>
+<status status="PASS" endtime="20170627 08:44:32.082" starttime="20170627 08:44:31.877"></status>
+</kw>
+<kw name="Click Telecom Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=#menu-item-1994&gt;a</arg>
+</arguments>
+<msg timestamp="20170627 08:44:32.083" level="INFO">Clicking element 'css=#menu-item-1994&gt;a'.</msg>
+<status status="PASS" endtime="20170627 08:44:33.853" starttime="20170627 08:44:32.082"></status>
+</kw>
+<status status="PASS" endtime="20170627 08:44:33.853" starttime="20170627 08:44:32.082"></status>
+</kw>
+<kw name="Assert Telecom Page">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>css=.vc_single_image-img.attachment-full</arg>
+</arguments>
+<msg timestamp="20170627 08:44:33.980" level="INFO">Current page contains image 'css=.vc_single_image-img.attachment-full'.</msg>
+<status status="PASS" endtime="20170627 08:44:33.981" starttime="20170627 08:44:33.854"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>High-speed, reliable, transparent service</arg>
+</arguments>
+<msg timestamp="20170627 08:44:34.076" level="INFO">Current page contains text 'High-speed, reliable, transparent service'.</msg>
+<status status="PASS" endtime="20170627 08:44:34.076" starttime="20170627 08:44:33.981"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>css=.wpb_wrapper&gt;p</arg>
+</arguments>
+<msg timestamp="20170627 08:44:34.117" level="INFO">Current page contains element 'css=.wpb_wrapper&gt;p'.</msg>
+<status status="PASS" endtime="20170627 08:44:34.117" starttime="20170627 08:44:34.076"></status>
+</kw>
+<status status="PASS" endtime="20170627 08:44:34.118" starttime="20170627 08:44:33.853"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170627 08:44:37.354" starttime="20170627 08:44:34.118"></status>
+</kw>
+<tags>
+<tag>Debug</tag>
+<tag>Telecom Tab</tag>
+</tags>
+<status status="PASS" endtime="20170627 08:44:37.354" critical="yes" starttime="20170627 08:44:03.329"></status>
+</test>
+<doc>Tests the Industries Tab and Industries dropdown tab menu</doc>
+<status status="PASS" endtime="20170627 08:44:37.356" starttime="20170627 08:44:03.183"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Debug</stat>
+<stat fail="0" pass="1">Telecom Tab</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="IndustriesTabSuite" pass="1">IndustriesTabSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
