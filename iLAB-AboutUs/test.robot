@@ -1,6 +1,5 @@
 *** Settings ***
-Documentation    Suite description
-Library     ExcelLibrary
+Documentation    Tests the About Us tab and the About Us dropdown tab menu
 Library     Selenium2Library     20
 Test Setup  open browser    ${Website}   firefox
 Test Teardown   close browser
