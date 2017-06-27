@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170627 07:55:34.728" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\iLAB-Services\ServicesTabSuite.robot" id="s1" name="ServicesTabSuite">
-<test id="s1-t1" name="Security Testing Tab">
+<robot generated="20170627 10:55:18.452" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\iLAB-Services\ServicesPageLinks.robot" id="s1" name="ServicesPageLinks">
+<test id="s1-t1" name="Consulting Services Page - Contact Form">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${Website}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20170627 07:55:37.589" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
-<status status="PASS" endtime="20170627 07:56:08.771" starttime="20170627 07:55:37.587"></status>
+<msg timestamp="20170627 10:55:19.944" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170627 10:55:47.690" starttime="20170627 10:55:19.943"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170627 07:56:10.258" starttime="20170627 07:56:08.771"></status>
+<status status="PASS" endtime="20170627 10:55:48.901" starttime="20170627 10:55:47.691"></status>
 </kw>
-<kw name="Wait for Page to Load">
+<kw name="Wait for Main Page to Load">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>css=.site-logo&gt;a&gt;img</arg>
 </arguments>
-<status status="PASS" endtime="20170627 07:56:10.623" starttime="20170627 07:56:10.259"></status>
+<status status="PASS" endtime="20170627 10:55:49.246" starttime="20170627 10:55:48.902"></status>
 </kw>
-<status status="PASS" endtime="20170627 07:56:10.624" starttime="20170627 07:56:10.259"></status>
+<status status="PASS" endtime="20170627 10:55:49.247" starttime="20170627 10:55:48.901"></status>
 </kw>
 <kw name="Hover Over Services">
 <kw name="Mouse Over" library="Selenium2Library">
@@ -31,60 +31,106 @@
 <arguments>
 <arg>css=#menu-item-1233&gt;a</arg>
 </arguments>
-<msg timestamp="20170627 07:56:10.625" level="INFO">Simulating Mouse Over on element 'css=#menu-item-1233&gt;a'</msg>
-<status status="PASS" endtime="20170627 07:56:10.873" starttime="20170627 07:56:10.625"></status>
+<msg timestamp="20170627 10:55:49.248" level="INFO">Simulating Mouse Over on element 'css=#menu-item-1233&gt;a'</msg>
+<status status="PASS" endtime="20170627 10:55:49.496" starttime="20170627 10:55:49.247"></status>
 </kw>
-<status status="PASS" endtime="20170627 07:56:10.874" starttime="20170627 07:56:10.624"></status>
+<status status="PASS" endtime="20170627 10:55:49.497" starttime="20170627 10:55:49.247"></status>
 </kw>
-<kw name="Click Security Testing Tab">
+<kw name="Click Consulting Services Tab">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>css=#menu-item-2055&gt;a</arg>
+<arg>css=#menu-item-1992&gt;a</arg>
 </arguments>
-<msg timestamp="20170627 07:56:10.875" level="INFO">Clicking element 'css=#menu-item-2055&gt;a'.</msg>
-<status status="PASS" endtime="20170627 07:56:13.006" starttime="20170627 07:56:10.874"></status>
+<msg timestamp="20170627 10:55:49.498" level="INFO">Clicking element 'css=#menu-item-1992&gt;a'.</msg>
+<status status="PASS" endtime="20170627 10:55:51.510" starttime="20170627 10:55:49.497"></status>
 </kw>
-<status status="PASS" endtime="20170627 07:56:13.007" starttime="20170627 07:56:10.874"></status>
+<status status="PASS" endtime="20170627 10:55:51.510" starttime="20170627 10:55:49.497"></status>
 </kw>
-<kw name="Assert Security Testing Page">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Wait for Consulting Services Page to Load">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
 <arguments>
-<arg>css=.wpb_wrapper&gt;h3</arg>
+<arg>Consulting Services: You Hold the Compass</arg>
 </arguments>
-<status status="PASS" endtime="20170627 07:56:13.097" starttime="20170627 07:56:13.007"></status>
+<status status="PASS" endtime="20170627 10:55:51.593" starttime="20170627 10:55:51.511"></status>
 </kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
-<arg>Security Testing: Know Your Enemy, Know Yourself</arg>
+<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
 </arguments>
-<msg timestamp="20170627 07:56:13.128" level="INFO">Current page contains text 'Security Testing: Know Your Enemy, Know Yourself'.</msg>
-<status status="PASS" endtime="20170627 07:56:13.128" starttime="20170627 07:56:13.097"></status>
+<status status="PASS" endtime="20170627 10:55:51.831" starttime="20170627 10:55:51.593"></status>
 </kw>
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by `locator` is found from current page.</doc>
+<status status="PASS" endtime="20170627 10:55:51.831" starttime="20170627 10:55:51.511"></status>
+</kw>
+<kw name="Move to Form">
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
 <arguments>
-<arg>css=.vc_single_image-img.attachment-full</arg>
+<arg>css=#sf_first_name</arg>
 </arguments>
-<msg timestamp="20170627 07:56:13.185" level="INFO">Current page contains image 'css=.vc_single_image-img.attachment-full'.</msg>
-<status status="PASS" endtime="20170627 07:56:13.186" starttime="20170627 07:56:13.129"></status>
+<msg timestamp="20170627 10:55:51.832" level="INFO">Simulating Mouse Down on element 'css=#sf_first_name'</msg>
+<status status="PASS" endtime="20170627 10:55:51.898" starttime="20170627 10:55:51.832"></status>
 </kw>
-<status status="PASS" endtime="20170627 07:56:13.186" starttime="20170627 07:56:13.007"></status>
+<status status="PASS" endtime="20170627 10:55:51.898" starttime="20170627 10:55:51.831"></status>
+</kw>
+<kw name="Fill Out Form">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#sf_first_name</arg>
+<arg>Test</arg>
+</arguments>
+<msg timestamp="20170627 10:55:51.899" level="INFO">Typing text 'Test' into text field 'css=#sf_first_name'</msg>
+<status status="PASS" endtime="20170627 10:55:52.080" starttime="20170627 10:55:51.899"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#sf_last_name</arg>
+<arg>Tester</arg>
+</arguments>
+<msg timestamp="20170627 10:55:52.081" level="INFO">Typing text 'Tester' into text field 'css=#sf_last_name'</msg>
+<status status="PASS" endtime="20170627 10:55:52.215" starttime="20170627 10:55:52.080"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#sf_company</arg>
+<arg>iLAB</arg>
+</arguments>
+<msg timestamp="20170627 10:55:52.216" level="INFO">Typing text 'iLAB' into text field 'css=#sf_company'</msg>
+<status status="PASS" endtime="20170627 10:55:52.360" starttime="20170627 10:55:52.216"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#sf_email</arg>
+<arg>test@test.com</arg>
+</arguments>
+<msg timestamp="20170627 10:55:52.361" level="INFO">Typing text 'test@test.com' into text field 'css=#sf_email'</msg>
+<status status="PASS" endtime="20170627 10:55:52.572" starttime="20170627 10:55:52.360"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=#sf_phone</arg>
+<arg>555-555-5555</arg>
+</arguments>
+<msg timestamp="20170627 10:55:52.573" level="INFO">Typing text '555-555-5555' into text field 'css=#sf_phone'</msg>
+<status status="PASS" endtime="20170627 10:55:52.727" starttime="20170627 10:55:52.573"></status>
+</kw>
+<status status="PASS" endtime="20170627 10:55:52.728" starttime="20170627 10:55:51.898"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170627 07:56:16.648" starttime="20170627 07:56:13.186"></status>
+<status status="PASS" endtime="20170627 10:55:56.017" starttime="20170627 10:55:52.728"></status>
 </kw>
-<tags>
-<tag>Debug</tag>
-<tag>Security Testing Tab</tag>
-</tags>
-<status status="PASS" endtime="20170627 07:56:16.648" critical="yes" starttime="20170627 07:55:37.586"></status>
+<status status="PASS" endtime="20170627 10:55:56.017" critical="yes" starttime="20170627 10:55:19.943"></status>
 </test>
-<doc>Tests the Services Tab and Services dropdown tab menu</doc>
-<status status="PASS" endtime="20170627 07:56:16.649" starttime="20170627 07:55:34.734"></status>
+<doc>Tests the Industries Tab and Industries dropdown tab menu</doc>
+<status status="PASS" endtime="20170627 10:55:56.019" starttime="20170627 10:55:18.456"></status>
 </suite>
 <statistics>
 <total>
@@ -92,11 +138,9 @@
 <stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">Debug</stat>
-<stat fail="0" pass="1">Security Testing Tab</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="ServicesTabSuite" pass="1">ServicesTabSuite</stat>
+<stat fail="0" id="s1" name="ServicesPageLinks" pass="1">ServicesPageLinks</stat>
 </suite>
 </statistics>
 <errors>
