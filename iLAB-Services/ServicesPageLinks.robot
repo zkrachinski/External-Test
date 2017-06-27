@@ -253,7 +253,3 @@ Assert HPE Page
 Assert Case Study Page
     wait until page contains  Case Study Title
     page should contain image  css=.vc_single_image-img.attachment-full
-
-Assert Mobile Page
-    wait until page contains  Mobile Testing: Ensure Cross-Platform Excellence
-    page should contain element  css=.vc_single_image-img.attachment-full

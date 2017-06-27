@@ -24,8 +24,10 @@ Click Careers Link
     click link  http://ilabquality.staging.wpengine.com/careers/
 
 Click South Africa Button
-    mouse down  css=.vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-square.vc_btn3-style-gradient-custom.vc_btn3-block.vc_btn-gradient-btn-5952a810199ad
-    click element  css=.vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-square.vc_btn3-style-gradient-custom.vc_btn3-block.vc_btn-gradient-btn-5952a810199ad
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+    mouse down  css=.vc_custom_heading
+    mouse down  xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[3]/a
+    click element  xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[3]/a
 
 
 Assert Careers Page
