@@ -1,89 +1,506 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170622 13:51:26.531" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\iLAB-AboutUs\test.robot" id="s1" name="Test">
-<test id="s1-t1" name="The iLab Story Tab">
+<robot generated="20170626 16:29:56.697" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Donna.Block\PycharmProjects\External-Test\iLAB-Careers\CareersTest.robot" id="s1" name="CareersTest">
+<test id="s1-t1" name="Careers Tab">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${Website}</arg>
-<arg>firefox</arg>
+<arg>chrome</arg>
 </arguments>
-<msg timestamp="20170622 13:51:29.188" level="INFO">Opening browser 'firefox' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
-<status status="PASS" endtime="20170622 13:51:59.992" starttime="20170622 13:51:29.188"></status>
+<msg timestamp="20170626 16:29:58.584" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170626 16:30:27.025" starttime="20170626 16:29:58.583"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170622 13:52:00.288" starttime="20170622 13:51:59.992"></status>
+<status status="PASS" endtime="20170626 16:30:28.206" starttime="20170626 16:30:27.026"></status>
 </kw>
-<kw name="Wait for Page to Load">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Click Careers Link">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
 <arguments>
-<arg>css=#menu-item-388&gt;a</arg>
+<arg>http://ilabquality.staging.wpengine.com/careers/</arg>
 </arguments>
-<status status="PASS" endtime="20170622 13:52:00.571" starttime="20170622 13:52:00.289"></status>
+<msg timestamp="20170626 16:30:28.207" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/careers/'.</msg>
+<status status="PASS" endtime="20170626 16:30:31.171" starttime="20170626 16:30:28.207"></status>
 </kw>
-<status status="PASS" endtime="20170622 13:52:00.571" starttime="20170622 13:52:00.288"></status>
+<status status="PASS" endtime="20170626 16:30:31.172" starttime="20170626 16:30:28.206"></status>
 </kw>
-<kw name="Hover Over About Us">
-<kw name="Mouse Over" library="Selenium2Library">
-<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<kw name="Assert Careers Page">
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
 <arguments>
-<arg>css=#menu-item-388&gt;a</arg>
+<arg>http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png</arg>
 </arguments>
-<msg timestamp="20170622 13:52:00.573" level="INFO">Simulating Mouse Over on element 'css=#menu-item-388&gt;a'</msg>
-<status status="PASS" endtime="20170622 13:52:00.908" starttime="20170622 13:52:00.572"></status>
+<msg timestamp="20170626 16:30:31.214" level="INFO">Current page contains image 'http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png'.</msg>
+<status status="PASS" endtime="20170626 16:30:31.214" starttime="20170626 16:30:31.173"></status>
 </kw>
-<status status="PASS" endtime="20170622 13:52:00.908" starttime="20170622 13:52:00.572"></status>
+<status status="PASS" endtime="20170626 16:30:31.214" starttime="20170626 16:30:31.172"></status>
 </kw>
-<kw name="Click The iLAB Story">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click South Africa Button">
+<kw name="Mouse Down On Link" library="Selenium2Library">
+<doc>Simulates a mouse down event on a link.</doc>
 <arguments>
-<arg>css=#menu-item-848&gt;a</arg>
+<arg>/careers/south-africa/</arg>
 </arguments>
-<msg timestamp="20170622 13:52:00.909" level="INFO">Clicking element 'css=#menu-item-848&gt;a'.</msg>
-<status status="PASS" endtime="20170622 13:52:03.000" starttime="20170622 13:52:00.909"></status>
+<status status="PASS" endtime="20170626 16:30:31.291" starttime="20170626 16:30:31.215"></status>
 </kw>
-<status status="PASS" endtime="20170622 13:52:03.000" starttime="20170622 13:52:00.909"></status>
+<status status="PASS" endtime="20170626 16:30:31.291" starttime="20170626 16:30:31.214"></status>
 </kw>
-<kw name="Assert About Us Page">
+<kw name="Assert South Africa Careers">
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
-<arg>INNOVATION IN QUALITY &amp; TESTING</arg>
+<arg>Get More From Your Career</arg>
 </arguments>
-<msg timestamp="20170622 13:52:03.025" level="INFO">Current page contains text 'INNOVATION IN QUALITY &amp; TESTING'.</msg>
-<status status="PASS" endtime="20170622 13:52:03.025" starttime="20170622 13:52:03.001"></status>
+<msg timestamp="20170626 16:30:31.433" level="INFO">&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="js_active  vc_desktop  vc_transform  vc_transform skrollr skrollr-desktop"&gt;&lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" /&gt;
+    &lt;meta name="format-detection" content="telephone=no" /&gt;
+    &lt;link rel="profile" href="http://gmpg.org/xfn/11" /&gt;
+    &lt;link rel="pingback" href="http://ilabquality.staging.wpengine.com/xmlrpc.php" /&gt;
+
+    
+    &lt;title&gt;CAREERS – iLAB&lt;/title&gt;
+&lt;meta name="robots" content="noindex,follow" /&gt;
+&lt;link rel="dns-prefetch" href="//fonts.googleapis.com" /&gt;
+&lt;link rel="dns-prefetch" href="//s.w.org" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="iLAB » Feed" href="http://ilabquality.staging.wpengine.com/feed/" /&gt;
+&lt;link rel="alternate" type="application/rss+xml" title="iLAB » Comments Feed" href="http://ilabquality.staging.wpengine.com/comments/feed/" /&gt;
+		&lt;script async="" src="https://www.google-analytics.com/analytics.js"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ilabquality.staging.wpengine.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length&amp;lt;3e3)&amp;amp;&amp;amp;(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&amp;amp;&amp;amp;j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h&amp;lt;i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&amp;amp;&amp;amp;c.supports[i[h]],"flag"!==i[h]&amp;amp;&amp;amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;amp;&amp;amp;c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;amp;&amp;amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;amp;&amp;amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;amp;&amp;amp;f.twemoji&amp;amp;&amp;amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;&lt;script src="http://ilabquality.staging.wpengine.com/wp-includes/js/wp-emoji-release.min.js?ver=4.7.2" type="text/javascript" defer=""&gt;&lt;/script&gt;
+		&lt;style type="text/css"&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+&lt;link rel="stylesheet" id="dashicons-css" href="http://ilabquality.staging.wpengine.com/wp-includes/css/dashicons.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="wp-jquery-ui-dialog-css" href="http://ilabquality.staging.wpengine.com/wp-includes/css/jquery-ui-dialog.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="google-web-fonts-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;amp;ver=4.7.2#038;subset=greek%2Ccyrillic%2Cgreek-ext%2Clatin%2Ccyrillic-ext%2Cvietnamese%2Clatin-ext" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="contact-form-7-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.8" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="rs-plugin-settings-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.1.6" type="text/css" media="all" /&gt;
+&lt;style id="rs-plugin-settings-inline-css" type="text/css"&gt;
+#rs-demo-id {}
+&lt;/style&gt;
+&lt;link rel="stylesheet" id="tt-theme-fonts-css" href="//fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Vollkorn:400,400italic&amp;amp;subset=latin%2Clatin-ext" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="bootstrap-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/bootstrap/css/bootstrap.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="bootstrap-theme-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/bootstrap/css/bootstrap-theme.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="fontawesome-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/font-awesome/css/font-awesome.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="owl-carousel-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/owl-carousel/owl.carousel.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="owl-carousel-theme-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/owl-carousel/owl.theme.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="ionicons-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/ionicons/css/ionicons.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="kwicks-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/css/jquery.kwicks.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="tt-theme-stylesheet-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/style.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="sucarouselmergedcss-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/supercarousel/css/supercarouselmerged.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="js_composer_front-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="js_composer_custom_css-css" href="//ilabquality.staging.wpengine.com/wp-content/uploads/js_composer/custom.css?ver=5.1.1" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="wpjb-glyphs-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=4.5.0" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="wpjb-css-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=4.5.0" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="themeton-stylesheet-css" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/themeton/iLAB.css?ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.1.6"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.1.6"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &amp;lt;![CDATA[ */
+var WpjbData = {"AjaxRequest":"http:\/\/ilabquality.staging.wpengine.com\/careers\/plain\/discount","Protection":"pr0t3ct1on","no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
+/* ]]&amp;gt; */
+&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=4.5.0"&gt;&lt;/script&gt;
+&lt;link rel="https://api.w.org/" href="http://ilabquality.staging.wpengine.com/wp-json/" /&gt;
+&lt;link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ilabquality.staging.wpengine.com/xmlrpc.php?rsd" /&gt;
+&lt;link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ilabquality.staging.wpengine.com/wp-includes/wlwmanifest.xml" /&gt; 
+&lt;link rel="canonical" href="http://ilabquality.staging.wpengine.com/careers/" /&gt;
+&lt;link rel="shortlink" href="http://ilabquality.staging.wpengine.com/?p=1351" /&gt;
+&lt;link rel="alternate" type="application/json+oembed" href="http://ilabquality.staging.wpengine.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Filabquality.staging.wpengine.com%2Fcareers%2F" /&gt;
+&lt;link rel="alternate" type="text/xml+oembed" href="http://ilabquality.staging.wpengine.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Filabquality.staging.wpengine.com%2Fcareers%2F&amp;amp;format=xml" /&gt;
+&lt;script&gt;
+                var theme_options = { ajax_url: "http://ilabquality.staging.wpengine.com/wp-admin/admin-ajax.php" };
+          &lt;/script&gt;&lt;meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." /&gt;
+&lt;!--[if lte IE 9]&gt;&lt;link rel="stylesheet" type="text/css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"&gt;&lt;![endif]--&gt;&lt;meta name="generator" content="Powered by Slider Revolution 5.1.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." /&gt;
+&lt;link rel="icon" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-32x32.png" sizes="32x32" /&gt;
+&lt;link rel="icon" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-192x192.png" sizes="192x192" /&gt;
+&lt;link rel="apple-touch-icon-precomposed" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-180x180.png" /&gt;
+&lt;meta name="msapplication-TileImage" content="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-270x270.png" /&gt;
+&lt;style type="text/css" data-type="vc_shortcodes-custom-css"&gt;.vc_custom_1466718784289{margin-top: -70px !important;padding-top: 100px !important;padding-bottom: 70px !important;}.vc_custom_1467312319980{margin-top: 15px !important;}&lt;/style&gt;&lt;noscript&gt;&amp;lt;style type="text/css"&amp;gt; .wpb_animate_when_almost_visible { opacity: 1; }&amp;lt;/style&amp;gt;&lt;/noscript&gt;&lt;style type="text/css" id="theme-customize-css"&gt;
+            .detail-wrr{ min-height:;}
+            .single-job em.wpjb-top-header-subtitle {
+    display: none;
+}
+.wpjb-job-list .wpjb-grid-col-last .wpjb-line-major {
+    display: none;
+    width: 0;
+}
+
+            .footer-top svg path,
+            .footer-top svg rect {
+                fill: #2c2c2c;
+            }
+        &lt;/style&gt;
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86318273-1', 'auto');
+  ga('send', 'pageview');
+
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+
+&lt;body class="page-template-default page page-id-1351 page-parent wpb-js-composer js-comp-ver-5.1.1 vc_responsive"&gt;
+
+    &lt;div class="nav-menu-icon"&gt;
+        &lt;a href="javascript:;"&gt;&lt;i&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Site logo --&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="site-logo"&gt;
+            &lt;a href="http://ilabquality.staging.wpengine.com/"&gt;
+                &lt;img src="http://ilabquality.wpengine.com/wp-content/uploads/2017/02/logoweb-1.png" alt="iLAB" /&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- Mouse icon --&gt;
+    &lt;/div&gt;
+
+    
+    &lt;header id="header"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-sm-5"&gt;
+
+                    &lt;nav class="navigation-left"&gt;
+                        &lt;ul id="menu-primary-left-menu" class="menu"&gt;&lt;li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-386"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/"&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li id="menu-item-388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-388"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;ABOUT US&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li id="menu-item-848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;THE iLAB STORY&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1288"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/our-process/"&gt;OUR PROCESS&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/engagement-models/"&gt;ENGAGEMENT MODELS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id="menu-item-1233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1233"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/"&gt;SERVICES&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li id="menu-item-1992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1992"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/consulting-services/"&gt;CONSULTING SERVICES&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1991"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/software-testing-automation/"&gt;SOFTWARE TESTING &amp;amp; AUTOMATION&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1989"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/performance-testing/"&gt;PERFORMANCE TESTING&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-2055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2055"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/security-testing/"&gt;SECURITY TESTING&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1990"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/mobile/"&gt;MOBILE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id="menu-item-838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-838"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/"&gt;INDUSTRIES&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/banking-finance/"&gt;BANKING &amp;amp; FINANCE&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-2000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2000"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/healthcare/"&gt;HEALTHCARE&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1998"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/human-resources/"&gt;HUMAN RESOURCES&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1997"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/insurance/"&gt;INSURANCE&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1996"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/public-sector/"&gt;PUBLIC SECTOR&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/retail/"&gt;RETAIL&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1994"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/telecom/"&gt;TELECOM&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1993"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/tourism-gaming/"&gt;TOURISM &amp;amp; GAMING&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;                    &lt;/nav&gt;
+
+                &lt;/div&gt;
+                &lt;div class="col-sm-2 curved-shape"&gt;
+                    &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="325px" height="90px" viewBox="0 0 325 90" preserveAspectRatio="xMinYMid" enable-background="new 0 0 325 90" xml:space="preserve"&gt; &lt;path fill="#ffffff" d="M162.635,49.333C204.638,49.333,233.143,90,266.511,90s10.385,0,10.385,0V30h-228v60c0,0-16.127,0,12.378,0 S120.632,49.333,162.635,49.333z"/&gt; &lt;rect fill="#ffffff" width="50" height="90"/&gt; &lt;rect x="275.801" fill="#ffffff" width="50" height="90"/&gt; &lt;rect x="48.823" y="0.005" fill="#ffffff" width="228.541" height="30.5"/&gt; &lt;/svg&gt;&lt;a href="http://ilabquality.com"&gt;&lt;img src="http://ilabquality.com/wp-content/uploads/2016/02/iLABwebsiteCenter.png" alt="iLABwebsiteCenter" width="130" height="56" class="aligncenter size-full wp-image-1047" /&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="col-sm-5"&gt;
+                    &lt;nav class="navigation-right text-right"&gt;
+                        &lt;ul id="menu-primary-right-menu" class="menu"&gt;&lt;li id="menu-item-1856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/resources/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-847"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li id="menu-item-1640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING COURSES&lt;/a&gt;&lt;/li&gt;
+	&lt;li id="menu-item-1641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1641"&gt;&lt;a href="/wp-content/uploads/2016/10/Training_Schedule_Template_Final.pdf"&gt;TRAINING SCHEDULE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id="menu-item-389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/contact/"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+&lt;li id="menu-item-1373" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1351 current_page_item menu-item-1373"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/careers/"&gt;CAREERS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;                    &lt;/nav&gt;                        
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class="mobile"&gt;
+            &lt;ul id="menu-primary-left-menu-1" class="menu"&gt;&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-386"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/"&gt;HOME&lt;/a&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-388"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;ABOUT US&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;THE iLAB STORY&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1288"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/our-process/"&gt;OUR PROCESS&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/engagement-models/"&gt;ENGAGEMENT MODELS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1233"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/"&gt;SERVICES&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1992"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/consulting-services/"&gt;CONSULTING SERVICES&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1991"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/software-testing-automation/"&gt;SOFTWARE TESTING &amp;amp; AUTOMATION&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1989"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/performance-testing/"&gt;PERFORMANCE TESTING&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2055"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/security-testing/"&gt;SECURITY TESTING&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1990"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/mobile/"&gt;MOBILE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-838"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/"&gt;INDUSTRIES&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/banking-finance/"&gt;BANKING &amp;amp; FINANCE&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2000"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/healthcare/"&gt;HEALTHCARE&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1998"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/human-resources/"&gt;HUMAN RESOURCES&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1997"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/insurance/"&gt;INSURANCE&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1996"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/public-sector/"&gt;PUBLIC SECTOR&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/retail/"&gt;RETAIL&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1994"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/telecom/"&gt;TELECOM&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1993"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/tourism-gaming/"&gt;TOURISM &amp;amp; GAMING&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;            &lt;ul id="menu-primary-right-menu-1" class="menu"&gt;&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/resources/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-847"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING&lt;/a&gt;
+&lt;ul class="sub-menu"&gt;
+	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING COURSES&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1641"&gt;&lt;a href="/wp-content/uploads/2016/10/Training_Schedule_Template_Final.pdf"&gt;TRAINING SCHEDULE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/contact/"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+&lt;li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1351 current_page_item menu-item-1373"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/careers/"&gt;CAREERS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;        &lt;/nav&gt;
+
+    &lt;/header&gt;
+
+
+
+
+&lt;section class="content-area "&gt;
+    &lt;div class="clip"&gt;
+        &lt;div class="bg bg-bg-chrome act" style=""&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="section-content" style=""&gt;
+
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-12"&gt;
+                    
+                    &lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" data-vc-parallax="1.5" data-vc-parallax-image="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/02/laptop-work-1148958_1920.jpg" class="vc_row wpb_row vc_row-fluid vc_custom_1466718784289 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px;"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_single_image wpb_content_element vc_align_left"&gt;
+		
+		&lt;figure class="wpb_wrapper vc_figure"&gt;
+			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="2197" height="342" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png 2197w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers-300x47.png 300w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers-768x120.png 768w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers-1024x159.png 1024w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers-848x132.png 848w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers-875x136.png 875w" sizes="(max-width: 2197px) 100vw, 2197px" /&gt;&lt;/div&gt;
+		&lt;/figure&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_parallax-inner skrollable skrollable-after" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; background-image: url(&amp;quot;http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/02/laptop-work-1148958_1920.jpg&amp;quot;); top: 0%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="1.5" data-vc-parallax-image="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/pagebackground.jpg" data-overlay="#ffffff" data-overlay-alpha=".7" class="vc_row wpb_row vc_row-fluid vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="vc-row-overlay" style="background-color:#ffffff; opacity:.7;"&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-12"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="vc_row wpb_row vc_inner vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_text_column wpb_content_element "&gt;
+		&lt;div class="wpb_wrapper"&gt;
+			&lt;p class="text-left" style="font-size: 32px; color: #393939; letter-spacing: 4px; padding: 30px 20px;"&gt;WORK WITH&lt;span class="brand-color"&gt; iLAB&lt;/span&gt;&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
+	&lt;div class="wpb_text_column wpb_content_element "&gt;
+		&lt;div class="wpb_wrapper"&gt;
+			&lt;p&gt;iLAB has been a leader in the software quality assurance industry for over two decades.  You don’t enjoy success at the top without the individuals who are committed to excellence for our partners every day.  If you are looking for the opportunity to learn and develop with the best, look no further.  iLAB will help you grow and develop to achieve your own personal career goals.&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_empty_space" style="height: 40px"&gt;&lt;span class="vc_empty_space_inner"&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div class="vc_row wpb_row vc_inner vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-8"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 class="heading-dash text-center "&gt;INNOVATION IN QUALITY &amp;amp; TESTING&lt;/h3&gt;
+	&lt;div class="wpb_text_column wpb_content_element "&gt;
+		&lt;div class="wpb_wrapper"&gt;
+			&lt;p&gt;Join the rapidly growing, experienced international leader in software quality assurance and drive your career to new levels of success.  At iLAB, we believe it is essential to build a community of software quality assurance experts who can enjoy long-term growth and development within our brand.&lt;/p&gt;
+&lt;p&gt;Our internationally accredited staff of experts have worked in over 20+ industries, and possess the knowledge and guidance that can help your career flourish.  Since knowledge truly is power, we encourage our staff to continually seek leadership or growth opportunities, and will facilitate the necessary training to help you accomplish the careers goals you want to achieve.&lt;/p&gt;
+&lt;p&gt;Unlike our competitors, iLAB prides itself on avoiding the staffing firm mentality.  We seek to bring in individuals who hope to have a long-term impact on the iLAB brand and who no longer wish to live with the uncertainty a staffing model can present.&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;h4 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading"&gt;THE iLAB DIFFERENCE&lt;/h4&gt;&lt;div class="service-box style-left  large-desc"&gt;
+                        &lt;div class="service-icon"&gt;&lt;i class="fa fa-lightbulb-o" style="color: ;"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;h3&gt;
+                            TRAINING &amp;amp; CERTIFICATION
+                            
+                        &lt;/h3&gt;
+                        &lt;p&gt;We provide and encourage our team members to pursue advanced training and certification within the industry. Knowledge is the key to success in the software quality assurance industry, and we understand that our people must have access to the knowledge they need to succeed in their careers.&lt;/p&gt;
+                    &lt;/div&gt;&lt;div class="service-box style-left  large-desc"&gt;
+                        &lt;div class="service-icon"&gt;&lt;i class="fa fa-globe" style="color: ;"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;h3&gt;
+                            FIND YOUR OWN PATH
+                            
+                        &lt;/h3&gt;
+                        &lt;p&gt;Our team members are encouraged to find their own calling within the company. We seek to better understand your career goals and provide you with the knowledge, tools and support to help you get there - quicker.&lt;/p&gt;
+                    &lt;/div&gt;&lt;div class="service-box style-left  large-desc"&gt;
+                        &lt;div class="service-icon"&gt;&lt;i class="fa fa-globe" style="color: ;"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;h3&gt;
+                            COMPETITIVE BENEFITS
+                            
+                        &lt;/h3&gt;
+                        &lt;p&gt;Our corporate benefits package is built to reward our employees for their hard work and dedication. We offer competitive healthcare and retirement benefits along with many other corporate perks you won't find anywhere else.&lt;/p&gt;
+                    &lt;/div&gt;&lt;div class="service-box style-left  large-desc"&gt;
+                        &lt;div class="service-icon"&gt;&lt;i class="fa fa-globe" style="color: ;"&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;h3&gt;
+                            LONG TERM MINDSET
+                            
+                        &lt;/h3&gt;
+                        &lt;p&gt;We have invested in growing and developing over 550 internationally accredited software quality assurance experts. We don't believe in the here today, gone tomorrow staffing model. We build careers at iLAB and surround you with the knowledge and experience of experts who have spent years in the industry.&lt;/p&gt;
+                    &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-4"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="vc_empty_space" style="height: 100px"&gt;&lt;span class="vc_empty_space_inner"&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;h4 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading"&gt;WHAT OUR EMPLOYEES SAY&lt;/h4&gt;&lt;h4 style="line-height: 1.5;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading"&gt;"It is an exciting time to be a part of the iLAB family. Company growth has provided me with opportunities that not many of my peers are fortunate enough to experience, and the knowledge I have gained from my veteran coworkers is priceless. It is nice to finally feel like a company cares about my career goals, and not just their own business goals."&lt;/h4&gt;&lt;div class="vc_empty_space" style="height: 100px"&gt;&lt;span class="vc_empty_space_inner"&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;h4 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1467312319980"&gt;JOIN OUR TEAM&lt;/h4&gt;&lt;p style="color: #000000;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading"&gt;Select the location which you desire to apply and fill out the corresponding form. A member of our team will follow up with you shortly.&lt;/p&gt;&lt;style type="text/css"&gt;.vc_btn3-style-gradient-custom.vc_btn-gradient-btn-59516ee54d830:hover{color: #ffffff;background-color: #000000;border: none;background-position: 100% 0;}&lt;/style&gt;&lt;style type="text/css"&gt;.vc_btn3-style-gradient-custom.vc_btn-gradient-btn-59516ee54d830{color: #ffffff;border: none;background-color: #a10001;background-image: -webkit-linear-gradient(left, #a10001 0%, #000000 50%,#a10001 100%);background-image: linear-gradient(to right, #a10001 0%, #000000 50%,#a10001 100%);-webkit-transition: all .2s ease-in-out;transition: all .2s ease-in-out;background-size: 200% 100%;}&lt;/style&gt;&lt;div class="vc_btn3-container vc_btn3-left"&gt;
+	&lt;a data-vc-gradient-1="#a10001" data-vc-gradient-2="#000000" class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-square vc_btn3-style-gradient-custom vc_btn3-block vc_btn-gradient-btn-59516ee54d830" href="/careers/south-africa/" title=""&gt;South Africa&lt;/a&gt;&lt;/div&gt;
+&lt;style type="text/css"&gt;.vc_btn3-style-gradient-custom.vc_btn-gradient-btn-59516ee54db80:hover{color: #ffffff;background-color: #000000;border: none;background-position: 100% 0;}&lt;/style&gt;&lt;style type="text/css"&gt;.vc_btn3-style-gradient-custom.vc_btn-gradient-btn-59516ee54db80{color: #ffffff;border: none;background-color: #a10001;background-image: -webkit-linear-gradient(left, #a10001 0%, #000000 50%,#a10001 100%);background-image: linear-gradient(to right, #a10001 0%, #000000 50%,#a10001 100%);-webkit-transition: all .2s ease-in-out;transition: all .2s ease-in-out;background-size: 200% 100%;}&lt;/style&gt;&lt;div class="vc_btn3-container vc_btn3-left"&gt;
+	&lt;a data-vc-gradient-1="#a10001" data-vc-gradient-2="#000000" class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-square vc_btn3-style-gradient-custom vc_btn3-block vc_btn-gradient-btn-59516ee54db80" href="/careers/north-america/" title=""&gt;North America&lt;/a&gt;&lt;/div&gt;
+&lt;style type="text/css"&gt;.vc_btn3-style-gradient-custom.vc_btn-gradient-btn-59516ee54dead:hover{color: #ffffff;background-color: #000000;border: none;background-position: 100% 0;}&lt;/style&gt;&lt;style type="text/css"&gt;.vc_btn3-style-gradient-custom.vc_btn-gradient-btn-59516ee54dead{color: #ffffff;border: none;background-color: #a10001;background-image: -webkit-linear-gradient(left, #a10001 0%, #000000 50%,#a10001 100%);background-image: linear-gradient(to right, #a10001 0%, #000000 50%,#a10001 100%);-webkit-transition: all .2s ease-in-out;transition: all .2s ease-in-out;background-size: 200% 100%;}&lt;/style&gt;&lt;div class="vc_btn3-container vc_btn3-left"&gt;
+	&lt;a data-vc-gradient-1="#a10001" data-vc-gradient-2="#000000" class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-square vc_btn3-style-gradient-custom vc_btn3-block vc_btn-gradient-btn-59516ee54dead" href="/careers/australia/" title=""&gt;Australia&lt;/a&gt;&lt;/div&gt;
+&lt;style type="text/css"&gt;.vc_btn3-style-gradient-custom.vc_btn-gradient-btn-59516ee54e204:hover{color: #ffffff;background-color: #000000;border: none;background-position: 100% 0;}&lt;/style&gt;&lt;style type="text/css"&gt;.vc_btn3-style-gradient-custom.vc_btn-gradient-btn-59516ee54e204{color: #ffffff;border: none;background-color: #a10001;background-image: -webkit-linear-gradient(left, #a10001 0%, #000000 50%,#a10001 100%);background-image: linear-gradient(to right, #a10001 0%, #000000 50%,#a10001 100%);-webkit-transition: all .2s ease-in-out;transition: all .2s ease-in-out;background-size: 200% 100%;}&lt;/style&gt;&lt;div class="vc_btn3-container vc_btn3-left"&gt;
+	&lt;a data-vc-gradient-1="#a10001" data-vc-gradient-2="#000000" class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-square vc_btn3-style-gradient-custom vc_btn3-block vc_btn-gradient-btn-59516ee54e204" href="/careers/united-kingdom/" title=""&gt;United Kingdom&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_parallax-inner skrollable skrollable-between" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; background-image: url(&amp;quot;http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/04/pagebackground.jpg&amp;quot;); top: -32.7214%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+	&lt;div id="footer-top" class="footer-top"&gt;
+		&lt;div class="container"&gt;
+	        &lt;div class="col-md-5"&gt;&lt;/div&gt;
+	        &lt;div class="col-md-2"&gt;
+	            &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="325.37px" height="90px" viewBox="347.802 0 325.37 90" enable-background="new 347.802 0 325.37 90" xml:space="preserve"&gt; &lt;path fill="#2c2c2c" d="M510.968,40.667C468.966,40.667,440.46,0,407.093,0c-33.369,0-10.385,0-10.385,0v60h228V0 c0,0,16.127,0-12.379,0C583.825,0,552.972,40.667,510.968,40.667z"/&gt; &lt;rect x="623.604" fill="#2c2c2c" width="50" height="90"/&gt; &lt;rect x="347.802" fill="#2c2c2c" width="50" height="90"/&gt; &lt;rect x="396.239" y="59.495" fill="#2c2c2c" width="228.541" height="30.5"/&gt; &lt;/svg&gt;
+	        &lt;/div&gt;
+	        &lt;div class="col-md-5"&gt;&lt;/div&gt;
+	    &lt;/div&gt;
+	    &lt;span class="back-to-top"&gt;Back to top&lt;/span&gt;
+	&lt;/div&gt;
+
+	&lt;footer id="footer"&gt;
+		&lt;div class="container" style="background-image: url( http://ilabquality.staging.wpengine.com/wp-content/uploads/2015/10/footer-map.png)"&gt;
+			&lt;div class="row"&gt;
+				&lt;div class="col-md-3 col-sm-6 footer-column-1"&gt;&lt;div id="text-1" class="footer_widget widget widget_text"&gt;			&lt;div class="textwidget"&gt;&lt;img src="http://ilabquality.com/wp-content/uploads/2016/02/iLABwebsite.png" /&gt;
+&lt;p&gt;iLAB is the worldwide leader in software quality assurance.  With over 2 decades of experience, trust iLAB when the future of your organization is on the line. &lt;/p&gt;&lt;/div&gt;
+		&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-3 col-sm-6 footer-column-2"&gt;&lt;/div&gt;&lt;div class="col-md-3 col-sm-6 footer-column-3"&gt;&lt;div id="tt_recentpostswidget-1" class="footer_widget widget recent-posts"&gt;&lt;h3 class="widget-title"&gt;Recent Articles&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/chains-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
+                    &lt;span&gt;The Ins and Outs of…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
+                    &lt;a href="http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/clouds-792x320-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
+                    &lt;span&gt;The 5 Cloud-Based Load Testing…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
+                    &lt;a href="http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2017/04/keyboard-720-320-1-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
+                    &lt;span&gt;What Should The Software Testing…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
+                    &lt;a href="http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2017/04/caution-internet-post-pic-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
+                    &lt;span&gt;6 Requirements For Synthetic User…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
+                    &lt;a href="http://ilabquality.staging.wpengine.com/6-requirements-for-synthetic-user-management-violate-at-your-own-risk/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-3 col-sm-6 footer-column-4"&gt;&lt;div id="tt_sociallinkswidget-1" class="footer_widget widget widget_social"&gt;&lt;h3 class="widget-title"&gt; Stay Connected &lt;/h3&gt;&lt;div class="social-links"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="http://www.twitter.com/ilabquality"&gt;&lt;i class="social-twitter fa fa-twitter"&gt;&lt;/i&gt; @iLAB&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.linkedin.com/company/829111?trk=tyah&amp;amp;trkInfo=clickedVerticalcompanyclickedEntityId829111idx2-1-4tarId1467726348363tasilab"&gt;&lt;i class="social-linkedin fa fa-linkedin"&gt;&lt;/i&gt; iLAB on LinkedIn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="text-2" class="footer_widget widget widget_text"&gt;			&lt;div class="textwidget"&gt;&lt;a href="https://www.gsa.gov" target="_blank"&gt;&lt;img class="alignnone size-medium wp-image-1969" src="/wp-content/uploads/2017/04/Schedule_StarMark_Color_w_Contract_Number_Arial-1-300x70.png" alt="" width="300" height="70" /&gt;&lt;/a&gt;&lt;/div&gt;
+		&lt;/div&gt;&lt;/div&gt;			&lt;/div&gt;
+		&lt;/div&gt;
+
+	&lt;/footer&gt;
+	&lt;div class="sub-footer"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-sm-12"&gt;
+				&lt;div class="entry-footer"&gt;
+					COPYRIGHT © iLAB				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+if (typeof ajaxurl === 'undefined') {
+ajaxurl = "http://ilabquality.staging.wpengine.com/wp-admin/admin-ajax.php";
+}
+&lt;/script&gt;
+&lt;link rel="stylesheet" id="vc_google_fonts_open_sans300300italicregularitalic600600italic700700italic800800italic-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;amp;ver=4.7.2" type="text/css" media="all" /&gt;
+&lt;link rel="stylesheet" id="font-awesome-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.1.1" type="text/css" media="all" /&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/wpdialog.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &amp;lt;![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/ilabquality.staging.wpengine.com\/wp-json\/","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]&amp;gt; */
+&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.8"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &amp;lt;![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Download File":"Download File","Download Video":"Download Video","Play":"Play","Pause":"Pause","Captions\/Subtitles":"Captions\/Subtitles","None":"None","Time Slider":"Time Slider","Skip back %1 seconds":"Skip back %1 seconds","Video Player":"Video Player","Audio Player":"Audio Player","Volume Slider":"Volume Slider","Mute Toggle":"Mute Toggle","Unmute":"Unmute","Mute":"Mute","Use Up\/Down Arrow keys to increase or decrease volume.":"Use Up\/Down Arrow keys to increase or decrease volume.","Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds."}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]&amp;gt; */
+&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.22.0"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/bootstrap/js/bootstrap.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/js/jquery.kwicks.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/js/jquery.counterup.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/owl-carousel/owl.carousel.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/js/scripts.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/supercarousel/js/supercarouselmerged.js?ver=2.4"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+/* &amp;lt;![CDATA[ */
+var daq_selectlist_lang = {"hint":"Select options ..."};
+/* ]]&amp;gt; */
+&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/application/vendor/select-list/jquery.selectlist.pack.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/wp-embed.min.js?ver=4.7.2"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=5.1.1"&gt;&lt;/script&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170626 16:30:31.658" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170626 16:30:31.658" starttime="20170626 16:30:31.436"></status>
 </kw>
-<status status="PASS" endtime="20170622 13:52:03.025" starttime="20170622 13:52:03.001"></status>
+<msg timestamp="20170626 16:30:31.660" level="FAIL">Page should have contained text 'Get More From Your Career' but did not</msg>
+<status status="FAIL" endtime="20170626 16:30:31.660" starttime="20170626 16:30:31.292"></status>
+</kw>
+<status status="FAIL" endtime="20170626 16:30:31.660" starttime="20170626 16:30:31.291"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170622 13:52:03.479" starttime="20170622 13:52:03.026"></status>
+<status status="PASS" endtime="20170626 16:30:34.888" starttime="20170626 16:30:31.661"></status>
 </kw>
 <tags>
-<tag>About Us</tag>
+<tag>Careers</tag>
 <tag>Debug</tag>
-<tag>The iLAB Story</tag>
 </tags>
-<status status="PASS" endtime="20170622 13:52:03.479" critical="yes" starttime="20170622 13:51:29.187"></status>
+<status status="FAIL" endtime="20170626 16:30:34.888" critical="yes" starttime="20170626 16:29:58.583">Page should have contained text 'Get More From Your Career' but did not</status>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" endtime="20170622 13:52:03.480" starttime="20170622 13:51:26.536"></status>
+<status status="FAIL" endtime="20170626 16:30:34.889" starttime="20170626 16:29:56.701"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">About Us</stat>
-<stat fail="0" pass="1">Debug</stat>
-<stat fail="0" pass="1">The iLAB Story</stat>
+<stat fail="1" pass="0">Careers</stat>
+<stat fail="1" pass="0">Debug</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
+<stat fail="1" id="s1" name="CareersTest" pass="0">CareersTest</stat>
 </suite>
 </statistics>
 <errors>
