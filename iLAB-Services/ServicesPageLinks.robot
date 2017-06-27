@@ -30,13 +30,46 @@ Consulting Services Page - Read More Links
     click case study link
     assert case study page
 
+Software Testing and Automation Page - Read More Links
+    [Tags]    Debug  Software Testing and Automation Page
+    maximize browser window
+    wait for main page to load
+    hover over services
+    click software testing and automation tab
+    wait for software testing and automation page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for software testing and automation page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for software testing and automation page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for software testing and automation page to load
+    click case study link
+    assert case study page
+
 
 Consulting Services Page - Contact Form
+    [Tags]  Debug  Contact Form  Consulting Services Page
     maximize browser window
     wait for main page to load
     hover over services
     click consulting services tab
     wait for consulting services page to load
+    move to form
+    fill out form
+
+Software Testing and Automation Page - Contact Form
+    [Tags]  Debug  Contact Form  Software Testing and Automation Page
+    maximize browser window
+    wait for main page to load
+    hover over services
+    click software testing and automation tab
+    wait for software testing and automation page to load
     move to form
     fill out form
 
@@ -62,8 +95,15 @@ Wait for Consulting Services Page to Load
     wait until page contains  Consulting Services: You Hold the Compass
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
 
+Wait for Software Testing and Automation Page to Load
+    wait until page contains  Software Testing: Foresight, Not Hindsight
+    wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
+
 Click Consulting Services Tab
     click element  css=#menu-item-1992>a
+
+Click Software Testing and Automation Tab
+    click element  css=#menu-item-1991>a
 
 Click First Read More
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
@@ -79,7 +119,8 @@ Click Third Read More
 
 Click Case Study Link
     mouse down  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom
-    click link  /services/consulting-services/case-study-consulting-services/
+    click element  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom
+
 Assert Stress Testing Page
     wait until page contains  The Ins and Outs of Stress Testing Web & Mobile Applications
     page should contain  Stress Testing vs. Load Testing
