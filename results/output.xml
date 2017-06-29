@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170629 09:28:42.014" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<robot generated="20170629 09:39:21.771" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
 <suite source="C:\Users\Donna.Block\PycharmProjects\External-Test\iLAB-Blog\BlogTest.robot" id="s1" name="BlogTest">
 <test id="s1-t1" name="Blog Tab">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
@@ -8,12 +8,12 @@
 <arg>${Website}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20170629 09:28:45.095" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
-<status status="PASS" endtime="20170629 09:29:21.728" starttime="20170629 09:28:45.095"></status>
+<msg timestamp="20170629 09:39:22.055" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170629 09:39:49.404" starttime="20170629 09:39:22.055"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170629 09:29:23.077" starttime="20170629 09:29:21.728"></status>
+<status status="PASS" endtime="20170629 09:39:50.600" starttime="20170629 09:39:49.404"></status>
 </kw>
 <kw name="Wait For Page To Load">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -21,9 +21,9 @@
 <arguments>
 <arg>css=.site-logo&gt;a&gt;img</arg>
 </arguments>
-<status status="PASS" endtime="20170629 09:29:23.276" starttime="20170629 09:29:23.079"></status>
+<status status="PASS" endtime="20170629 09:39:50.768" starttime="20170629 09:39:50.602"></status>
 </kw>
-<status status="PASS" endtime="20170629 09:29:23.276" starttime="20170629 09:29:23.078"></status>
+<status status="PASS" endtime="20170629 09:39:50.768" starttime="20170629 09:39:50.601"></status>
 </kw>
 <kw name="Click Blog Link">
 <kw name="Click Link" library="Selenium2Library">
@@ -31,34 +31,41 @@
 <arguments>
 <arg>http://ilabquality.staging.wpengine.com/resources/</arg>
 </arguments>
-<msg timestamp="20170629 09:29:23.278" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/resources/'.</msg>
-<status status="PASS" endtime="20170629 09:29:25.395" starttime="20170629 09:29:23.278"></status>
+<msg timestamp="20170629 09:39:50.770" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/resources/'.</msg>
+<status status="PASS" endtime="20170629 09:39:52.197" starttime="20170629 09:39:50.769"></status>
 </kw>
-<status status="PASS" endtime="20170629 09:29:25.396" starttime="20170629 09:29:23.277"></status>
+<status status="PASS" endtime="20170629 09:39:52.197" starttime="20170629 09:39:50.768"></status>
 </kw>
 <kw name="Assert Blog Page">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.vc_grid-filter.vc_clearfix.vc_grid-filter-default.vc_grid-filter-size-md.vc_grid-filter-center.vc_grid-filter-color-grey</arg>
+</arguments>
+<status status="PASS" endtime="20170629 09:39:52.856" starttime="20170629 09:39:52.198"></status>
+</kw>
 <kw name="Page Should Contain Link" library="Selenium2Library">
 <doc>Verifies link identified by `locator` is found from current page.</doc>
 <arguments>
 <arg>http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/</arg>
 </arguments>
-<msg timestamp="20170629 09:29:25.431" level="INFO">Current page contains link 'http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/'.</msg>
-<status status="PASS" endtime="20170629 09:29:25.431" starttime="20170629 09:29:25.397"></status>
+<msg timestamp="20170629 09:39:52.901" level="INFO">Current page contains link 'http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/'.</msg>
+<status status="PASS" endtime="20170629 09:39:52.902" starttime="20170629 09:39:52.857"></status>
 </kw>
-<status status="PASS" endtime="20170629 09:29:25.432" starttime="20170629 09:29:25.396"></status>
+<status status="PASS" endtime="20170629 09:39:52.902" starttime="20170629 09:39:52.197"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170629 09:29:28.720" starttime="20170629 09:29:25.432"></status>
+<status status="PASS" endtime="20170629 09:39:56.239" starttime="20170629 09:39:52.902"></status>
 </kw>
 <tags>
 <tag>Blog Tab</tag>
 <tag>Debug</tag>
 </tags>
-<status status="PASS" endtime="20170629 09:29:28.720" critical="yes" starttime="20170629 09:28:45.094"></status>
+<status status="PASS" endtime="20170629 09:39:56.239" critical="yes" starttime="20170629 09:39:22.055"></status>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" endtime="20170629 09:29:28.721" starttime="20170629 09:28:42.020"></status>
+<status status="PASS" endtime="20170629 09:39:56.239" starttime="20170629 09:39:21.771"></status>
 </suite>
 <statistics>
 <total>

@@ -23,6 +23,7 @@ Click Blog Link
     click link  http://ilabquality.staging.wpengine.com/resources/
 
 Assert Blog Page
+    wait until page contains element  css=.vc_grid-filter.vc_clearfix.vc_grid-filter-default.vc_grid-filter-size-md.vc_grid-filter-center.vc_grid-filter-color-grey
     page should contain link    http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/
 
 Wait For Page To Load
