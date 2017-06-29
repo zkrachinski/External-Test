@@ -9,7 +9,7 @@ ${Website}      http://ilabquality.staging.wpengine.com/
 *** Test Cases ***
 #Validate Blog page loads correctly
 Training Tab
-    [Tags]    Debug     Training
+    [Tags]    Debug   Training
     Maximize Browser Window
     Wait For Page To Load
     Click Training Link
@@ -44,7 +44,9 @@ Hover Over Training
     mouse over  css=#menu-item-847>a
 
 Assert Training Page
+    page should contain image  css=.vc_single_image-img.attachment-full
     page should contain     INTERNATIONALLY ACCREDITED TRAINING
+    page should contain element  css=.wpb_wrapper>p
 
 Wait For Page To Load
     wait until page contains element  css=.site-logo>a>img

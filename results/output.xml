@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170627 14:53:26.486" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-<suite source="C:\Users\Donna.Block\PycharmProjects\External-Test\iLAB-Careers\CareersTest.robot" id="s1" name="CareersTest">
-<test id="s1-t1" name="Careers Tab">
+<robot generated="20170629 09:28:42.014" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Donna.Block\PycharmProjects\External-Test\iLAB-Blog\BlogTest.robot" id="s1" name="BlogTest">
+<test id="s1-t1" name="Blog Tab">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${Website}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20170627 14:53:26.662" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
-<status status="PASS" endtime="20170627 14:53:54.170" starttime="20170627 14:53:26.661"></status>
+<msg timestamp="20170629 09:28:45.095" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170629 09:29:21.728" starttime="20170629 09:28:45.095"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170627 14:53:55.353" starttime="20170627 14:53:54.170"></status>
+<status status="PASS" endtime="20170629 09:29:23.077" starttime="20170629 09:29:21.728"></status>
 </kw>
 <kw name="Wait For Page To Load">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -21,88 +21,56 @@
 <arguments>
 <arg>css=.site-logo&gt;a&gt;img</arg>
 </arguments>
-<status status="PASS" endtime="20170627 14:53:55.531" starttime="20170627 14:53:55.354"></status>
+<status status="PASS" endtime="20170629 09:29:23.276" starttime="20170629 09:29:23.079"></status>
 </kw>
-<status status="PASS" endtime="20170627 14:53:55.531" starttime="20170627 14:53:55.353"></status>
+<status status="PASS" endtime="20170629 09:29:23.276" starttime="20170629 09:29:23.078"></status>
 </kw>
-<kw name="Click Careers Link">
+<kw name="Click Blog Link">
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by locator.</doc>
 <arguments>
-<arg>http://ilabquality.staging.wpengine.com/careers/</arg>
+<arg>http://ilabquality.staging.wpengine.com/resources/</arg>
 </arguments>
-<msg timestamp="20170627 14:53:55.533" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/careers/'.</msg>
-<status status="PASS" endtime="20170627 14:53:57.202" starttime="20170627 14:53:55.532"></status>
+<msg timestamp="20170629 09:29:23.278" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/resources/'.</msg>
+<status status="PASS" endtime="20170629 09:29:25.395" starttime="20170629 09:29:23.278"></status>
 </kw>
-<status status="PASS" endtime="20170627 14:53:57.202" starttime="20170627 14:53:55.531"></status>
+<status status="PASS" endtime="20170629 09:29:25.396" starttime="20170629 09:29:23.277"></status>
 </kw>
-<kw name="Assert Careers Page">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Assert Blog Page">
+<kw name="Page Should Contain Link" library="Selenium2Library">
+<doc>Verifies link identified by `locator` is found from current page.</doc>
 <arguments>
-<arg>css=.heading-dash.text-center</arg>
+<arg>http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/</arg>
 </arguments>
-<status status="PASS" endtime="20170627 14:53:57.268" starttime="20170627 14:53:57.203"></status>
+<msg timestamp="20170629 09:29:25.431" level="INFO">Current page contains link 'http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/'.</msg>
+<status status="PASS" endtime="20170629 09:29:25.431" starttime="20170629 09:29:25.397"></status>
 </kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>INNOVATION IN QUALITY &amp; TESTING</arg>
-</arguments>
-<msg timestamp="20170627 14:53:57.300" level="INFO">Current page contains text 'INNOVATION IN QUALITY &amp; TESTING'.</msg>
-<status status="PASS" endtime="20170627 14:53:57.300" starttime="20170627 14:53:57.269"></status>
-</kw>
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by `locator` is found from current page.</doc>
-<arguments>
-<arg>http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png</arg>
-</arguments>
-<msg timestamp="20170627 14:53:57.331" level="INFO">Current page contains image 'http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png'.</msg>
-<status status="PASS" endtime="20170627 14:53:57.331" starttime="20170627 14:53:57.301"></status>
-</kw>
-<status status="PASS" endtime="20170627 14:53:57.331" starttime="20170627 14:53:57.203"></status>
-</kw>
-<kw name="Click South Africa Button">
-<kw name="Mouse Down" library="Selenium2Library">
-<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
-<arguments>
-<arg>css=.vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-square.vc_btn3-style-gradient-custom.vc_btn3-block.vc_btn-gradient-btn-5952a810199ad</arg>
-</arguments>
-<msg timestamp="20170627 14:53:57.333" level="INFO">Simulating Mouse Down on element 'css=.vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-square.vc_btn3-style-gradient-custom.vc_btn3-block.vc_btn-gradient-btn-5952a810199ad'</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170627 14:53:57.782" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170627 14:53:57.782" starttime="20170627 14:53:57.358"></status>
-</kw>
-<msg timestamp="20170627 14:53:57.784" level="FAIL">ERROR: Element css=.vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-square.vc_btn3-style-gradient-custom.vc_btn3-block.vc_btn-gradient-btn-5952a810199ad not found.</msg>
-<status status="FAIL" endtime="20170627 14:53:57.784" starttime="20170627 14:53:57.332"></status>
-</kw>
-<status status="FAIL" endtime="20170627 14:53:57.785" starttime="20170627 14:53:57.332"></status>
+<status status="PASS" endtime="20170629 09:29:25.432" starttime="20170629 09:29:25.396"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170627 14:54:00.998" starttime="20170627 14:53:57.785"></status>
+<status status="PASS" endtime="20170629 09:29:28.720" starttime="20170629 09:29:25.432"></status>
 </kw>
 <tags>
-<tag>Careers Tab</tag>
+<tag>Blog Tab</tag>
 <tag>Debug</tag>
 </tags>
-<status status="FAIL" endtime="20170627 14:54:00.998" critical="yes" starttime="20170627 14:53:26.661">ERROR: Element css=.vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-square.vc_btn3-style-gradient-custom.vc_btn3-block.vc_btn-gradient-btn-5952a810199ad not found.</status>
+<status status="PASS" endtime="20170629 09:29:28.720" critical="yes" starttime="20170629 09:28:45.094"></status>
 </test>
 <doc>Suite description</doc>
-<status status="FAIL" endtime="20170627 14:54:00.999" starttime="20170627 14:53:26.492"></status>
+<status status="PASS" endtime="20170629 09:29:28.721" starttime="20170629 09:28:42.020"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">Careers Tab</stat>
-<stat fail="1" pass="0">Debug</stat>
+<stat fail="0" pass="1">Blog Tab</stat>
+<stat fail="0" pass="1">Debug</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="CareersTest" pass="0">CareersTest</stat>
+<stat fail="0" id="s1" name="BlogTest" pass="1">BlogTest</stat>
 </suite>
 </statistics>
 <errors>

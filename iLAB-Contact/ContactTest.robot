@@ -24,7 +24,10 @@ Click Contact Link
     click link  http://ilabquality.staging.wpengine.com/contact/
 
 Assert Contact Page
+    page should contain image  css=.vc_single_image-img.attachment-full
     page should contain link    mailto:info.sa@ilabquality.com
+    page should contain element  css=.wpb_wrapper>p
+    page should contain element  css=.wpb_map_wraper
 
 Wait For Page To Load
     wait until page contains element  css=.site-logo>a>img
