@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170629 09:39:21.771" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-<suite source="C:\Users\Donna.Block\PycharmProjects\External-Test\iLAB-Blog\BlogTest.robot" id="s1" name="BlogTest">
-<test id="s1-t1" name="Blog Tab">
+<robot generated="20170629 10:17:34.602" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Donna.Block\PycharmProjects\External-Test\iLAB-Careers\CareersPageLinks.robot" id="s1" name="CareersPageLinks">
+<test id="s1-t1" name="Careers Page - Location Buttons">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${Website}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20170629 09:39:22.055" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
-<status status="PASS" endtime="20170629 09:39:49.404" starttime="20170629 09:39:22.055"></status>
+<msg timestamp="20170629 10:17:34.775" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170629 10:18:02.239" starttime="20170629 10:17:34.774"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170629 09:39:50.600" starttime="20170629 09:39:49.404"></status>
+<status status="PASS" endtime="20170629 10:18:03.437" starttime="20170629 10:18:02.240"></status>
 </kw>
 <kw name="Wait For Page To Load">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -21,51 +21,357 @@
 <arguments>
 <arg>css=.site-logo&gt;a&gt;img</arg>
 </arguments>
-<status status="PASS" endtime="20170629 09:39:50.768" starttime="20170629 09:39:50.602"></status>
+<status status="PASS" endtime="20170629 10:18:03.630" starttime="20170629 10:18:03.438"></status>
 </kw>
-<status status="PASS" endtime="20170629 09:39:50.768" starttime="20170629 09:39:50.601"></status>
+<status status="PASS" endtime="20170629 10:18:03.630" starttime="20170629 10:18:03.437"></status>
 </kw>
-<kw name="Click Blog Link">
+<kw name="Click Careers Link">
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by locator.</doc>
 <arguments>
-<arg>http://ilabquality.staging.wpengine.com/resources/</arg>
+<arg>http://ilabquality.staging.wpengine.com/careers/</arg>
 </arguments>
-<msg timestamp="20170629 09:39:50.770" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/resources/'.</msg>
-<status status="PASS" endtime="20170629 09:39:52.197" starttime="20170629 09:39:50.769"></status>
+<msg timestamp="20170629 10:18:03.633" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/careers/'.</msg>
+<status status="PASS" endtime="20170629 10:18:05.309" starttime="20170629 10:18:03.632"></status>
 </kw>
-<status status="PASS" endtime="20170629 09:39:52.197" starttime="20170629 09:39:50.768"></status>
+<status status="PASS" endtime="20170629 10:18:05.310" starttime="20170629 10:18:03.631"></status>
 </kw>
-<kw name="Assert Blog Page">
+<kw name="Assert Careers Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.heading-dash.text-center</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:05.367" starttime="20170629 10:18:05.311"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>INNOVATION IN QUALITY &amp; TESTING</arg>
+</arguments>
+<msg timestamp="20170629 10:18:05.401" level="INFO">Current page contains text 'INNOVATION IN QUALITY &amp; TESTING'.</msg>
+<status status="PASS" endtime="20170629 10:18:05.401" starttime="20170629 10:18:05.367"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png</arg>
+</arguments>
+<msg timestamp="20170629 10:18:05.432" level="INFO">Current page contains image 'http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png'.</msg>
+<status status="PASS" endtime="20170629 10:18:05.432" starttime="20170629 10:18:05.401"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:05.433" starttime="20170629 10:18:05.310"></status>
+</kw>
+<kw name="Click South Africa Button">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
-<arg>css=.vc_grid-filter.vc_clearfix.vc_grid-filter-default.vc_grid-filter-size-md.vc_grid-filter-center.vc_grid-filter-color-grey</arg>
+<arg>css=.vc_single_image-img.attachment-full</arg>
 </arguments>
-<status status="PASS" endtime="20170629 09:39:52.856" starttime="20170629 09:39:52.198"></status>
+<status status="PASS" endtime="20170629 10:18:05.458" starttime="20170629 10:18:05.433"></status>
 </kw>
-<kw name="Page Should Contain Link" library="Selenium2Library">
-<doc>Verifies link identified by `locator` is found from current page.</doc>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
 <arguments>
-<arg>http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/</arg>
+<arg>css=.vc_custom_heading</arg>
 </arguments>
-<msg timestamp="20170629 09:39:52.901" level="INFO">Current page contains link 'http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/'.</msg>
-<status status="PASS" endtime="20170629 09:39:52.902" starttime="20170629 09:39:52.857"></status>
+<msg timestamp="20170629 10:18:05.458" level="INFO">Simulating Mouse Down on element 'css=.vc_custom_heading'</msg>
+<status status="PASS" endtime="20170629 10:18:05.526" starttime="20170629 10:18:05.458"></status>
 </kw>
-<status status="PASS" endtime="20170629 09:39:52.902" starttime="20170629 09:39:52.197"></status>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[3]/a</arg>
+</arguments>
+<msg timestamp="20170629 10:18:05.527" level="INFO">Simulating Mouse Down on element 'xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[3]/a'</msg>
+<status status="PASS" endtime="20170629 10:18:05.609" starttime="20170629 10:18:05.527"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[3]/a</arg>
+</arguments>
+<msg timestamp="20170629 10:18:05.610" level="INFO">Clicking element 'xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[3]/a'.</msg>
+<status status="PASS" endtime="20170629 10:18:06.858" starttime="20170629 10:18:05.610"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:06.858" starttime="20170629 10:18:05.433"></status>
+</kw>
+<kw name="Assert Location Careers">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>CURRENT OPENINGS</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:06.892" starttime="20170629 10:18:06.859"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Get More From Your Career</arg>
+</arguments>
+<msg timestamp="20170629 10:18:06.923" level="INFO">Current page contains text 'Get More From Your Career'.</msg>
+<status status="PASS" endtime="20170629 10:18:06.923" starttime="20170629 10:18:06.892"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:06.923" starttime="20170629 10:18:06.859"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20170629 10:18:07.839" starttime="20170629 10:18:06.924"></status>
+</kw>
+<kw name="Assert Careers Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.heading-dash.text-center</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:07.916" starttime="20170629 10:18:07.840"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>INNOVATION IN QUALITY &amp; TESTING</arg>
+</arguments>
+<msg timestamp="20170629 10:18:07.932" level="INFO">Current page contains text 'INNOVATION IN QUALITY &amp; TESTING'.</msg>
+<status status="PASS" endtime="20170629 10:18:07.932" starttime="20170629 10:18:07.917"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png</arg>
+</arguments>
+<msg timestamp="20170629 10:18:07.947" level="INFO">Current page contains image 'http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png'.</msg>
+<status status="PASS" endtime="20170629 10:18:07.947" starttime="20170629 10:18:07.932"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:07.947" starttime="20170629 10:18:07.840"></status>
+</kw>
+<kw name="Click North America Button">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.vc_single_image-img.attachment-full</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:07.957" starttime="20170629 10:18:07.948"></status>
+</kw>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>css=.vc_custom_heading</arg>
+</arguments>
+<msg timestamp="20170629 10:18:07.958" level="INFO">Simulating Mouse Down on element 'css=.vc_custom_heading'</msg>
+<status status="PASS" endtime="20170629 10:18:07.998" starttime="20170629 10:18:07.958"></status>
+</kw>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[4]/a</arg>
+</arguments>
+<msg timestamp="20170629 10:18:07.999" level="INFO">Simulating Mouse Down on element 'xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[4]/a'</msg>
+<status status="PASS" endtime="20170629 10:18:08.072" starttime="20170629 10:18:07.998"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[4]/a</arg>
+</arguments>
+<msg timestamp="20170629 10:18:08.074" level="INFO">Clicking element 'xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[4]/a'.</msg>
+<status status="PASS" endtime="20170629 10:18:09.609" starttime="20170629 10:18:08.073"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:09.609" starttime="20170629 10:18:07.948"></status>
+</kw>
+<kw name="Assert Location Careers">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>CURRENT OPENINGS</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:09.625" starttime="20170629 10:18:09.610"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Get More From Your Career</arg>
+</arguments>
+<msg timestamp="20170629 10:18:09.643" level="INFO">Current page contains text 'Get More From Your Career'.</msg>
+<status status="PASS" endtime="20170629 10:18:09.643" starttime="20170629 10:18:09.625"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:09.644" starttime="20170629 10:18:09.610"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20170629 10:18:10.513" starttime="20170629 10:18:09.644"></status>
+</kw>
+<kw name="Assert Careers Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.heading-dash.text-center</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:10.567" starttime="20170629 10:18:10.514"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>INNOVATION IN QUALITY &amp; TESTING</arg>
+</arguments>
+<msg timestamp="20170629 10:18:10.583" level="INFO">Current page contains text 'INNOVATION IN QUALITY &amp; TESTING'.</msg>
+<status status="PASS" endtime="20170629 10:18:10.583" starttime="20170629 10:18:10.567"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png</arg>
+</arguments>
+<msg timestamp="20170629 10:18:10.597" level="INFO">Current page contains image 'http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png'.</msg>
+<status status="PASS" endtime="20170629 10:18:10.598" starttime="20170629 10:18:10.583"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:10.598" starttime="20170629 10:18:10.513"></status>
+</kw>
+<kw name="Click Australia Button">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.vc_single_image-img.attachment-full</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:10.608" starttime="20170629 10:18:10.599"></status>
+</kw>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>css=.vc_custom_heading</arg>
+</arguments>
+<msg timestamp="20170629 10:18:10.609" level="INFO">Simulating Mouse Down on element 'css=.vc_custom_heading'</msg>
+<status status="PASS" endtime="20170629 10:18:10.654" starttime="20170629 10:18:10.609"></status>
+</kw>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[5]/a</arg>
+</arguments>
+<msg timestamp="20170629 10:18:10.655" level="INFO">Simulating Mouse Down on element 'xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[5]/a'</msg>
+<status status="PASS" endtime="20170629 10:18:10.722" starttime="20170629 10:18:10.654"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[5]/a</arg>
+</arguments>
+<msg timestamp="20170629 10:18:10.722" level="INFO">Clicking element 'xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[5]/a'.</msg>
+<status status="PASS" endtime="20170629 10:18:11.953" starttime="20170629 10:18:10.722"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:11.953" starttime="20170629 10:18:10.598"></status>
+</kw>
+<kw name="Assert Location Careers">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>CURRENT OPENINGS</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:11.966" starttime="20170629 10:18:11.954"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Get More From Your Career</arg>
+</arguments>
+<msg timestamp="20170629 10:18:11.985" level="INFO">Current page contains text 'Get More From Your Career'.</msg>
+<status status="PASS" endtime="20170629 10:18:11.986" starttime="20170629 10:18:11.966"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:11.986" starttime="20170629 10:18:11.953"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20170629 10:18:12.906" starttime="20170629 10:18:11.986"></status>
+</kw>
+<kw name="Assert Careers Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>css=.heading-dash.text-center</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:12.949" starttime="20170629 10:18:12.907"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>INNOVATION IN QUALITY &amp; TESTING</arg>
+</arguments>
+<msg timestamp="20170629 10:18:12.963" level="INFO">Current page contains text 'INNOVATION IN QUALITY &amp; TESTING'.</msg>
+<status status="PASS" endtime="20170629 10:18:12.964" starttime="20170629 10:18:12.949"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png</arg>
+</arguments>
+<msg timestamp="20170629 10:18:12.978" level="INFO">Current page contains image 'http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/careers.png'.</msg>
+<status status="PASS" endtime="20170629 10:18:12.979" starttime="20170629 10:18:12.964"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:12.979" starttime="20170629 10:18:12.907"></status>
+</kw>
+<kw name="Click United Kingdom Button">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.vc_single_image-img.attachment-full</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:12.989" starttime="20170629 10:18:12.980"></status>
+</kw>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>css=.vc_custom_heading</arg>
+</arguments>
+<msg timestamp="20170629 10:18:12.990" level="INFO">Simulating Mouse Down on element 'css=.vc_custom_heading'</msg>
+<status status="PASS" endtime="20170629 10:18:13.031" starttime="20170629 10:18:12.990"></status>
+</kw>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[6]/a</arg>
+</arguments>
+<msg timestamp="20170629 10:18:13.032" level="INFO">Simulating Mouse Down on element 'xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[6]/a'</msg>
+<status status="PASS" endtime="20170629 10:18:13.113" starttime="20170629 10:18:13.031"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[6]/a</arg>
+</arguments>
+<msg timestamp="20170629 10:18:13.115" level="INFO">Clicking element 'xpath=html/body/section/div[2]/div/div/div/div[3]/div[2]/div/div/div[3]/div[2]/div/div/div[6]/a'.</msg>
+<status status="PASS" endtime="20170629 10:18:14.647" starttime="20170629 10:18:13.114"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:14.647" starttime="20170629 10:18:12.979"></status>
+</kw>
+<kw name="Assert Location Careers">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>CURRENT OPENINGS</arg>
+</arguments>
+<status status="PASS" endtime="20170629 10:18:14.661" starttime="20170629 10:18:14.648"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Get More From Your Career</arg>
+</arguments>
+<msg timestamp="20170629 10:18:14.682" level="INFO">Current page contains text 'Get More From Your Career'.</msg>
+<status status="PASS" endtime="20170629 10:18:14.682" starttime="20170629 10:18:14.662"></status>
+</kw>
+<status status="PASS" endtime="20170629 10:18:14.683" starttime="20170629 10:18:14.647"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170629 09:39:56.239" starttime="20170629 09:39:52.902"></status>
+<status status="PASS" endtime="20170629 10:18:17.874" starttime="20170629 10:18:14.683"></status>
 </kw>
 <tags>
-<tag>Blog Tab</tag>
+<tag>Careers Tab</tag>
 <tag>Debug</tag>
 </tags>
-<status status="PASS" endtime="20170629 09:39:56.239" critical="yes" starttime="20170629 09:39:22.055"></status>
+<status status="PASS" endtime="20170629 10:18:17.874" critical="yes" starttime="20170629 10:17:34.773"></status>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" endtime="20170629 09:39:56.239" starttime="20170629 09:39:21.771"></status>
+<status status="PASS" endtime="20170629 10:18:17.875" starttime="20170629 10:17:34.606"></status>
 </suite>
 <statistics>
 <total>
@@ -73,11 +379,11 @@
 <stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">Blog Tab</stat>
+<stat fail="0" pass="1">Careers Tab</stat>
 <stat fail="0" pass="1">Debug</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="BlogTest" pass="1">BlogTest</stat>
+<stat fail="0" id="s1" name="CareersPageLinks" pass="1">CareersPageLinks</stat>
 </suite>
 </statistics>
 <errors>
