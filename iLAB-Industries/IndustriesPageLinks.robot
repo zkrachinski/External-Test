@@ -30,6 +30,161 @@ Banking and Finance Page - Read More Links
     click case study link
     assert case study page
 
+Healthcare Page - Read More Links
+    [Tags]    Debug  Healthcare Page Links
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click healthcare tab
+    wait for healthcare page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for healthcare page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for healthcare page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for healthcare page to load
+    click case study link
+    assert case study page
+
+Human Resources Page - Read More Links
+    [Tags]    Debug  Human Resources Page Links
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click human resources tab
+    wait for human resources page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for human resources page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for human resources page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for human resources page to load
+    click case study link
+    assert case study page
+
+Insurance Page - Read More Links
+    [Tags]    Debug  Insurance Page Links
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click insurance tab
+    wait for insurance page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for insurance page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for insurance page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for insurance page to load
+    click case study link
+    assert case study page
+
+Public Sector Page - Read More Links
+    [Tags]    Debug  Public Sector Page Links
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click public sector tab
+    wait for public sector page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for public sector page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for public sector page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for public sector page to load
+    click case study link
+    assert case study page
+
+
+Retail Page - Read More Links
+    [Tags]    Debug  Retail Page Links
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click retail tab
+    wait for retail page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for retail page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for retail page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for retail page to load
+    click case study link
+    assert case study page
+
+Telecom Page - Read More Links
+    [Tags]    Debug  Telecom Page Links
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click telecom tab
+    wait for telecom page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for telecom page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for telecom page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for telecom page to load
+    click case study link
+    assert case study page
+
+Tourism and Gaming Page - Read More Links
+    [Tags]    Debug  Tourism and Gaming Page Links
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click tourism and gaming tab
+    wait for tourism and gaming page to load
+    click first read more
+    assert stress testing page
+    go back
+    wait for tourism and gaming page to load
+    click second read more
+    assert cloud-based page
+    go back
+    wait for tourism and gaming page to load
+    click third read more
+    assert hpe page
+    go back
+    wait for tourism and gaming page to load
+    click case study link
+    assert case study page
+
 *** Keywords ***
 Hover Over Industries
     mouse over  css=#menu-item-838>a
@@ -66,6 +221,34 @@ Click Tourism and Gaming Tab
 
 Wait for Banking and Finance Page to Load
     wait until page contains  Funding life on-the-go with safe, connective solutions
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+
+Wait for Healthcare Page to Load
+    wait until page contains  Secure patient and physician support along the continuum of care
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+
+Wait for Human Resources Page to Load
+    wait until page contains  Intuitive organization of all the messy human details
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+
+Wait for Insurance Page to Load
+    wait until page contains  Intuitive organization of all the messy human details
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+
+Wait for Public Sector Page to Load
+    wait until page contains  Software solutions that improve efficiency and the community
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+
+Wait for Retail Page to Load
+    wait until page contains  Promote customer loyalty and encourage habitual buying
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+
+Wait for Telecom Page to Load
+    wait until page contains  High-speed, reliable, transparent service
+    wait until page contains element  css=.vc_single_image-img.attachment-full
+
+Wait for Tourism and Gaming Page to Load
+    wait until page contains  Immersive escapes and entertainment
     wait until page contains element  css=.vc_single_image-img.attachment-full
 
 Assert Industries Page
@@ -124,18 +307,22 @@ Fill Out Form
     input text  css=#sf_phone  555-555-5555
 
 Click First Read More
+    wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     click link  http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/
 
 Click Second Read More
+    wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     click link  http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/
 
 Click Third Read More
+    wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     click link  http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/
 
 Click Case Study Link
+    wait until page contains element  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom
     mouse down  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom
     click element  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom
 
