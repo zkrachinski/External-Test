@@ -185,6 +185,86 @@ Tourism and Gaming Page - Read More Links
     click case study link
     assert case study page
 
+Banking and Financing Page - Contact Form
+    [Tags]  Debug  Contact Form  Banking and Financing Page
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click banking and finance tab
+    wait for banking and finance page to load
+    move to form
+    fill out form
+
+Healthcare Page - Contact Form
+    [Tags]  Debug  Contact Form  Healthcare Page
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click healthcare tab
+    wait for healthcare page to load
+    move to form
+    fill out form
+
+Human Resources Page - Contact Form
+    [Tags]  Debug  Contact Form  Human Resources Page
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click human resources tab
+    wait for human resources page to load
+    move to form
+    fill out form
+
+Insurance Page - Contact Form
+    [Tags]  Debug  Contact Form  Insurance Page
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click insurance tab
+    wait for insurance page to load
+    move to form
+    fill out form
+
+Public Sector Page - Contact Form
+    [Tags]  Debug  Contact Form  Human Resources Page
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click public sector tab
+    wait for public sector page to load
+    move to form
+    fill out form
+
+Retail Page - Contact Form
+    [Tags]  Debug  Contact Form  Retail Page
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click retail tab
+    wait for retail page to load
+    move to form
+    fill out form
+
+Telecom Page - Contact Form
+    [Tags]  Debug  Contact Form  Telecom Page
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click telecom tab
+    wait for telecom page to load
+    move to form
+    fill out form
+
+Tourism and Gaming Page - Contact Form
+    [Tags]  Debug  Contact Form  Human Resources Page
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click tourism and gaming tab
+    wait for tourism and gaming page to load
+    move to form
+    fill out form
+
 *** Keywords ***
 Hover Over Industries
     mouse over  css=#menu-item-838>a
