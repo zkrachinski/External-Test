@@ -282,10 +282,10 @@ Click Healthcare Tab
     click element  css=#menu-item-2000>a
 
 Click Human Resources Tab
-    click element  css=#menu-item-2000>a
+    click element  css=#menu-item-1998>a
 
 Click Insurance Tab
-    click element  css=#menu-item-2000>a
+    click element  css=#menu-item-1997>a
 
 Click Public Sector Tab
     click element  css=#menu-item-1996>a
@@ -312,7 +312,7 @@ Wait for Human Resources Page to Load
     wait until page contains element  css=.vc_single_image-img.attachment-full
 
 Wait for Insurance Page to Load
-    wait until page contains  Intuitive organization of all the messy human details
+    wait until page contains  Reassuring communication during life’s major challenges
     wait until page contains element  css=.vc_single_image-img.attachment-full
 
 Wait for Public Sector Page to Load
@@ -335,46 +335,55 @@ Assert Industries Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Lead Your Industry in Innovation and Quality
     page should contain element  css=.wpb_wrapper>p
+    page should contain  MOST COMMON INDUSTRIES SERVED
 
 Assert Banking and Finance Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Funding life on-the-go with safe, connective solutions
     page should contain element  css=.wpb_wrapper>p
+    page should contain  BANKING AND FINANCE CASE STUDY
 
 Assert Healthcare Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Secure patient and physician support along the continuum of care
     page should contain element  css=.wpb_wrapper>p
+    page should contain  HEALTHCARE CASE STUDY
 
 Assert Human Resources Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Intuitive organization of all the messy human details
     page should contain element  css=.wpb_wrapper>p
+    page should contain  HUMAN RESOURCES CASE STUDY
 
 Assert Insurance Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Reassuring communication during life’s major challenges
     page should contain element  css=.wpb_wrapper>p
+    page should contain  INSURANCE CASE STUDY
 
 Assert Public Sector Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Software solutions that improve efficiency and the community
     page should contain element  css=.wpb_wrapper>p
+    page should contain  PUBLIC SECTOR CASE STUDY
 
 Assert Retail Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Promote customer loyalty and encourage habitual buying
     page should contain element  css=.wpb_wrapper>p
+    page should contain  RETAIL CASE STUDY
 
 Assert Telecom Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  High-speed, reliable, transparent service
     page should contain element  css=.wpb_wrapper>p
+    page should contain  TELECOMMUNICATIONS CASE STUDY
 
 Assert Tourism and Gaming Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Immersive escapes and entertainment
     page should contain element  css=.wpb_wrapper>p
+    page should contain  TOURISM AND GAMING CASE STUDY
 
 Move to Form
     mouse down  css=#sf_first_name
@@ -409,15 +418,24 @@ Click Case Study Link
 Assert Stress Testing Page
     wait until page contains  The Ins and Outs of Stress Testing Web & Mobile Applications
     page should contain  Stress Testing vs. Load Testing
+    page should contain  When to conduct stress tests
+    page should contain  Benefits of stress testing
 
 Assert Cloud-Based Page
     wait until page contains  The 5 Cloud-Based Load Testing Tool Must-Haves
     page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Selecting a Cloud-Based Load Testing Tool
+    page should contain  1. Integration With Cloud Platforms
+    page should contain  2. Ability to Conduct Realistic Tests
+
 
 Assert HPE Page
     wait until page contains  What Should The Software Testing Industry Watch For as the HPE–Micro Focus Merger Plays Out?
     page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Balance Between Cost Consolidation and Active Product Development
+    page should contain  The Case of Overlapping Assets
 
 Assert Case Study Page
     wait until page contains  Case Study Title
     page should contain image  css=.vc_single_image-img.attachment-full
+    page should contain  Sub-Header

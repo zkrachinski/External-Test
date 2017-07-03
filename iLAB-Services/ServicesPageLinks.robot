@@ -245,15 +245,24 @@ Click Case Study Link
 Assert Stress Testing Page
     wait until page contains  The Ins and Outs of Stress Testing Web & Mobile Applications
     page should contain  Stress Testing vs. Load Testing
+    page should contain  When to conduct stress tests
+    page should contain  Benefits of stress testing
 
 Assert Cloud-Based Page
     wait until page contains  The 5 Cloud-Based Load Testing Tool Must-Haves
     page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Selecting a Cloud-Based Load Testing Tool
+    page should contain  1. Integration With Cloud Platforms
+    page should contain  2. Ability to Conduct Realistic Tests
+
 
 Assert HPE Page
     wait until page contains  What Should The Software Testing Industry Watch For as the HPE–Micro Focus Merger Plays Out?
     page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Balance Between Cost Consolidation and Active Product Development
+    page should contain  The Case of Overlapping Assets
 
 Assert Case Study Page
     wait until page contains  Case Study Title
     page should contain image  css=.vc_single_image-img.attachment-full
+    page should contain  Sub-Header
