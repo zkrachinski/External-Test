@@ -1,659 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170629 16:19:48.913" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-<suite source="C:\Users\Donna.Block\PycharmProjects\External-Test\iLAB-Training\TrainingPageLinks.robot" id="s1" name="TrainingPageLinks">
-<test id="s1-t1" name="Training - Testing Link">
+<robot generated="20170703 15:50:30.885" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Donna.Block\PycharmProjects\External-Test\iLAB-Blog\BlogPageLinks.robot" id="s1" name="BlogPageLinks">
+<test id="s1-t1" name="Blog - Blog Links">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${Website}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20170629 16:19:49.091" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
-<status status="PASS" endtime="20170629 16:20:17.594" starttime="20170629 16:19:49.091"></status>
+<msg timestamp="20170703 15:50:32.146" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170703 15:51:01.078" starttime="20170703 15:50:32.145"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170629 16:20:18.782" starttime="20170629 16:20:17.595"></status>
+<status status="PASS" endtime="20170703 15:51:02.265" starttime="20170703 15:51:01.079"></status>
 </kw>
 <kw name="Wait For Page To Load">
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until element specified with `locator` appears on current page.</doc>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
 <arguments>
-<arg>css=.site-logo&gt;a&gt;img</arg>
+<arg>30</arg>
 </arguments>
-<status status="PASS" endtime="20170629 16:20:19.028" starttime="20170629 16:20:18.783"></status>
+<status status="PASS" endtime="20170703 15:51:02.271" starttime="20170703 15:51:02.266"></status>
 </kw>
-<status status="PASS" endtime="20170629 16:20:19.028" starttime="20170629 16:20:18.782"></status>
+<status status="PASS" endtime="20170703 15:51:02.271" starttime="20170703 15:51:02.265"></status>
 </kw>
-<kw name="Hover Over Training">
-<kw name="Mouse Over" library="Selenium2Library">
-<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
-<arguments>
-<arg>css=#menu-item-847&gt;a</arg>
-</arguments>
-<msg timestamp="20170629 16:20:19.030" level="INFO">Simulating Mouse Over on element 'css=#menu-item-847&gt;a'</msg>
-<status status="PASS" endtime="20170629 16:20:19.182" starttime="20170629 16:20:19.029"></status>
-</kw>
-<status status="PASS" endtime="20170629 16:20:19.182" starttime="20170629 16:20:19.028"></status>
-</kw>
-<kw name="Click Training Link">
+<kw name="Click Blog Link">
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by locator.</doc>
 <arguments>
-<arg>http://ilabquality.staging.wpengine.com/training/</arg>
+<arg>http://ilabquality.staging.wpengine.com/resources/</arg>
 </arguments>
-<msg timestamp="20170629 16:20:19.184" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/training/'.</msg>
-<status status="PASS" endtime="20170629 16:20:21.806" starttime="20170629 16:20:19.183"></status>
+<msg timestamp="20170703 15:51:02.273" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/resources/'.</msg>
+<status status="PASS" endtime="20170703 15:51:03.489" starttime="20170703 15:51:02.273"></status>
 </kw>
-<status status="PASS" endtime="20170629 16:20:21.806" starttime="20170629 16:20:19.183"></status>
+<status status="PASS" endtime="20170703 15:51:03.490" starttime="20170703 15:51:02.272"></status>
 </kw>
-<kw name="Assert Training Page">
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by `locator` is found from current page.</doc>
+<kw name="Assert Blog Page">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
-<arg>css=.vc_single_image-img.attachment-full</arg>
+<arg>css=.vc_grid-filter.vc_clearfix.vc_grid-filter-default.vc_grid-filter-size-md.vc_grid-filter-center.vc_grid-filter-color-grey</arg>
 </arguments>
-<msg timestamp="20170629 16:20:21.886" level="INFO">Current page contains image 'css=.vc_single_image-img.attachment-full'.</msg>
-<status status="PASS" endtime="20170629 16:20:21.886" starttime="20170629 16:20:21.807"></status>
+<status status="PASS" endtime="20170703 15:51:04.235" starttime="20170703 15:51:03.490"></status>
 </kw>
 <kw name="Page Should Contain Link" library="Selenium2Library">
 <doc>Verifies link identified by `locator` is found from current page.</doc>
 <arguments>
-<arg>mailto:training@ilabquality.com</arg>
+<arg>http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/</arg>
 </arguments>
-<msg timestamp="20170629 16:20:21.922" level="INFO">Current page contains link 'mailto:training@ilabquality.com'.</msg>
-<status status="PASS" endtime="20170629 16:20:21.922" starttime="20170629 16:20:21.887"></status>
+<msg timestamp="20170703 15:51:04.282" level="INFO">Current page contains link 'http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/'.</msg>
+<status status="PASS" endtime="20170703 15:51:04.282" starttime="20170703 15:51:04.236"></status>
 </kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies element identified by `locator` is found on the current page.</doc>
-<arguments>
-<arg>css=.wpb_wrapper&gt;p</arg>
-</arguments>
-<msg timestamp="20170629 16:20:21.954" level="INFO">Current page contains element 'css=.wpb_wrapper&gt;p'.</msg>
-<status status="PASS" endtime="20170629 16:20:21.954" starttime="20170629 16:20:21.923"></status>
+<status status="PASS" endtime="20170703 15:51:04.283" starttime="20170703 15:51:03.490"></status>
 </kw>
-<status status="PASS" endtime="20170629 16:20:21.954" starttime="20170629 16:20:21.807"></status>
-</kw>
-<kw name="Click Testing Link">
+<kw name="Click First Read More">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
-<arg>css=.vc_single_image-img.attachment-full</arg>
+<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
 </arguments>
-<status status="PASS" endtime="20170629 16:20:21.965" starttime="20170629 16:20:21.955"></status>
+<status status="PASS" endtime="20170703 15:51:04.323" starttime="20170703 15:51:04.284"></status>
 </kw>
 <kw name="Mouse Down" library="Selenium2Library">
 <doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
 <arguments>
-<arg>xpath=html/body/section/div[2]/div/div/div/div[8]/div[1]/div/div/h3/a</arg>
+<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
 </arguments>
-<msg timestamp="20170629 16:20:21.966" level="INFO">Simulating Mouse Down on element 'xpath=html/body/section/div[2]/div/div/div/div[8]/div[1]/div/div/h3/a'</msg>
-<status status="PASS" endtime="20170629 16:20:22.044" starttime="20170629 16:20:21.965"></status>
+<msg timestamp="20170703 15:51:04.324" level="INFO">Simulating Mouse Down on element 'css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink'</msg>
+<status status="PASS" endtime="20170703 15:51:04.383" starttime="20170703 15:51:04.323"></status>
 </kw>
-<status status="PASS" endtime="20170629 16:20:22.044" starttime="20170629 16:20:21.955"></status>
-</kw>
-<kw name="Assert Testing Page">
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by `locator` is found from current page.</doc>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
 <arguments>
-<arg>css=.vc_single_image-img.attachment-full</arg>
+<arg>http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/</arg>
 </arguments>
-<msg timestamp="20170629 16:20:22.090" level="INFO">Current page contains image 'css=.vc_single_image-img.attachment-full'.</msg>
-<status status="PASS" endtime="20170629 16:20:22.090" starttime="20170629 16:20:22.045"></status>
+<msg timestamp="20170703 15:51:04.384" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/'.</msg>
+<status status="PASS" endtime="20170703 15:51:05.276" starttime="20170703 15:51:04.384"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:05.276" starttime="20170703 15:51:04.283"></status>
+</kw>
+<kw name="Assert Stress Testing Page">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>The Ins and Outs of Stress Testing Web &amp; Mobile Applications</arg>
+</arguments>
+<status status="PASS" endtime="20170703 15:51:05.307" starttime="20170703 15:51:05.277"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
-<arg>Download Overview</arg>
+<arg>Stress Testing vs. Load Testing</arg>
 </arguments>
-<msg timestamp="20170629 16:20:22.175" level="INFO">&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="js_active  vc_desktop  vc_transform  vc_transform skrollr skrollr-desktop"&gt;&lt;head&gt;
-    &lt;meta charset="UTF-8" /&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" /&gt;
-    &lt;meta name="format-detection" content="telephone=no" /&gt;
-    &lt;link rel="profile" href="http://gmpg.org/xfn/11" /&gt;
-    &lt;link rel="pingback" href="http://ilabquality.staging.wpengine.com/xmlrpc.php" /&gt;
-
-    
-    &lt;title&gt;TRAINING – iLAB&lt;/title&gt;
-&lt;meta name="robots" content="noindex,follow" /&gt;
-&lt;link rel="dns-prefetch" href="//fonts.googleapis.com" /&gt;
-&lt;link rel="dns-prefetch" href="//s.w.org" /&gt;
-&lt;link rel="alternate" type="application/rss+xml" title="iLAB » Feed" href="http://ilabquality.staging.wpengine.com/feed/" /&gt;
-&lt;link rel="alternate" type="application/rss+xml" title="iLAB » Comments Feed" href="http://ilabquality.staging.wpengine.com/comments/feed/" /&gt;
-		&lt;script async="" src="https://www.google-analytics.com/analytics.js"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ilabquality.staging.wpengine.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length&amp;lt;3e3)&amp;amp;&amp;amp;(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&amp;amp;&amp;amp;j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h&amp;lt;i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&amp;amp;&amp;amp;c.supports[i[h]],"flag"!==i[h]&amp;amp;&amp;amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;amp;&amp;amp;c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;amp;&amp;amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;amp;&amp;amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;amp;&amp;amp;f.twemoji&amp;amp;&amp;amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		&lt;/script&gt;&lt;script src="http://ilabquality.staging.wpengine.com/wp-includes/js/wp-emoji-release.min.js?ver=4.7.2" type="text/javascript" defer=""&gt;&lt;/script&gt;
-		&lt;style type="text/css"&gt;
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-&lt;/style&gt;
-&lt;link rel="stylesheet" id="dashicons-css" href="http://ilabquality.staging.wpengine.com/wp-includes/css/dashicons.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="wp-jquery-ui-dialog-css" href="http://ilabquality.staging.wpengine.com/wp-includes/css/jquery-ui-dialog.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="google-web-fonts-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;amp;ver=4.7.2#038;subset=greek%2Ccyrillic%2Cgreek-ext%2Clatin%2Ccyrillic-ext%2Cvietnamese%2Clatin-ext" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="contact-form-7-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.8" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="rs-plugin-settings-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.1.6" type="text/css" media="all" /&gt;
-&lt;style id="rs-plugin-settings-inline-css" type="text/css"&gt;
-#rs-demo-id {}
-&lt;/style&gt;
-&lt;link rel="stylesheet" id="tt-theme-fonts-css" href="//fonts.googleapis.com/css?family=Lato:400,100,300,700,900|Vollkorn:400,400italic&amp;amp;subset=latin%2Clatin-ext" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="bootstrap-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/bootstrap/css/bootstrap.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="bootstrap-theme-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/bootstrap/css/bootstrap-theme.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="fontawesome-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/font-awesome/css/font-awesome.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="owl-carousel-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/owl-carousel/owl.carousel.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="owl-carousel-theme-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/owl-carousel/owl.theme.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="ionicons-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/ionicons/css/ionicons.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="kwicks-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/css/jquery.kwicks.min.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="tt-theme-stylesheet-css" href="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/style.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="sucarouselmergedcss-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/supercarousel/css/supercarouselmerged.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="js_composer_front-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="js_composer_custom_css-css" href="//ilabquality.staging.wpengine.com/wp-content/uploads/js_composer/custom.css?ver=5.1.1" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="wpjb-glyphs-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=4.5.0" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="wpjb-css-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=4.5.0" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="themeton-stylesheet-css" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/themeton/iLAB.css?ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.1.6"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.1.6"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-/* &amp;lt;![CDATA[ */
-var WpjbData = {"AjaxRequest":"http:\/\/ilabquality.staging.wpengine.com\/training\/plain\/discount","Protection":"pr0t3ct1on","no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","max_date":"9999\/12\/31"};
-/* ]]&amp;gt; */
-&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=4.5.0"&gt;&lt;/script&gt;
-&lt;link rel="https://api.w.org/" href="http://ilabquality.staging.wpengine.com/wp-json/" /&gt;
-&lt;link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ilabquality.staging.wpengine.com/xmlrpc.php?rsd" /&gt;
-&lt;link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ilabquality.staging.wpengine.com/wp-includes/wlwmanifest.xml" /&gt; 
-&lt;link rel="canonical" href="http://ilabquality.staging.wpengine.com/training/" /&gt;
-&lt;link rel="shortlink" href="http://ilabquality.staging.wpengine.com/?p=845" /&gt;
-&lt;link rel="alternate" type="application/json+oembed" href="http://ilabquality.staging.wpengine.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Filabquality.staging.wpengine.com%2Ftraining%2F" /&gt;
-&lt;link rel="alternate" type="text/xml+oembed" href="http://ilabquality.staging.wpengine.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Filabquality.staging.wpengine.com%2Ftraining%2F&amp;amp;format=xml" /&gt;
-&lt;script&gt;
-                var theme_options = { ajax_url: "http://ilabquality.staging.wpengine.com/wp-admin/admin-ajax.php" };
-          &lt;/script&gt;&lt;meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." /&gt;
-&lt;!--[if lte IE 9]&gt;&lt;link rel="stylesheet" type="text/css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"&gt;&lt;![endif]--&gt;&lt;meta name="generator" content="Powered by Slider Revolution 5.1.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." /&gt;
-&lt;link rel="icon" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-32x32.png" sizes="32x32" /&gt;
-&lt;link rel="icon" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-192x192.png" sizes="192x192" /&gt;
-&lt;link rel="apple-touch-icon-precomposed" href="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-180x180.png" /&gt;
-&lt;meta name="msapplication-TileImage" content="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/cropped-LogoIcon-270x270.png" /&gt;
-&lt;style type="text/css" data-type="vc_shortcodes-custom-css"&gt;.vc_custom_1465529836208{margin-top: -70px !important;padding-top: 100px !important;padding-bottom: 70px !important;}.vc_custom_1497282317738{background-color: #f4f4f4 !important;}.vc_custom_1472489859465{background-image: url(http://radius-media.com/ilab/wp-content/uploads/2016/06/training_banner.jpg?id=855) !important;}.vc_custom_1466708742089{padding-bottom: 15px !important;}.vc_custom_1466709589130{padding-bottom: 15px !important;background-color: #f4f4f4 !important;}.vc_custom_1466708795638{padding-bottom: 15px !important;}.vc_custom_1466709607465{padding-bottom: 15px !important;background-color: #f4f4f4 !important;}.vc_custom_1466708811799{padding-bottom: 15px !important;}.vc_custom_1472489910623{background-image: url(http://radius-media.com/ilab/wp-content/uploads/2016/06/training_banner.jpg?id=855) !important;}.vc_custom_1466708821834{padding-bottom: 15px !important;}.vc_custom_1483409446497{padding-bottom: 15px !important;background-color: #f4f4f4 !important;}.vc_custom_1466708837665{padding-bottom: 15px !important;}.vc_custom_1472489995434{background-image: url(http://radius-media.com/ilab/wp-content/uploads/2016/06/training_banner.jpg?id=855) !important;}.vc_custom_1483409295228{padding-bottom: 15px !important;}.vc_custom_1483409301518{padding-bottom: 15px !important;background-color: #f4f4f4 !important;}.vc_custom_1483409314191{padding-bottom: 15px !important;}.vc_custom_1466710887950{margin-bottom: -50px !important;}.vc_custom_1469200639126{padding-top: -10px !important;padding-bottom: 25px !important;}.vc_custom_1488210374324{padding-top: 10px !important;}.vc_custom_1466709311210{padding-right: 10px !important;}.vc_custom_1466709324167{padding-left: 10px !important;}.vc_custom_1468248915075{margin-top: -10px !important;}.vc_custom_1466708633679{margin-top: -15px !important;margin-bottom: 10px !important;}.vc_custom_1468248923646{margin-top: -10px !important;}.vc_custom_1466708944283{margin-top: -15px !important;}.vc_custom_1468248933048{margin-top: -10px !important;}.vc_custom_1466708963091{margin-top: -15px !important;}.vc_custom_1468248940843{margin-top: -10px !important;}.vc_custom_1466709097618{margin-top: -15px !important;}.vc_custom_1468248955076{margin-top: -10px !important;}.vc_custom_1466708993487{margin-top: -15px !important;}.vc_custom_1468248963336{margin-top: -10px !important;}.vc_custom_1466709006603{margin-top: -15px !important;}.vc_custom_1468248971354{margin-top: -10px !important;}.vc_custom_1466709121729{margin-top: -15px !important;}.vc_custom_1468248979771{margin-top: -10px !important;}.vc_custom_1466709131944{margin-top: -15px !important;}.vc_custom_1468248990329{margin-top: -10px !important;}.vc_custom_1466709147481{margin-top: -15px !important;}.vc_custom_1469200743192{padding-top: -10px !important;padding-bottom: 25px !important;}.vc_custom_1488210391968{padding-top: 10px !important;}.vc_custom_1468249001655{margin-top: -10px !important;}.vc_custom_1466708244586{margin-top: -15px !important;}.vc_custom_1468249010767{margin-top: -10px !important;}.vc_custom_1466709172628{margin-top: -15px !important;}.vc_custom_1468249020021{margin-top: -10px !important;}.vc_custom_1466709190773{margin-top: -15px !important;}.vc_custom_1469200779162{padding-top: -10px !important;padding-bottom: 25px !important;}.vc_custom_1488210427818{padding-top: 10px !important;}.vc_custom_1468249033340{margin-top: -10px !important;}.vc_custom_1465441396794{margin-top: -10px !important;}.vc_custom_1466709217529{margin-top: -15px !important;}.vc_custom_1468249043070{margin-top: -10px !important;}.vc_custom_1465441628333{margin-top: -10px !important;}.vc_custom_1466709238208{margin-top: -15px !important;}.vc_custom_1468249053726{margin-top: -10px !important;}.vc_custom_1468859685471{margin-top: -10px !important;}.vc_custom_1466709250120{margin-top: -15px !important;}.vc_custom_1466710686625{margin-top: -5px !important;}&lt;/style&gt;&lt;noscript&gt;&amp;lt;style type="text/css"&amp;gt; .wpb_animate_when_almost_visible { opacity: 1; }&amp;lt;/style&amp;gt;&lt;/noscript&gt;&lt;style type="text/css" id="theme-customize-css"&gt;
-            .detail-wrr{ min-height:;}
-            .single-job em.wpjb-top-header-subtitle {
-    display: none;
-}
-.wpjb-job-list .wpjb-grid-col-last .wpjb-line-major {
-    display: none;
-    width: 0;
-}
-
-            .footer-top svg path,
-            .footer-top svg rect {
-                fill: #2c2c2c;
-            }
-        &lt;/style&gt;
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-86318273-1', 'auto');
-  ga('send', 'pageview');
-
-&lt;/script&gt;
-
-&lt;/head&gt;
-
-
-&lt;body class="page-template-default page page-id-845 page-parent wpb-js-composer js-comp-ver-5.1.1 vc_responsive"&gt;
-
-    &lt;div class="nav-menu-icon"&gt;
-        &lt;a href="javascript:;"&gt;&lt;i&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;/div&gt;
-
-    &lt;!-- Site logo --&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="site-logo"&gt;
-            &lt;a href="http://ilabquality.staging.wpengine.com/"&gt;
-                &lt;img src="http://ilabquality.wpengine.com/wp-content/uploads/2017/02/logoweb-1.png" alt="iLAB" /&gt;
-            &lt;/a&gt;
-        &lt;/div&gt;
-        &lt;!-- Mouse icon --&gt;
-    &lt;/div&gt;
-
-    
-    &lt;header id="header"&gt;
-        &lt;div class="container"&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="col-sm-5"&gt;
-
-                    &lt;nav class="navigation-left"&gt;
-                        &lt;ul id="menu-primary-left-menu" class="menu"&gt;&lt;li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-386"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/"&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li id="menu-item-388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-388"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;ABOUT US&lt;/a&gt;
-&lt;ul class="sub-menu"&gt;
-	&lt;li id="menu-item-848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;THE iLAB STORY&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1288"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/our-process/"&gt;OUR PROCESS&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/engagement-models/"&gt;ENGAGEMENT MODELS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li id="menu-item-1233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1233"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/"&gt;SERVICES&lt;/a&gt;
-&lt;ul class="sub-menu"&gt;
-	&lt;li id="menu-item-1992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1992"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/consulting-services/"&gt;CONSULTING SERVICES&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1991"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/software-testing-automation/"&gt;SOFTWARE TESTING &amp;amp; AUTOMATION&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1989"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/performance-testing/"&gt;PERFORMANCE TESTING&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-2055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2055"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/security-testing/"&gt;SECURITY TESTING&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1990"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/mobile/"&gt;MOBILE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li id="menu-item-838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-838"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/"&gt;INDUSTRIES&lt;/a&gt;
-&lt;ul class="sub-menu"&gt;
-	&lt;li id="menu-item-1999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/banking-finance/"&gt;BANKING &amp;amp; FINANCE&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-2000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2000"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/healthcare/"&gt;HEALTHCARE&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1998"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/human-resources/"&gt;HUMAN RESOURCES&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1997"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/insurance/"&gt;INSURANCE&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1996"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/public-sector/"&gt;PUBLIC SECTOR&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/retail/"&gt;RETAIL&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1994"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/telecom/"&gt;TELECOM&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1993"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/tourism-gaming/"&gt;TOURISM &amp;amp; GAMING&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;                    &lt;/nav&gt;
-
-                &lt;/div&gt;
-                &lt;div class="col-sm-2 curved-shape"&gt;
-                    &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="325px" height="90px" viewBox="0 0 325 90" preserveAspectRatio="xMinYMid" enable-background="new 0 0 325 90" xml:space="preserve"&gt; &lt;path fill="#ffffff" d="M162.635,49.333C204.638,49.333,233.143,90,266.511,90s10.385,0,10.385,0V30h-228v60c0,0-16.127,0,12.378,0 S120.632,49.333,162.635,49.333z"/&gt; &lt;rect fill="#ffffff" width="50" height="90"/&gt; &lt;rect x="275.801" fill="#ffffff" width="50" height="90"/&gt; &lt;rect x="48.823" y="0.005" fill="#ffffff" width="228.541" height="30.5"/&gt; &lt;/svg&gt;&lt;a href="http://ilabquality.com"&gt;&lt;img src="http://ilabquality.com/wp-content/uploads/2016/02/iLABwebsiteCenter.png" alt="iLABwebsiteCenter" width="130" height="56" class="aligncenter size-full wp-image-1047" /&gt;&lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class="col-sm-5"&gt;
-                    &lt;nav class="navigation-right text-right"&gt;
-                        &lt;ul id="menu-primary-right-menu" class="menu"&gt;&lt;li id="menu-item-1856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/resources/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-845 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-847"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING&lt;/a&gt;
-&lt;ul class="sub-menu"&gt;
-	&lt;li id="menu-item-1640" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-845 current_page_item menu-item-1640"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING COURSES&lt;/a&gt;&lt;/li&gt;
-	&lt;li id="menu-item-1641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1641"&gt;&lt;a href="/wp-content/uploads/2016/10/Training_Schedule_Template_Final.pdf"&gt;TRAINING SCHEDULE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li id="menu-item-389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/contact/"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
-&lt;li id="menu-item-1373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1373"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/careers/"&gt;CAREERS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;                    &lt;/nav&gt;                        
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;nav class="mobile"&gt;
-            &lt;ul id="menu-primary-left-menu-1" class="menu"&gt;&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-386"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/"&gt;HOME&lt;/a&gt;&lt;/li&gt;
-&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-388"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;ABOUT US&lt;/a&gt;
-&lt;ul class="sub-menu"&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/about-us/"&gt;THE iLAB STORY&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1288"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/our-process/"&gt;OUR PROCESS&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/engagement-models/"&gt;ENGAGEMENT MODELS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1233"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/"&gt;SERVICES&lt;/a&gt;
-&lt;ul class="sub-menu"&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1992"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/consulting-services/"&gt;CONSULTING SERVICES&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1991"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/software-testing-automation/"&gt;SOFTWARE TESTING &amp;amp; AUTOMATION&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1989"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/performance-testing/"&gt;PERFORMANCE TESTING&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2055"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/security-testing/"&gt;SECURITY TESTING&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1990"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/services/mobile/"&gt;MOBILE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-838"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/"&gt;INDUSTRIES&lt;/a&gt;
-&lt;ul class="sub-menu"&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1999"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/banking-finance/"&gt;BANKING &amp;amp; FINANCE&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2000"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/healthcare/"&gt;HEALTHCARE&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1998"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/human-resources/"&gt;HUMAN RESOURCES&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1997"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/insurance/"&gt;INSURANCE&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1996"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/public-sector/"&gt;PUBLIC SECTOR&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1995"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/retail/"&gt;RETAIL&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1994"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/telecom/"&gt;TELECOM&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1993"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/industries/tourism-gaming/"&gt;TOURISM &amp;amp; GAMING&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;            &lt;ul id="menu-primary-right-menu-1" class="menu"&gt;&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1856"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/resources/"&gt;Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-845 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-847"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING&lt;/a&gt;
-&lt;ul class="sub-menu"&gt;
-	&lt;li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-845 current_page_item menu-item-1640"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/training/"&gt;TRAINING COURSES&lt;/a&gt;&lt;/li&gt;
-	&lt;li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1641"&gt;&lt;a href="/wp-content/uploads/2016/10/Training_Schedule_Template_Final.pdf"&gt;TRAINING SCHEDULE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;span class="sub-menu-indicator"&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/contact/"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
-&lt;li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1373"&gt;&lt;a href="http://ilabquality.staging.wpengine.com/careers/"&gt;CAREERS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;        &lt;/nav&gt;
-
-    &lt;/header&gt;
-
-
-
-
-&lt;section class="content-area "&gt;
-    &lt;div class="clip"&gt;
-        &lt;div class="bg bg-bg-chrome act" style=""&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="section-content" style=""&gt;
-
-        &lt;div class="container"&gt;
-            &lt;div class="row"&gt;
-                &lt;div class="col-md-12"&gt;
-                    
-                    &lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" data-vc-parallax="1.5" data-vc-parallax-image="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/training_banner.jpg" class="vc_row wpb_row vc_row-fluid vc_custom_1465529836208 vc_row-has-fill vc_row-o-content-bottom vc_row-flex vc_general vc_parallax vc_parallax-content-moving" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px;"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
-	&lt;div class="wpb_single_image wpb_content_element vc_align_left"&gt;
-		
-		&lt;figure class="wpb_wrapper vc_figure"&gt;
-			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="2197" height="342" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/training.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/training.png 2197w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/training-300x47.png 300w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/training-768x120.png 768w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/training-1024x159.png 1024w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/training-848x132.png 848w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/training-875x136.png 875w" sizes="(max-width: 2197px) 100vw, 2197px" /&gt;&lt;/div&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_parallax-inner skrollable skrollable-between" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; background-image: url(&amp;quot;http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/training_banner.jpg&amp;quot;); top: -6.31625%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1497282317738 vc_row-has-fill" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-12"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h1 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading"&gt;The iLAB Johannesburg head office has moved from Woodmead to Sandton CBD.&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;/h1&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Until further notice all training courses will be held at Cedar Woods: 120 Western Service Road, Woodmead. For more information please e-mail &lt;a href="mailto:training@ilabquality.com"&gt;training@ilabquality.com&lt;/a&gt; or contact iLAB on +27 11 033 0200.&lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-4"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h1 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading"&gt;INTERNATIONALLY&lt;br /&gt;
-ACCREDITED&lt;br /&gt;
-TRAINING&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-8"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;As the leader in independent software quality assurance and testing for over two decades, our training has helped thousands of testers and managers launch their careers to the next level.&lt;/p&gt;
-&lt;p&gt;Our highly focused, interactive training will offer you an unforgettable and enjoyable learning experience. We offer a wide variety of courses at initial, intermediate and advanced levels. Our courses range from one to five days in duration and, depending on the facilities and number of candidates, can be arranged at your location. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-overlay="#000000" data-overlay-alpha=".7" class="vc_row wpb_row vc_row-fluid vc_custom_1472489859465 vc_row-has-fill vc_row-o-content-middle vc_row-flex vc-row-table" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="vc-row-overlay" style="background-color:#000000; opacity:.7;"&gt;&lt;/div&gt;&lt;div class="vc-col-option" data-valign="middle" data-align="left"&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h2 style="color: #ffffff;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1469200639126"&gt;INITIAL LEVEL COURSES&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="vc_btn3-container vc_btn3-right vc_custom_1488210374324"&gt;
-	&lt;a onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'" onmouseenter="this.style.borderColor='#a10001'; this.style.backgroundColor='#a10001'; this.style.color='#ffffff';" style="border-color:#ffffff; color:#ffffff;" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom" href="/wp-content/uploads/2016/10/Training_Schedule_Template_Final.pdf" title="" target="_blank"&gt;Download Full Training Schedule&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid vc_custom_1466708742089 vc_row-o-content-top vc_row-flex"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner vc_custom_1466709311210"&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468248915075"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;PRACTICAL SOFTWARE TESTING&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Participants will gain an understanding of software testing and the why, how and when to apply it. Topics include reviews, requirements extraction and management, testing techniques, defect management, testing types, and practical tips and tricks for doing effective testing.&lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466708633679"&gt;Course Duration: 3 Days&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner vc_custom_1466709324167"&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468248923646"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;SOFTWARE TESTING OVERVIEW FOR DEVELOPERS&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;This course is based on the popular Practical Software Testing course and provides valuable testing principles and techniques for developers. The highlights of this course include how to reduce errors upstream, become more productive, and reduce the amount of maintenance work required. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466708944283"&gt;Course Duration: 1 Day&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1466709589130 vc_row-has-fill vc_row-o-content-top vc_row-flex" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468248933048"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;SOFTWARE TESTING OVERVIEW FOR MANAGERS&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Based on the popular Practical Software Testing, this course conveys valuable testing insights for managers. The course emphasizes testing best practices and why they are valuable. This education allows managers to make better testing and quality decisions from the underlying principles. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466708963091"&gt;Course Duration: 1 Day&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468248940843"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;BUSINESS ANALYSIS AND REQUIREMENTS ENGINEERING&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Inadequate requirements create nearly 57 percent of all IT defects. Through this training, core requirement techniques are covered to prevent these defects from occurring and equip analysts with skills including: elicitation, analysis, specification, verification, and management. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709097618"&gt;Course Duration: 3 Days&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid vc_custom_1466708795638 vc_row-o-content-top vc_row-flex"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468248955076"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;BASIC PRACTICAL SQL FOR DEVELOPERS&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Provides details on how to check database information critical to your systems. Participants get a full understanding of introductory data and database concepts. Learn, in a hands-on way, to build queries. Those who succeed in the course leave equipped to access, read and test common database content. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466708993487"&gt;Course Duration: 2 Days&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468248963336"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;PRACTICAL USABILITY TESTING&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Focuses on usability testing techniques with life cycle development, user-centered design. Participants will enjoy learning the practical approach and real-world application examples. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709006603"&gt;Course Duration: 2 Days&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1466709607465 vc_row-has-fill vc_row-o-content-top vc_row-flex" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468248971354"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;USER ACCEPTANCE TESTING&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;As users you may understand the business; however, that’s only half of the solution when it comes to testing a system. This course provides answers to the “What?” “Why?” and the “How?” concerning UAT, and delivers much-improved testing outcomes. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709121729"&gt;Course Duration: 2 Days&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468248979771"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;PERFORMANCE TESTING FUNDAMENTALS&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Explains the fundamentals throughout performance testing life cycle including: planning, design, test preparation, execution and maintenance. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709131944"&gt;Course Duration: 1 Day&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid vc_custom_1466708811799 vc_row-o-content-top vc_row-flex"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468248990329"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;SECURITY TESTING FUNDAMENTALS&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Understand fundamental theoretical framework and practical techniques, along with how to identify best practice security vulnerabilities. Throughout the training, participants will receive education on: overview, user interface, attacks, competitive intelligence scouting, privilege, containment, password cracking and Google hacking. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709147481"&gt;Course Duration: 1 Day&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-overlay="#000000" data-overlay-alpha=".7" class="vc_row wpb_row vc_row-fluid vc_custom_1472489910623 vc_row-has-fill vc_row-o-content-middle vc_row-flex vc-row-table" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="vc-row-overlay" style="background-color:#000000; opacity:.7;"&gt;&lt;/div&gt;&lt;div class="vc-col-option" data-valign="middle" data-align="left"&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h2 style="color: #ffffff;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1469200743192"&gt;INTERMEDIATE LEVEL COURSES&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="vc_btn3-container vc_btn3-right vc_custom_1488210391968"&gt;
-	&lt;a onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'" onmouseenter="this.style.borderColor='#a10001'; this.style.backgroundColor='#a10001'; this.style.color='#ffffff';" style="border-color:#ffffff; color:#ffffff;" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom" href="/wp-content/uploads/2016/10/Training_Schedule_Template_Final.pdf" title="" target="_blank"&gt;Download Full Training Schedule&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid vc_custom_1466708821834 vc_row-o-content-top vc_row-flex"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-9"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468249001655"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;PRACTICAL SOFTWARE TESTING - ADVANCED&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Understand the skills and tools necessary to be able to test in a rapidly changing environment. Participants will not only be taught how to adapt to change but also produce tests where there are poorly specified requirements and focus on how to make appropriate changes and the resulting impact. Topics covered throughout this course include: Exploratory testing, responding to change, testing with mind maps, creating testable requirements from nothing and creating checklists amongst others. &lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466708244586"&gt;Course Duration: 3 Days&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1483409446497 vc_row-has-fill" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-9 vc_col-xs-9"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468249010767"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;ISTQB FOUNDATION CERTIFICATE IN SOFTWARE TESTING&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Teaches excellent testing practices, regardless of the software development Life Cycle (SDLC) used. This course includes education in: fundamentals, testing throughout the SDLC, static techniques, design, management and tool support. Upon the successful completion of the course, an International Certificate will be issued by the appropriate accredited testing body.&lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709172628"&gt;Course Duration: 3 Days + Exam&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3 vc_col-xs-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
-	&lt;div class="wpb_single_image wpb_content_element vc_align_center"&gt;
-		
-		&lt;figure class="wpb_wrapper vc_figure"&gt;
-			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="1682" height="1066" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred.png 1682w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-300x190.png 300w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-768x487.png 768w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-1024x649.png 1024w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-848x537.png 848w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-875x555.png 875w" sizes="(max-width: 1682px) 100vw, 1682px" /&gt;&lt;/div&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid vc_custom_1466708837665 vc_row-o-content-top vc_row-flex"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-9"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468249020021"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;ISTQB AGILE TESTING FOUNDATION LEVEL&lt;/a&gt;&lt;/h3&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Equips participants with knowledge of Agile methods and how to test based upon User Stories. Trainees will understand how to engage with “whole team” concepts that will allow them to collaborate with the Agile team and provide value to stakeholders by being the “testing expert” on the team.&lt;/p&gt;
-&lt;p&gt;Prerequisites: ISTQB Foundation Certificate in Software Testing.&lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709190773"&gt;Course Duration: 2 Days + Exam&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-overlay="#000000" data-overlay-alpha=".7" class="vc_row wpb_row vc_row-fluid vc_custom_1472489995434 vc_row-has-fill vc_row-o-content-middle vc_row-flex vc-row-table" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="vc-row-overlay" style="background-color:#000000; opacity:.7;"&gt;&lt;/div&gt;&lt;div class="vc-col-option" data-valign="middle" data-align="left"&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h2 style="color: #ffffff;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1469200779162"&gt;ADVANCED LEVEL COURSES&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-6 vc_col-xs-6"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;div class="vc_btn3-container vc_btn3-right vc_custom_1488210427818"&gt;
-	&lt;a onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'" onmouseenter="this.style.borderColor='#a10001'; this.style.backgroundColor='#a10001'; this.style.color='#ffffff';" style="border-color:#ffffff; color:#ffffff;" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline-custom" href="/wp-content/uploads/2016/10/Training_Schedule_Template_Final.pdf" title="" target="_blank"&gt;Download Full Training Schedule&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid vc_custom_1483409295228"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-9 vc_col-xs-9"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468249033340"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;ISTQB ADVANCED LEVEL CERTIFICATION IN SOFTWARE TESTING &lt;/a&gt;&lt;/h3&gt;&lt;h4 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:italic" class="vc_custom_heading vc_custom_1465441396794"&gt;ADVANCED TEST MANAGER MODULE&lt;/h4&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Trainees will understand and apply testing in life cycles, create firm foundations, experience estimation and planning, and more. Participants will gain insight on managing test resources, building test teams and applying process improvement models.&lt;/p&gt;
-&lt;p&gt;Prerequisites: An ISTQB Foundation Certificate in Software Testing. Candidates must either have at least five years’ testing experience, or two years’ experience and an IT related Bachelor’s degree. No prerequisites are needed if candidates sit the course without taking the exam.&lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709217529"&gt;Course Duration: 5 Days + Exam&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3 vc_col-xs-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
-	&lt;div class="wpb_single_image wpb_content_element vc_align_center"&gt;
-		
-		&lt;figure class="wpb_wrapper vc_figure"&gt;
-			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="1682" height="1066" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred.png 1682w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-300x190.png 300w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-768x487.png 768w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-1024x649.png 1024w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-848x537.png 848w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-875x555.png 875w" sizes="(max-width: 1682px) 100vw, 1682px" /&gt;&lt;/div&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1483409301518 vc_row-has-fill" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-9 vc_col-xs-9"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468249043070"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;ISTQB ADVANCED LEVEL CERTIFICATION IN SOFTWARE TESTING &lt;/a&gt;&lt;/h3&gt;&lt;h4 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:italic" class="vc_custom_heading vc_custom_1465441628333"&gt;ADVANCED TEST ANALYST MODULE&lt;/h4&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Participants will gain the ability to determine domain validity, identify design techniques, produce quality design specifications with best techniques, and apply techniques to test quality characteristics. Additionally, participants will understand the difference between conditions and cases, as well as when to produce them.&lt;/p&gt;
-&lt;p&gt;Prerequisites: An ISTQB Foundation Certificate in Software Testing. Candidates must either have at least five years’ testing experience, or two years’ experience and an IT related Bachelor’s degree. No prerequisites are needed if candidates sit the course without taking the exam.&lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709238208"&gt;Course Duration: 4 Days + Exam&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3 vc_col-xs-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
-	&lt;div class="wpb_single_image wpb_content_element vc_align_center"&gt;
-		
-		&lt;figure class="wpb_wrapper vc_figure"&gt;
-			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="1682" height="1066" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred.png 1682w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-300x190.png 300w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-768x487.png 768w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-1024x649.png 1024w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-848x537.png 848w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-875x555.png 875w" sizes="(max-width: 1682px) 100vw, 1682px" /&gt;&lt;/div&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;&lt;div class="vc_row wpb_row vc_row-fluid vc_custom_1483409314191"&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-9 vc_col-xs-9"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h3 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading vc_custom_1468249053726"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;ISTQB ADVANCED LEVEL CERTIFICATION IN SOFTWARE TESTING &lt;/a&gt;&lt;/h3&gt;&lt;h4 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:italic" class="vc_custom_heading vc_custom_1468859685471"&gt;ADVANCED TECHNICAL TEST ANALYST MODULE&lt;/h4&gt;
-	&lt;div class="wpb_text_column wpb_content_element "&gt;
-		&lt;div class="wpb_wrapper"&gt;
-			&lt;p&gt;Advanced training on Identifying and choosing test design techniques, analysing the internal system to meet expected quality, and understanding the difference between conditions and cases. Participants will use functional-based and other design techniques, evaluate and apply suitable techniques in areas such as performance and reliability, learn static and dynamic analysis principles, and the basis for applying and using keyword-driven scripting.&lt;/p&gt;
-&lt;p&gt;Prerequisites: An ISTQB Foundation Certificate in Software Testing. Candidates must either have at least five years’ testing experience, or two years’ experience and an IT related Bachelor’s degree. No prerequisites are needed if candidates sit the course without taking the exam.&lt;/p&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;h5 style="color: #a10001;text-align: left;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466709250120"&gt;Course Duration: 3 Days + Exam&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-3 vc_col-xs-3"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;
-	&lt;div class="wpb_single_image wpb_content_element vc_align_center"&gt;
-		
-		&lt;figure class="wpb_wrapper vc_figure"&gt;
-			&lt;div class="vc_single_image-wrapper   vc_box_border_grey"&gt;&lt;img width="1682" height="1066" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred.png" class="vc_single_image-img attachment-full" alt="" srcset="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred.png 1682w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-300x190.png 300w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-768x487.png 768w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-1024x649.png 1024w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-848x537.png 848w, http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/internationalaccred-875x555.png 875w" sizes="(max-width: 1682px) 100vw, 1682px" /&gt;&lt;/div&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="1.5" data-vc-parallax-image="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/server-1235959.jpg" data-overlay="#a10001" data-overlay-alpha=".9" class="vc_row wpb_row vc_row-fluid vc_custom_1466710887950 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"&gt;&lt;div class="vc-row-overlay" style="background-color:#a10001; opacity:.9;"&gt;&lt;/div&gt;&lt;div class="wpb_column vc_column_container vc_col-sm-12"&gt;&lt;div class="vc_column-inner "&gt;&lt;div class="wpb_wrapper"&gt;&lt;h1 style="color: #ffffff;text-align: center;font-family:Open Sans;font-weight:400;font-style:normal" class="vc_custom_heading"&gt;&lt;a href="http://ilabquality.wpengine.com/?page_id=913"&gt;DOWNLOAD THE TRAINING CATALOGUE&lt;/a&gt;&lt;/h1&gt;&lt;h4 style="color: #ffffff;text-align: center;font-family:Open Sans;font-weight:300;font-style:normal" class="vc_custom_heading vc_custom_1466710686625"&gt;As the leader in independent software quality assurance and testing for over two decades, our training has helped thousands of testers and managers launch their careers to the next level. Our highly focused, interactive training will offer you an unforgettable and enjoyable learning experience.&lt;/h4&gt;&lt;div class="vc_btn3-container vc_btn3-center"&gt;
-	&lt;a onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'" onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#a10001';" style="border-color:#ffffff; color:#ffffff;" class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-outline-custom vc_btn3-block" href="/training/training-catalogue/" title=""&gt;DOWNLOAD THE CATALOGUE&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_parallax-inner skrollable skrollable-before" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;" style="height: 150%; background-image: url(&amp;quot;http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/06/server-1235959.jpg&amp;quot;); top: -50%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="vc_row-full-width vc_clearfix"&gt;&lt;/div&gt;
-
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        
-    &lt;/div&gt;
-&lt;/section&gt;
-
-
-
-
-
-	&lt;div id="footer-top" class="footer-top"&gt;
-		&lt;div class="container"&gt;
-	        &lt;div class="col-md-5"&gt;&lt;/div&gt;
-	        &lt;div class="col-md-2"&gt;
-	            &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="325.37px" height="90px" viewBox="347.802 0 325.37 90" enable-background="new 347.802 0 325.37 90" xml:space="preserve"&gt; &lt;path fill="#2c2c2c" d="M510.968,40.667C468.966,40.667,440.46,0,407.093,0c-33.369,0-10.385,0-10.385,0v60h228V0 c0,0,16.127,0-12.379,0C583.825,0,552.972,40.667,510.968,40.667z"/&gt; &lt;rect x="623.604" fill="#2c2c2c" width="50" height="90"/&gt; &lt;rect x="347.802" fill="#2c2c2c" width="50" height="90"/&gt; &lt;rect x="396.239" y="59.495" fill="#2c2c2c" width="228.541" height="30.5"/&gt; &lt;/svg&gt;
-	        &lt;/div&gt;
-	        &lt;div class="col-md-5"&gt;&lt;/div&gt;
-	    &lt;/div&gt;
-	    &lt;span class="back-to-top"&gt;Back to top&lt;/span&gt;
-	&lt;/div&gt;
-
-	&lt;footer id="footer"&gt;
-		&lt;div class="container" style="background-image: url( http://ilabquality.staging.wpengine.com/wp-content/uploads/2015/10/footer-map.png)"&gt;
-			&lt;div class="row"&gt;
-				&lt;div class="col-md-3 col-sm-6 footer-column-1"&gt;&lt;div id="text-1" class="footer_widget widget widget_text"&gt;			&lt;div class="textwidget"&gt;&lt;img src="http://ilabquality.com/wp-content/uploads/2016/02/iLABwebsite.png" /&gt;
-&lt;p&gt;iLAB is the worldwide leader in software quality assurance.  With over 2 decades of experience, trust iLAB when the future of your organization is on the line. &lt;/p&gt;&lt;/div&gt;
-		&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-3 col-sm-6 footer-column-2"&gt;&lt;/div&gt;&lt;div class="col-md-3 col-sm-6 footer-column-3"&gt;&lt;div id="tt_recentpostswidget-1" class="footer_widget widget recent-posts"&gt;&lt;h3 class="widget-title"&gt;Recent Articles&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/chains-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
-                    &lt;span&gt;The Ins and Outs of…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
-                    &lt;a href="http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
-                &lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2016/09/clouds-792x320-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
-                    &lt;span&gt;The 5 Cloud-Based Load Testing…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
-                    &lt;a href="http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
-                &lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2017/04/keyboard-720-320-1-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
-                    &lt;span&gt;What Should The Software Testing…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
-                    &lt;a href="http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
-                &lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;img width="170" height="48" src="http://ilabquality.staging.wpengine.com/wp-content/uploads/2017/04/caution-internet-post-pic-170x48.jpg" class="attachment-creatify-footer-post-thumb size-creatify-footer-post-thumb wp-post-image" alt="" /&gt;&lt;div class="cover"&gt;
-                    &lt;span&gt;6 Requirements For Synthetic User…&lt;/span&gt;&lt;span class="child"&gt;&lt;/span&gt;
-                    &lt;a href="http://ilabquality.staging.wpengine.com/6-requirements-for-synthetic-user-management-violate-at-your-own-risk/"&gt;READ MORE &lt;i class="ion-ios-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
-                &lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-3 col-sm-6 footer-column-4"&gt;&lt;div id="tt_sociallinkswidget-1" class="footer_widget widget widget_social"&gt;&lt;h3 class="widget-title"&gt; Stay Connected &lt;/h3&gt;&lt;div class="social-links"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="http://www.twitter.com/ilabquality"&gt;&lt;i class="social-twitter fa fa-twitter"&gt;&lt;/i&gt; @iLAB&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.linkedin.com/company/829111?trk=tyah&amp;amp;trkInfo=clickedVerticalcompanyclickedEntityId829111idx2-1-4tarId1467726348363tasilab"&gt;&lt;i class="social-linkedin fa fa-linkedin"&gt;&lt;/i&gt; iLAB on LinkedIn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id="text-2" class="footer_widget widget widget_text"&gt;			&lt;div class="textwidget"&gt;&lt;a href="https://www.gsa.gov" target="_blank"&gt;&lt;img class="alignnone size-medium wp-image-1969" src="/wp-content/uploads/2017/04/Schedule_StarMark_Color_w_Contract_Number_Arial-1-300x70.png" alt="" width="300" height="70" /&gt;&lt;/a&gt;&lt;/div&gt;
-		&lt;/div&gt;&lt;/div&gt;			&lt;/div&gt;
-		&lt;/div&gt;
-
-	&lt;/footer&gt;
-	&lt;div class="sub-footer"&gt;
-		&lt;div class="row"&gt;
-			&lt;div class="col-sm-12"&gt;
-				&lt;div class="entry-footer"&gt;
-					COPYRIGHT © iLAB				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-
-&lt;script type="text/javascript"&gt;
-if (typeof ajaxurl === 'undefined') {
-ajaxurl = "http://ilabquality.staging.wpengine.com/wp-admin/admin-ajax.php";
-}
-&lt;/script&gt;
-&lt;link rel="stylesheet" id="vc_google_fonts_open_sans300300italicregularitalic600600italic700700italic800800italic-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;amp;ver=4.7.2" type="text/css" media="all" /&gt;
-&lt;link rel="stylesheet" id="font-awesome-css" href="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.1.1" type="text/css" media="all" /&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/wpdialog.min.js?ver=4.7.2"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-/* &amp;lt;![CDATA[ */
-var wpcf7 = {"apiSettings":{"root":"http:\/\/ilabquality.staging.wpengine.com\/wp-json\/","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
-/* ]]&amp;gt; */
-&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.8"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-/* &amp;lt;![CDATA[ */
-var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Download File":"Download File","Download Video":"Download Video","Play":"Play","Pause":"Pause","Captions\/Subtitles":"Captions\/Subtitles","None":"None","Time Slider":"Time Slider","Skip back %1 seconds":"Skip back %1 seconds","Video Player":"Video Player","Audio Player":"Audio Player","Volume Slider":"Volume Slider","Mute Toggle":"Mute Toggle","Unmute":"Unmute","Mute":"Mute","Use Up\/Down Arrow keys to increase or decrease volume.":"Use Up\/Down Arrow keys to increase or decrease volume.","Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds."}};
-var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
-/* ]]&amp;gt; */
-&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.22.0"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.7.2"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/bootstrap/js/bootstrap.min.js?ver=4.7.2"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=5.1.1"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=5.1.1"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/js/jquery.kwicks.min.js?ver=4.7.2"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/js/jquery.counterup.js?ver=4.7.2"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/vendors/owl-carousel/owl.carousel.min.js?ver=4.7.2"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/themes/iLAB/js/scripts.js?ver=4.7.2"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/supercarousel/js/supercarouselmerged.js?ver=2.4"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-/* &amp;lt;![CDATA[ */
-var daq_selectlist_lang = {"hint":"Select options ..."};
-/* ]]&amp;gt; */
-&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/wpjobboard/application/vendor/select-list/jquery.selectlist.pack.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-includes/js/wp-embed.min.js?ver=4.7.2"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://ilabquality.staging.wpengine.com/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=5.1.1"&gt;&lt;/script&gt;
-
-
-
-&lt;/body&gt;&lt;/html&gt;</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170629 16:20:22.501" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170629 16:20:22.501" starttime="20170629 16:20:22.178"></status>
+<msg timestamp="20170703 15:51:05.338" level="INFO">Current page contains text 'Stress Testing vs. Load Testing'.</msg>
+<status status="PASS" endtime="20170703 15:51:05.339" starttime="20170703 15:51:05.308"></status>
 </kw>
-<msg timestamp="20170629 16:20:22.502" level="FAIL">Page should have contained text 'Download Overview' but did not</msg>
-<status status="FAIL" endtime="20170629 16:20:22.503" starttime="20170629 16:20:22.090"></status>
+<status status="PASS" endtime="20170703 15:51:05.339" starttime="20170703 15:51:05.276"></status>
 </kw>
-<status status="FAIL" endtime="20170629 16:20:22.503" starttime="20170629 16:20:22.044"></status>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20170703 15:51:05.903" starttime="20170703 15:51:05.339"></status>
+</kw>
+<kw name="Wait For Page To Load">
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>30</arg>
+</arguments>
+<status status="PASS" endtime="20170703 15:51:05.907" starttime="20170703 15:51:05.904"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:05.908" starttime="20170703 15:51:05.904"></status>
+</kw>
+<kw name="Click Second Read More">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
+</arguments>
+<status status="PASS" endtime="20170703 15:51:06.214" starttime="20170703 15:51:05.909"></status>
+</kw>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
+</arguments>
+<msg timestamp="20170703 15:51:06.215" level="INFO">Simulating Mouse Down on element 'css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink'</msg>
+<status status="PASS" endtime="20170703 15:51:06.280" starttime="20170703 15:51:06.214"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/</arg>
+</arguments>
+<msg timestamp="20170703 15:51:06.281" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/'.</msg>
+<status status="PASS" endtime="20170703 15:51:07.153" starttime="20170703 15:51:06.281"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:07.153" starttime="20170703 15:51:05.908"></status>
+</kw>
+<kw name="Assert Cloud-Based Page">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>The 5 Cloud-Based Load Testing Tool Must-Haves</arg>
+</arguments>
+<status status="PASS" endtime="20170703 15:51:07.183" starttime="20170703 15:51:07.154"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>css=.attachment-creatify-single-post.size-creatify-single-post</arg>
+</arguments>
+<msg timestamp="20170703 15:51:07.215" level="INFO">Current page contains image 'css=.attachment-creatify-single-post.size-creatify-single-post'.</msg>
+<status status="PASS" endtime="20170703 15:51:07.216" starttime="20170703 15:51:07.183"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:07.216" starttime="20170703 15:51:07.154"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20170703 15:51:07.854" starttime="20170703 15:51:07.217"></status>
+</kw>
+<kw name="Wait For Page To Load">
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>30</arg>
+</arguments>
+<status status="PASS" endtime="20170703 15:51:07.858" starttime="20170703 15:51:07.855"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:07.858" starttime="20170703 15:51:07.855"></status>
+</kw>
+<kw name="Click Third Read More">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
+</arguments>
+<status status="PASS" endtime="20170703 15:51:08.175" starttime="20170703 15:51:07.859"></status>
+</kw>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
+</arguments>
+<msg timestamp="20170703 15:51:08.176" level="INFO">Simulating Mouse Down on element 'css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink'</msg>
+<status status="PASS" endtime="20170703 15:51:08.263" starttime="20170703 15:51:08.175"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/</arg>
+</arguments>
+<msg timestamp="20170703 15:51:08.263" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/'.</msg>
+<status status="PASS" endtime="20170703 15:51:09.098" starttime="20170703 15:51:08.263"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:09.098" starttime="20170703 15:51:07.859"></status>
+</kw>
+<kw name="Assert HPE Page">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>What Should The Software Testing Industry Watch For as the HPE–Micro Focus Merger Plays Out?</arg>
+</arguments>
+<status status="PASS" endtime="20170703 15:51:09.130" starttime="20170703 15:51:09.099"></status>
+</kw>
+<kw name="Page Should Contain Image" library="Selenium2Library">
+<doc>Verifies image identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>css=.attachment-creatify-single-post.size-creatify-single-post</arg>
+</arguments>
+<msg timestamp="20170703 15:51:09.147" level="INFO">Current page contains image 'css=.attachment-creatify-single-post.size-creatify-single-post'.</msg>
+<status status="PASS" endtime="20170703 15:51:09.148" starttime="20170703 15:51:09.130"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:09.148" starttime="20170703 15:51:09.098"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20170703 15:51:09.656" starttime="20170703 15:51:09.149"></status>
+</kw>
+<kw name="Wait For Page To Load">
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>30</arg>
+</arguments>
+<status status="PASS" endtime="20170703 15:51:09.658" starttime="20170703 15:51:09.657"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:09.659" starttime="20170703 15:51:09.656"></status>
+</kw>
+<kw name="Click Load More Button">
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-icon-left.vc_btn3-color-black</arg>
+</arguments>
+<msg timestamp="20170703 15:51:09.660" level="INFO">Simulating Mouse Down on element 'css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-icon-left.vc_btn3-color-black'</msg>
+<status status="PASS" endtime="20170703 15:51:10.031" starttime="20170703 15:51:09.660"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:10.032" starttime="20170703 15:51:09.659"></status>
+</kw>
+<kw name="Assert Load More Click">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>The Ultimate Mobile Performance Testing Checklist</arg>
+</arguments>
+<msg timestamp="20170703 15:51:10.097" level="INFO">Current page contains text 'The Ultimate Mobile Performance Testing Checklist'.</msg>
+<status status="PASS" endtime="20170703 15:51:10.097" starttime="20170703 15:51:10.033"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Whose Job Is It? Performance Testing in an Agile Environment</arg>
+</arguments>
+<msg timestamp="20170703 15:51:10.143" level="INFO">Current page contains text 'Whose Job Is It? Performance Testing in an Agile Environment'.</msg>
+<status status="PASS" endtime="20170703 15:51:10.144" starttime="20170703 15:51:10.097"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Continuous Performance Validation:</arg>
+<arg>What It Is and Why It Works</arg>
+</arguments>
+<msg timestamp="20170703 15:51:10.187" level="INFO">Current page contains text 'Continuous Performance Validation:'.</msg>
+<status status="PASS" endtime="20170703 15:51:10.187" starttime="20170703 15:51:10.144"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>How Testing Teams Can Achieve End-to-End Traceability</arg>
+</arguments>
+<msg timestamp="20170703 15:51:10.223" level="INFO">Current page contains text 'How Testing Teams Can Achieve End-to-End Traceability'.</msg>
+<status status="PASS" endtime="20170703 15:51:10.224" starttime="20170703 15:51:10.188"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Top 10 Strategic Technology Trends for 2016</arg>
+</arguments>
+<msg timestamp="20170703 15:51:10.256" level="INFO">Current page contains text 'Top 10 Strategic Technology Trends for 2016'.</msg>
+<status status="PASS" endtime="20170703 15:51:10.256" starttime="20170703 15:51:10.224"></status>
+</kw>
+<status status="PASS" endtime="20170703 15:51:10.257" starttime="20170703 15:51:10.033"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170629 16:20:25.739" starttime="20170629 16:20:22.504"></status>
+<status status="PASS" endtime="20170703 15:51:13.527" starttime="20170703 15:51:10.257"></status>
 </kw>
 <tags>
+<tag>Blog Tab</tag>
 <tag>Debug</tag>
-<tag>Training</tag>
 </tags>
-<status status="FAIL" endtime="20170629 16:20:25.739" critical="yes" starttime="20170629 16:19:49.090">Page should have contained text 'Download Overview' but did not</status>
+<status status="PASS" endtime="20170703 15:51:13.527" critical="yes" starttime="20170703 15:50:32.145"></status>
 </test>
-<status status="FAIL" endtime="20170629 16:20:25.740" starttime="20170629 16:19:48.918"></status>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20170703 15:51:13.527" starttime="20170703 15:50:30.892"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">Debug</stat>
-<stat fail="1" pass="0">Training</stat>
+<stat fail="0" pass="1">Blog Tab</stat>
+<stat fail="0" pass="1">Debug</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="TrainingPageLinks" pass="0">TrainingPageLinks</stat>
+<stat fail="0" id="s1" name="BlogPageLinks" pass="1">BlogPageLinks</stat>
 </suite>
 </statistics>
 <errors>
