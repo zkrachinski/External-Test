@@ -117,44 +117,56 @@ Click Tourism and Gaming Tab
 Assert Industries Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Lead Your Industry in Innovation and Quality
+    page should contain  BANKING
+    page should contain  HUMAN RESOURCES
+    page should contain  PUBLIC SECTOR
+    page should contain  TOURISM & GAMING
     page should contain element  css=.wpb_wrapper>p
 
 Assert Banking and Finance Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Funding life on-the-go with safe, connective solutions
+    page should contain  BANKING AND FINANCE CASE STUD
     page should contain element  css=.wpb_wrapper>p
 
 Assert Healthcare Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Secure patient and physician support along the continuum of care
+    page should contain  HEALTHCARE
     page should contain element  css=.wpb_wrapper>p
 
 Assert Human Resources Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Intuitive organization of all the messy human details
+    page should contain  HUMAN RESOURCES CASE STUDY
     page should contain element  css=.wpb_wrapper>p
 
 Assert Insurance Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Reassuring communication during life’s major challenges
+    page should contain  INSURANCE CASE STUDY
     page should contain element  css=.wpb_wrapper>p
 
 Assert Public Sector Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Software solutions that improve efficiency and the community
+    page should contain  PUBLIC SECTOR
     page should contain element  css=.wpb_wrapper>p
 
 Assert Retail Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Promote customer loyalty and encourage habitual buying
+    page should contain  RETAIL
     page should contain element  css=.wpb_wrapper>p
 
 Assert Telecom Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  High-speed, reliable, transparent service
+    page should contain  TELECOMMUNICATIONS
     page should contain element  css=.wpb_wrapper>p
 
 Assert Tourism and Gaming Page
     page should contain image  css=.vc_single_image-img.attachment-full
     page should contain  Immersive escapes and entertainment
+    page should contain  TOURISM & GAMING
     page should contain element  css=.wpb_wrapper>p
