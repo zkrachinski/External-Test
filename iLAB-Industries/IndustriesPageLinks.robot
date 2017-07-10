@@ -28,7 +28,7 @@ Banking and Finance Page - Read More Links
     go back
     wait for banking and finance page to load
     click case study link
-    assert case study page
+    assert banking and finance case study page
 
 Healthcare Page - Read More Links
     [Tags]    Debug  Healthcare Page Links
@@ -49,8 +49,6 @@ Healthcare Page - Read More Links
     assert hpe page
     go back
     wait for healthcare page to load
-    click case study link
-    assert case study page
 
 Human Resources Page - Read More Links
     [Tags]    Debug  Human Resources Page Links
@@ -72,7 +70,7 @@ Human Resources Page - Read More Links
     go back
     wait for human resources page to load
     click case study link
-    assert case study page
+    assert human resources case study page
 
 Insurance Page - Read More Links
     [Tags]    Debug  Insurance Page Links
@@ -94,30 +92,7 @@ Insurance Page - Read More Links
     go back
     wait for insurance page to load
     click case study link
-    assert case study page
-
-Public Sector Page - Read More Links
-    [Tags]    Debug  Public Sector Page Links
-    maximize browser window
-    wait for main page to load
-    hover over industries
-    click public sector tab
-    wait for public sector page to load
-    click first read more
-    assert stress testing page
-    go back
-    wait for public sector page to load
-    click second read more
-    assert cloud-based page
-    go back
-    wait for public sector page to load
-    click third read more
-    assert hpe page
-    go back
-    wait for public sector page to load
-    click case study link
-    assert case study page
-
+    assert insurance case study page
 
 Retail Page - Read More Links
     [Tags]    Debug  Retail Page Links
@@ -138,8 +113,6 @@ Retail Page - Read More Links
     assert hpe page
     go back
     wait for retail page to load
-    click case study link
-    assert case study page
 
 Telecom Page - Read More Links
     [Tags]    Debug  Telecom Page Links
@@ -160,8 +133,6 @@ Telecom Page - Read More Links
     assert hpe page
     go back
     wait for telecom page to load
-    click case study link
-    assert case study page
 
 Tourism and Gaming Page - Read More Links
     [Tags]    Debug  Tourism and Gaming Page Links
@@ -182,8 +153,6 @@ Tourism and Gaming Page - Read More Links
     assert hpe page
     go back
     wait for tourism and gaming page to load
-    click case study link
-    assert case study page
 
 Banking and Financing Page - Contact Form
     [Tags]  Debug  Contact Form  Banking and Financing Page
@@ -324,7 +293,7 @@ Wait for Retail Page to Load
     wait until page contains element  css=.vc_single_image-img.attachment-full
 
 Wait for Telecom Page to Load
-    wait until page contains  High-speed, reliable, transparent service
+    wait until page contains  Making complex solutions simple and intuitive for customers
     wait until page contains element  css=.vc_single_image-img.attachment-full
 
 Wait for Tourism and Gaming Page to Load
@@ -386,14 +355,14 @@ Assert Tourism and Gaming Page
     page should contain  TOURISM AND GAMING CASE STUDY
 
 Move to Form
-    mouse down  css=#sf_first_name
+    mouse down  css=#first_name
 
 Fill Out Form
-    input text  css=#sf_first_name  Test
-    input text  css=#sf_last_name  Tester
-    input text  css=#sf_company  iLAB
-    input text  css=#sf_email  test@test.com
-    input text  css=#sf_phone  555-555-5555
+    input text  css=#first_name  Test
+    input text  css=#last_name  Tester
+    input text  css=#company  iLAB
+    input text  css=#email  test@test.com
+    input text  css=#country  555-555-5555
 
 Click First Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
@@ -435,7 +404,20 @@ Assert HPE Page
     page should contain  Balance Between Cost Consolidation and Active Product Development
     page should contain  The Case of Overlapping Assets
 
-Assert Case Study Page
-    wait until page contains  Case Study Title
-    page should contain image  css=.vc_single_image-img.attachment-full
-    page should contain  Sub-Header
+Assert Banking and Finance Case Study Page
+    wait until page contains  BANKING AND FINANCE
+    page should contain  The Opportunit
+    page should contain  The Risk
+    page should contain  The iLAB Solution
+
+Assert Human Resources Case Study Page
+    wait until page contains  iLAB Understands Human Resources
+    page should contain  The Opportunity
+    page should contain  The Risk
+    page should contain  The iLAB Solution
+
+Assert Insurance Case Study Page
+    wait until page contains  iLAB Understands Insurance
+    page should contain  The Opportunity
+    page should contain  The Risk
+    page should contain  The iLAB Solution
