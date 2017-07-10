@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170703 13:32:48.548" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\iLAB-Services\ServicesPageLinks.robot" id="s1" name="ServicesPageLinks">
-<test id="s1-t1" name="Mobile Testing Page - Read More Links">
+<robot generated="20170710 08:59:58.870" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Zachary.Krachinski\PycharmProjects\External-Test\iLAB-Services\ServicesTabSuite.robot" id="s1" name="ServicesTabSuite">
+<test id="s1-t1" name="Mobile Tab">
 <kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${Website}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20170703 13:32:52.588" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
-<status status="PASS" endtime="20170703 13:33:24.251" starttime="20170703 13:32:52.587"></status>
+<msg timestamp="20170710 09:00:00.843" level="INFO">Opening browser 'chrome' to base url 'http://ilabquality.staging.wpengine.com/'</msg>
+<status status="PASS" endtime="20170710 09:00:29.552" starttime="20170710 09:00:00.841"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170703 13:33:25.449" starttime="20170703 13:33:24.252"></status>
+<status status="PASS" endtime="20170710 09:00:30.752" starttime="20170710 09:00:29.552"></status>
 </kw>
-<kw name="Wait for Main Page to Load">
+<kw name="Wait for Page to Load">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>css=.site-logo&gt;a&gt;img</arg>
 </arguments>
-<status status="PASS" endtime="20170703 13:33:25.630" starttime="20170703 13:33:25.450"></status>
+<status status="PASS" endtime="20170710 09:00:31.083" starttime="20170710 09:00:30.753"></status>
 </kw>
-<status status="PASS" endtime="20170703 13:33:25.630" starttime="20170703 13:33:25.449"></status>
+<status status="PASS" endtime="20170710 09:00:31.083" starttime="20170710 09:00:30.752"></status>
 </kw>
 <kw name="Hover Over Services">
 <kw name="Mouse Over" library="Selenium2Library">
@@ -31,10 +31,10 @@
 <arguments>
 <arg>css=#menu-item-1233&gt;a</arg>
 </arguments>
-<msg timestamp="20170703 13:33:25.631" level="INFO">Simulating Mouse Over on element 'css=#menu-item-1233&gt;a'</msg>
-<status status="PASS" endtime="20170703 13:33:25.768" starttime="20170703 13:33:25.631"></status>
+<msg timestamp="20170710 09:00:31.084" level="INFO">Simulating Mouse Over on element 'css=#menu-item-1233&gt;a'</msg>
+<status status="PASS" endtime="20170710 09:00:31.303" starttime="20170710 09:00:31.084"></status>
 </kw>
-<status status="PASS" endtime="20170703 13:33:25.769" starttime="20170703 13:33:25.630"></status>
+<status status="PASS" endtime="20170710 09:00:31.303" starttime="20170710 09:00:31.083"></status>
 </kw>
 <kw name="Click Mobile Tab">
 <kw name="Click Element" library="Selenium2Library">
@@ -42,359 +42,51 @@
 <arguments>
 <arg>css=#menu-item-1990&gt;a</arg>
 </arguments>
-<msg timestamp="20170703 13:33:25.770" level="INFO">Clicking element 'css=#menu-item-1990&gt;a'.</msg>
-<status status="PASS" endtime="20170703 13:33:27.804" starttime="20170703 13:33:25.769"></status>
+<msg timestamp="20170710 09:00:31.304" level="INFO">Clicking element 'css=#menu-item-1990&gt;a'.</msg>
+<status status="PASS" endtime="20170710 09:00:33.455" starttime="20170710 09:00:31.304"></status>
 </kw>
-<status status="PASS" endtime="20170703 13:33:27.804" starttime="20170703 13:33:25.769"></status>
+<status status="PASS" endtime="20170710 09:00:33.456" starttime="20170710 09:00:31.303"></status>
 </kw>
-<kw name="Wait For Mobile Testing Page to Load">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
+<kw name="Assert Mobile Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
-<arg>Mobile Testing: Ensure Cross-Platform Excellence</arg>
+<arg>.fa.fa-check-circle</arg>
 </arguments>
-<status status="PASS" endtime="20170703 13:33:27.870" starttime="20170703 13:33:27.805"></status>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170710 09:01:03.910" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170710 09:01:03.911" starttime="20170710 09:01:03.459"></status>
 </kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies element identified by `locator` is found on the current page.</doc>
-<arguments>
-<arg>css=.vc_single_image-img.attachment-full</arg>
-</arguments>
-<msg timestamp="20170703 13:33:27.946" level="INFO">Current page contains element 'css=.vc_single_image-img.attachment-full'.</msg>
-<status status="PASS" endtime="20170703 13:33:27.946" starttime="20170703 13:33:27.870"></status>
+<msg timestamp="20170710 09:01:03.935" level="FAIL">Element locator '.fa.fa-check-circle' did not match any elements after 30 seconds</msg>
+<status status="FAIL" endtime="20170710 09:01:03.935" starttime="20170710 09:00:33.457"></status>
 </kw>
-<status status="PASS" endtime="20170703 13:33:27.946" starttime="20170703 13:33:27.804"></status>
-</kw>
-<kw name="Click First Read More">
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<arguments>
-<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:27.975" starttime="20170703 13:33:27.947"></status>
-</kw>
-<kw name="Mouse Down" library="Selenium2Library">
-<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
-<arguments>
-<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
-</arguments>
-<msg timestamp="20170703 13:33:27.976" level="INFO">Simulating Mouse Down on element 'css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink'</msg>
-<status status="PASS" endtime="20170703 13:33:28.080" starttime="20170703 13:33:27.976"></status>
-</kw>
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by locator.</doc>
-<arguments>
-<arg>http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/</arg>
-</arguments>
-<msg timestamp="20170703 13:33:28.081" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/'.</msg>
-<status status="PASS" endtime="20170703 13:33:29.102" starttime="20170703 13:33:28.080"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:29.102" starttime="20170703 13:33:27.947"></status>
-</kw>
-<kw name="Assert Stress Testing Page">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>The Ins and Outs of Stress Testing Web &amp; Mobile Applications</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:29.135" starttime="20170703 13:33:29.103"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>Stress Testing vs. Load Testing</arg>
-</arguments>
-<msg timestamp="20170703 13:33:29.162" level="INFO">Current page contains text 'Stress Testing vs. Load Testing'.</msg>
-<status status="PASS" endtime="20170703 13:33:29.163" starttime="20170703 13:33:29.136"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>When to conduct stress tests</arg>
-</arguments>
-<msg timestamp="20170703 13:33:29.193" level="INFO">Current page contains text 'When to conduct stress tests'.</msg>
-<status status="PASS" endtime="20170703 13:33:29.193" starttime="20170703 13:33:29.163"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>Benefits of stress testing</arg>
-</arguments>
-<msg timestamp="20170703 13:33:29.222" level="INFO">Current page contains text 'Benefits of stress testing'.</msg>
-<status status="PASS" endtime="20170703 13:33:29.222" starttime="20170703 13:33:29.193"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:29.223" starttime="20170703 13:33:29.102"></status>
-</kw>
-<kw name="Go Back" library="Selenium2Library">
-<doc>Simulates the user clicking the "back" button on their browser.</doc>
-<status status="PASS" endtime="20170703 13:33:30.258" starttime="20170703 13:33:29.223"></status>
-</kw>
-<kw name="Wait For Mobile Testing Page to Load">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>Mobile Testing: Ensure Cross-Platform Excellence</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:30.273" starttime="20170703 13:33:30.259"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies element identified by `locator` is found on the current page.</doc>
-<arguments>
-<arg>css=.vc_single_image-img.attachment-full</arg>
-</arguments>
-<msg timestamp="20170703 13:33:30.286" level="INFO">Current page contains element 'css=.vc_single_image-img.attachment-full'.</msg>
-<status status="PASS" endtime="20170703 13:33:30.286" starttime="20170703 13:33:30.273"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:30.287" starttime="20170703 13:33:30.259"></status>
-</kw>
-<kw name="Click Second Read More">
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<arguments>
-<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:30.937" starttime="20170703 13:33:30.288"></status>
-</kw>
-<kw name="Mouse Down" library="Selenium2Library">
-<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
-<arguments>
-<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
-</arguments>
-<msg timestamp="20170703 13:33:30.937" level="INFO">Simulating Mouse Down on element 'css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink'</msg>
-<status status="PASS" endtime="20170703 13:33:30.986" starttime="20170703 13:33:30.937"></status>
-</kw>
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by locator.</doc>
-<arguments>
-<arg>http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/</arg>
-</arguments>
-<msg timestamp="20170703 13:33:30.986" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/'.</msg>
-<status status="PASS" endtime="20170703 13:33:31.954" starttime="20170703 13:33:30.986"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:31.955" starttime="20170703 13:33:30.287"></status>
-</kw>
-<kw name="Assert Cloud-Based Page">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>The 5 Cloud-Based Load Testing Tool Must-Haves</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:31.994" starttime="20170703 13:33:31.956"></status>
-</kw>
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by `locator` is found from current page.</doc>
-<arguments>
-<arg>css=.attachment-creatify-single-post.size-creatify-single-post</arg>
-</arguments>
-<msg timestamp="20170703 13:33:32.027" level="INFO">Current page contains image 'css=.attachment-creatify-single-post.size-creatify-single-post'.</msg>
-<status status="PASS" endtime="20170703 13:33:32.027" starttime="20170703 13:33:31.994"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>Selecting a Cloud-Based Load Testing Tool</arg>
-</arguments>
-<msg timestamp="20170703 13:33:32.053" level="INFO">Current page contains text 'Selecting a Cloud-Based Load Testing Tool'.</msg>
-<status status="PASS" endtime="20170703 13:33:32.053" starttime="20170703 13:33:32.027"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>1. Integration With Cloud Platforms</arg>
-</arguments>
-<msg timestamp="20170703 13:33:32.083" level="INFO">Current page contains text '1. Integration With Cloud Platforms'.</msg>
-<status status="PASS" endtime="20170703 13:33:32.083" starttime="20170703 13:33:32.053"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>2. Ability to Conduct Realistic Tests</arg>
-</arguments>
-<msg timestamp="20170703 13:33:32.114" level="INFO">Current page contains text '2. Ability to Conduct Realistic Tests'.</msg>
-<status status="PASS" endtime="20170703 13:33:32.115" starttime="20170703 13:33:32.083"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:32.115" starttime="20170703 13:33:31.955"></status>
-</kw>
-<kw name="Go Back" library="Selenium2Library">
-<doc>Simulates the user clicking the "back" button on their browser.</doc>
-<status status="PASS" endtime="20170703 13:33:33.189" starttime="20170703 13:33:32.115"></status>
-</kw>
-<kw name="Wait For Mobile Testing Page to Load">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>Mobile Testing: Ensure Cross-Platform Excellence</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:33.211" starttime="20170703 13:33:33.190"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies element identified by `locator` is found on the current page.</doc>
-<arguments>
-<arg>css=.vc_single_image-img.attachment-full</arg>
-</arguments>
-<msg timestamp="20170703 13:33:33.224" level="INFO">Current page contains element 'css=.vc_single_image-img.attachment-full'.</msg>
-<status status="PASS" endtime="20170703 13:33:33.224" starttime="20170703 13:33:33.212"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:33.224" starttime="20170703 13:33:33.189"></status>
-</kw>
-<kw name="Click Third Read More">
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<arguments>
-<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:34.286" starttime="20170703 13:33:33.225"></status>
-</kw>
-<kw name="Mouse Down" library="Selenium2Library">
-<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
-<arguments>
-<arg>css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink</arg>
-</arguments>
-<msg timestamp="20170703 13:33:34.287" level="INFO">Simulating Mouse Down on element 'css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink'</msg>
-<status status="PASS" endtime="20170703 13:33:34.337" starttime="20170703 13:33:34.286"></status>
-</kw>
-<kw name="Click Link" library="Selenium2Library">
-<doc>Clicks a link identified by locator.</doc>
-<arguments>
-<arg>http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/</arg>
-</arguments>
-<msg timestamp="20170703 13:33:34.338" level="INFO">Clicking link 'http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/'.</msg>
-<status status="PASS" endtime="20170703 13:33:35.307" starttime="20170703 13:33:34.337"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:35.308" starttime="20170703 13:33:33.224"></status>
-</kw>
-<kw name="Assert HPE Page">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>What Should The Software Testing Industry Watch For as the HPE–Micro Focus Merger Plays Out?</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:35.357" starttime="20170703 13:33:35.308"></status>
-</kw>
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by `locator` is found from current page.</doc>
-<arguments>
-<arg>css=.attachment-creatify-single-post.size-creatify-single-post</arg>
-</arguments>
-<msg timestamp="20170703 13:33:35.373" level="INFO">Current page contains image 'css=.attachment-creatify-single-post.size-creatify-single-post'.</msg>
-<status status="PASS" endtime="20170703 13:33:35.373" starttime="20170703 13:33:35.358"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>Balance Between Cost Consolidation and Active Product Development</arg>
-</arguments>
-<msg timestamp="20170703 13:33:35.398" level="INFO">Current page contains text 'Balance Between Cost Consolidation and Active Product Development'.</msg>
-<status status="PASS" endtime="20170703 13:33:35.398" starttime="20170703 13:33:35.373"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>The Case of Overlapping Assets</arg>
-</arguments>
-<msg timestamp="20170703 13:33:35.430" level="INFO">Current page contains text 'The Case of Overlapping Assets'.</msg>
-<status status="PASS" endtime="20170703 13:33:35.430" starttime="20170703 13:33:35.399"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:35.430" starttime="20170703 13:33:35.308"></status>
-</kw>
-<kw name="Go Back" library="Selenium2Library">
-<doc>Simulates the user clicking the "back" button on their browser.</doc>
-<status status="PASS" endtime="20170703 13:33:36.525" starttime="20170703 13:33:35.430"></status>
-</kw>
-<kw name="Wait For Mobile Testing Page to Load">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>Mobile Testing: Ensure Cross-Platform Excellence</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:36.542" starttime="20170703 13:33:36.526"></status>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<doc>Verifies element identified by `locator` is found on the current page.</doc>
-<arguments>
-<arg>css=.vc_single_image-img.attachment-full</arg>
-</arguments>
-<msg timestamp="20170703 13:33:36.559" level="INFO">Current page contains element 'css=.vc_single_image-img.attachment-full'.</msg>
-<status status="PASS" endtime="20170703 13:33:36.559" starttime="20170703 13:33:36.542"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:36.559" starttime="20170703 13:33:36.525"></status>
-</kw>
-<kw name="Click Case Study Link">
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<arguments>
-<arg>css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:36.590" starttime="20170703 13:33:36.560"></status>
-</kw>
-<kw name="Mouse Down" library="Selenium2Library">
-<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
-<arguments>
-<arg>css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom</arg>
-</arguments>
-<msg timestamp="20170703 13:33:36.591" level="INFO">Simulating Mouse Down on element 'css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom'</msg>
-<status status="PASS" endtime="20170703 13:33:36.648" starttime="20170703 13:33:36.590"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom</arg>
-</arguments>
-<msg timestamp="20170703 13:33:36.649" level="INFO">Clicking element 'css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom'.</msg>
-<status status="PASS" endtime="20170703 13:33:39.457" starttime="20170703 13:33:36.648"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:39.457" starttime="20170703 13:33:36.559"></status>
-</kw>
-<kw name="Assert Case Study Page">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>Case Study Title</arg>
-</arguments>
-<status status="PASS" endtime="20170703 13:33:39.490" starttime="20170703 13:33:39.458"></status>
-</kw>
-<kw name="Page Should Contain Image" library="Selenium2Library">
-<doc>Verifies image identified by `locator` is found from current page.</doc>
-<arguments>
-<arg>css=.vc_single_image-img.attachment-full</arg>
-</arguments>
-<msg timestamp="20170703 13:33:39.508" level="INFO">Current page contains image 'css=.vc_single_image-img.attachment-full'.</msg>
-<status status="PASS" endtime="20170703 13:33:39.509" starttime="20170703 13:33:39.490"></status>
-</kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
-<arguments>
-<arg>Sub-Header</arg>
-</arguments>
-<msg timestamp="20170703 13:33:39.535" level="INFO">Current page contains text 'Sub-Header'.</msg>
-<status status="PASS" endtime="20170703 13:33:39.535" starttime="20170703 13:33:39.509"></status>
-</kw>
-<status status="PASS" endtime="20170703 13:33:39.535" starttime="20170703 13:33:39.457"></status>
+<status status="FAIL" endtime="20170710 09:01:03.936" starttime="20170710 09:00:33.456"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170703 13:33:42.768" starttime="20170703 13:33:39.536"></status>
+<status status="PASS" endtime="20170710 09:01:07.124" starttime="20170710 09:01:03.936"></status>
 </kw>
 <tags>
 <tag>Debug</tag>
-<tag>Mobile Page Links</tag>
+<tag>Mobile Tab</tag>
 </tags>
-<status status="PASS" endtime="20170703 13:33:42.769" critical="yes" starttime="20170703 13:32:52.586"></status>
+<status status="FAIL" endtime="20170710 09:01:07.125" critical="yes" starttime="20170710 09:00:00.840">Element locator '.fa.fa-check-circle' did not match any elements after 30 seconds</status>
 </test>
-<doc>Tests the Industries Tab and Industries dropdown tab menu</doc>
-<status status="PASS" endtime="20170703 13:33:42.771" starttime="20170703 13:32:48.558"></status>
+<doc>Tests the Services Tab and Services dropdown tab menu</doc>
+<status status="FAIL" endtime="20170710 09:01:07.125" starttime="20170710 08:59:58.873"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">Debug</stat>
-<stat fail="0" pass="1">Mobile Page Links</stat>
+<stat fail="1" pass="0">Debug</stat>
+<stat fail="1" pass="0">Mobile Tab</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="ServicesPageLinks" pass="1">ServicesPageLinks</stat>
+<stat fail="1" id="s1" name="ServicesTabSuite" pass="0">ServicesTabSuite</stat>
 </suite>
 </statistics>
 <errors>
