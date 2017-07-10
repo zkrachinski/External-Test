@@ -40,6 +40,7 @@ Click Blog Link
 
 Click Load More Button
     mouse down  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-icon-left.vc_btn3-color-black
+    click element  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-icon-left.vc_btn3-color-black
 
 Click First Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
@@ -67,7 +68,7 @@ Assert Load More Click
     page should contain  Whose Job Is It? Performance Testing in an Agile Environment
     page should contain  Continuous Performance Validation:  What It Is and Why It Works
     page should contain  How Testing Teams Can Achieve End-to-End Traceability
-    page should contain  Top 10 Strategic Technology Trends for 2016
+    page should contain  The Ins and Outs of Stress Testing Web & Mobile Applications
 
 
 Assert Stress Testing Page
