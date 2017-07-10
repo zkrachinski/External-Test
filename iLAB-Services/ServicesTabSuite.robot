@@ -53,7 +53,7 @@ Mobile Tab
     wait for page to load
     hover over services
     click mobile tab
-    assert security testing page
+    assert mobile page
 
 *** Keywords ***
 Hover Over Services
@@ -83,31 +83,42 @@ Click Mobile Tab
 Assert Services Page
     wait until element is visible   css=.vc_single_image-img.attachment-full
     page should contain  Essential Services for Modern Industries
+    page should contain  CONSULTING SERVICES
+    page should contain  SOFTWARE TESTING & AUTOMATION
+    page should contain  PERFORMANCE TESTING
+    page should contain  SECURITY TESTING
+    page should contain  MOBILE
     page should contain image  css=.vc_single_image-img.attachment-thumbnail
 
 Assert Consulting Services Page
     wait until element is visible  css=.wpb_wrapper>h3
     page should contain  Consulting Services: You Hold the Compass
+    page should contain  CONSULTING SERVICES
     page should contain image  css=.vc_single_image-img.attachment-full
 
 Assert Software Testing and Automation Page
     wait until element is visible  css=.wpb_wrapper>h3
     page should contain  Software Testing: Foresight, Not Hindsight
+    page should contain  SOFTWARE TESTING & AUTOMATION
     page should contain image  css=.vc_single_image-img.attachment-full
 
 Assert Performance Testing Page
     wait until element is visible   css=.wpb_wrapper>h3
     page should contain  PERFORMANCE TESTING CASE STUDY
+    page should contain  Performance Testing: Build Rugged Software
+    page should contain  PERFORMANCE TESTING
     page should contain image   css=.vc_single_image-img.attachment-full
 
 Assert Security Testing Page
     wait until element is visible   css=.wpb_wrapper>h3
     page should contain  Security Testing: Know Your Enemy, Know Yourself
+    page should contain  SECURITY TESTING
     page should contain image  css=.vc_single_image-img.attachment-full
 
 Assert Mobile Page
-    wait until element is visible  .fa.fa-check-circle
-    page should contain  CONTACT FORM TITLE
+    wait until element is visible  css=.wpb_wrapper>h3
+    page should contain  Mobile Testing: Ensure Cross-Platform Excellence
+    page should contain  MOBILE TESTING
     page should contain image  .vc_single_image-img.attachment-full
 
 
