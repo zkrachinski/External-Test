@@ -16,19 +16,14 @@ Consulting Services Page - Read More Links
     click consulting services tab
     wait for consulting services page to load
     click first read more
-    assert stress testing page
     go back
     wait for consulting services page to load
     click second read more
-    assert cloud-based page
     go back
     wait for consulting services page to load
     click third read more
-    assert hpe page
     go back
     wait for consulting services page to load
-    click case study link
-    assert case study page
 
 Software Testing and Automation Page - Read More Links
     [Tags]    Debug  Software Testing and Automation Page Links
@@ -38,19 +33,14 @@ Software Testing and Automation Page - Read More Links
     click software testing and automation tab
     wait for software testing and automation page to load
     click first read more
-    assert stress testing page
     go back
     wait for software testing and automation page to load
     click second read more
-    assert cloud-based page
     go back
     wait for software testing and automation page to load
     click third read more
-    assert hpe page
     go back
     wait for software testing and automation page to load
-    click case study link
-    assert case study page
 
 Performance Testing Page - Read More Links
     [Tags]    Debug  Performance Testing Page Links
@@ -60,19 +50,15 @@ Performance Testing Page - Read More Links
     click performance testing tab
     wait for performance testing page to load
     click first read more
-    assert stress testing page
     go back
     wait for performance testing page to load
     click second read more
-    assert cloud-based page
     go back
     wait for performance testing page to load
     click third read more
-    assert hpe page
     go back
     wait for performance testing page to load
     click case study link
-    assert case study page
 
 Security Testing Page - Read More Links
     [Tags]    Debug  Security Testing Page Links
@@ -82,19 +68,11 @@ Security Testing Page - Read More Links
     click security testing tab
     wait for security testing page to load
     click first read more
-    assert stress testing page
     go back
     wait for security testing page to load
     click second read more
-    assert cloud-based page
     go back
     wait for security testing page to load
-    click third read more
-    assert hpe page
-    go back
-    wait for security testing page to load
-    click case study link
-    assert case study page
 
 Mobile Testing Page - Read More Links
     [Tags]    Debug  Mobile Page Links
@@ -104,19 +82,14 @@ Mobile Testing Page - Read More Links
     click mobile tab
     wait for mobile testing page to load
     click first read more
-    assert stress testing page
     go back
     wait for mobile testing page to load
     click second read more
-    assert cloud-based page
     go back
     wait for mobile testing page to load
     click third read more
-    assert hpe page
     go back
     wait for mobile testing page to load
-    click case study link
-    assert case study page
 
 Consulting Services Page - Contact Form
     [Tags]  Debug  Contact Form  Consulting Services Page
@@ -174,14 +147,14 @@ Hover Over Services
     mouse over  css=#menu-item-1233>a
 
 Move to Form
-    mouse down  css=#sf_first_name
+    mouse down  css=#first_name
 
 Fill Out Form
-    input text  css=#sf_first_name  Test
-    input text  css=#sf_last_name  Tester
-    input text  css=#sf_company  iLAB
-    input text  css=#sf_email  test@test.com
-    input text  css=#sf_phone  555-555-5555
+    input text  css=#first_name  Test
+    input text  css=#last_name  Tester
+    input text  css=#company  iLAB
+    input text  css=#email  test@test.com
+    input text  css=#country  555-555-5555
 
 
 Wait for Main Page to Load
@@ -225,17 +198,17 @@ Click Mobile Tab
 Click First Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
-    click link  http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/
+    click element  xpath=html/body/section/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/div[3]/a
 
 Click Second Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
-    click link  http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/
+    click element  xpath=html/body/section/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div[3]/a
 
 Click Third Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
-    click link  http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/
+    click element  xpath=html/body/section/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div[3]/div[1]/div[2]/div/div/div/div[3]/a
 
 Click Case Study Link
     wait until page contains element  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom
