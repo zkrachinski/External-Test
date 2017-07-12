@@ -16,14 +16,15 @@ Consulting Services Page - Read More Links
     click consulting services tab
     wait for consulting services page to load
     click first read more
+    assert cloud-based page
     go back
     wait for consulting services page to load
     click second read more
+    assert requirements for user management page
     go back
     wait for consulting services page to load
     click third read more
-    go back
-    wait for consulting services page to load
+    assert why worry hp enterprise page
 
 Software Testing and Automation Page - Read More Links
     [Tags]    Debug  Software Testing and Automation Page Links
@@ -33,14 +34,15 @@ Software Testing and Automation Page - Read More Links
     click software testing and automation tab
     wait for software testing and automation page to load
     click first read more
+    assert cloud-based page
     go back
     wait for software testing and automation page to load
     click second read more
+    assert hpe page
     go back
     wait for software testing and automation page to load
     click third read more
-    go back
-    wait for software testing and automation page to load
+    assert qa manager guide page
 
 Performance Testing Page - Read More Links
     [Tags]    Debug  Performance Testing Page Links
@@ -50,15 +52,19 @@ Performance Testing Page - Read More Links
     click performance testing tab
     wait for performance testing page to load
     click first read more
+    assert stress testing page
     go back
     wait for performance testing page to load
     click second read more
+    assert cloud-based page
     go back
     wait for performance testing page to load
     click third read more
+    assert testing streaming media page
     go back
     wait for performance testing page to load
     click case study link
+    assert performance testing case study page
 
 Security Testing Page - Read More Links
     [Tags]    Debug  Security Testing Page Links
@@ -68,11 +74,11 @@ Security Testing Page - Read More Links
     click security testing tab
     wait for security testing page to load
     click first read more
+    assert requirements for user management page
     go back
     wait for security testing page to load
     click second read more
-    go back
-    wait for security testing page to load
+    assert how testing teams can achieve page
 
 Mobile Testing Page - Read More Links
     [Tags]    Debug  Mobile Page Links
@@ -82,14 +88,15 @@ Mobile Testing Page - Read More Links
     click mobile tab
     wait for mobile testing page to load
     click first read more
+    assert stress testing page
     go back
     wait for mobile testing page to load
     click second read more
+    assert requirements for user management page
     go back
     wait for mobile testing page to load
     click third read more
-    go back
-    wait for mobile testing page to load
+    assert the ultimate mobile performance page
 
 Consulting Services Page - Contact Form
     [Tags]  Debug  Contact Form  Consulting Services Page
@@ -235,7 +242,48 @@ Assert HPE Page
     page should contain  Balance Between Cost Consolidation and Active Product Development
     page should contain  The Case of Overlapping Assets
 
-Assert Case Study Page
-    wait until page contains  Case Study Title
-    page should contain image  css=.vc_single_image-img.attachment-full
-    page should contain  Sub-Header
+Assert Requirements For User Management Page
+    wait until page contains  6 Requirements For Synthetic User Management: Violate At Your Own Risk
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  What Is Synthetic User Monitoring? How Does It Help?
+    page should contain  6 Mandatory Requirements For Proper Synthetic User Monitoring
+
+Assert Why Worry HP Enterprise Page
+    wait until page contains  Why Worry About HP Enterprise Sale When We Have Made Switching from HP Easy?
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+
+Assert QA Manager Guide Page
+    wait until page contains  A QA Manager’s Guide to Reducing Project Cost with API Virtualization
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Luckily, today teams are able to setup virtual APIs through more lightweight virtualization services, like ServiceV.
+    page should contain  How does it work?
+    page should contain  How does API virtualization reduce project cost?
+
+Assert Testing Streaming Media Page
+    wait until page contains  Testing Streaming Media: It’s Not Just for Netflix Anymore
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Video Streaming Is Experiencing Explosive Growth
+    page should contain  Tips for Top Video Streaming Performance
+
+Assert How Testing Teams Can Achieve Page
+    wait until page contains  How Testing Teams Can Achieve End-to-End Traceability
+    page should contain image  .attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Why Traceability
+    page should contain  Making traceability a partnership
+    page should contain  Kanban board
+    page should contain  Mind Maps
+
+Assert The Ultimate Mobile Performance Page
+    wait until page contains  The Ultimate Mobile Performance Testing Checklist
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Don’t Skimp on Mobile Performance Testing
+
+Assert One Journey Page
+    wait until page contains  One Journey, Two Distinct Experiences
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain link  http://blogging.avnet.com/weblog/avnetvoices/2016/04/16/one-journey-two-distinct-experiences/
+
+Assert Performance Testing Case Study Page
+    wait until page contains  iLAB Understands Performance Testing
+    page should contain  The Opportunity
+    page should contain  The iLAB Solution

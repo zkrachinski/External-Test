@@ -111,8 +111,16 @@ Retail Page - Read More Links
     wait for retail page to load
     click third read more
     assert hpe page
-    go back
-    wait for retail page to load
+
+Public Sector Page - Read More Links
+    [Tags]    Debug  Public Sector Page Links
+    maximize browser window
+    wait for main page to load
+    hover over industries
+    click public sector tab
+    wait for public sector page to load
+    click first read more
+
 
 Telecom Page - Read More Links
     [Tags]    Debug  Telecom Page Links
@@ -131,8 +139,6 @@ Telecom Page - Read More Links
     wait for telecom page to load
     click third read more
     assert hpe page
-    go back
-    wait for telecom page to load
 
 Tourism and Gaming Page - Read More Links
     [Tags]    Debug  Tourism and Gaming Page Links
@@ -151,8 +157,6 @@ Tourism and Gaming Page - Read More Links
     wait for tourism and gaming page to load
     click third read more
     assert hpe page
-    go back
-    wait for tourism and gaming page to load
 
 Banking and Financing Page - Contact Form
     [Tags]  Debug  Contact Form  Banking and Financing Page
@@ -367,17 +371,17 @@ Fill Out Form
 Click First Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
-    click link  http://ilabquality.staging.wpengine.com/the-ins-and-outs-of-stress-testing-web-mobile-applications-2/
+    click element  xpath=html/body/section/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/div[3]/a
 
 Click Second Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
-    click link  http://ilabquality.staging.wpengine.com/the-5-cloud-based-load-testing-tool-must-haves-2/
+    click element  xpath=html/body/section/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div[3]/a
 
 Click Third Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
-    click link  http://ilabquality.staging.wpengine.com/what-should-the-software-testing-industry-watch-for-as-the-hpe-micro-focus-merger-plays-out/
+    click element  xpath=html/body/section/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div[3]/div[1]/div[2]/div/div/div/div[3]/a
 
 Click Case Study Link
     wait until page contains element  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom
@@ -404,6 +408,47 @@ Assert HPE Page
     page should contain  Balance Between Cost Consolidation and Active Product Development
     page should contain  The Case of Overlapping Assets
 
+Assert One Journey Page
+    wait until page contains  One Journey, Two Distinct Experiences
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain link  http://blogging.avnet.com/weblog/avnetvoices/2016/04/16/one-journey-two-distinct-experiences/
+
+Assert Requirements For User Management Page
+    wait until page contains  6 Requirements For Synthetic User Management: Violate At Your Own Risk
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  What Is Synthetic User Monitoring? How Does It Help?
+    page should contain  6 Mandatory Requirements For Proper Synthetic User Monitoring
+
+Assert Why Worry HP Enterprise Page
+    wait until page contains  Why Worry About HP Enterprise Sale When We Have Made Switching from HP Easy?
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+
+Assert QA Manager Guide Page
+    wait until page contains  A QA Manager’s Guide to Reducing Project Cost with API Virtualization
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Luckily, today teams are able to setup virtual APIs through more lightweight virtualization services, like ServiceV.
+    page should contain  How does it work?
+    page should contain  How does API virtualization reduce project cost?
+
+Assert Testing Streaming Media Page
+    wait until page contains  Testing Streaming Media: It’s Not Just for Netflix Anymore
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Video Streaming Is Experiencing Explosive Growth
+    page should contain  Tips for Top Video Streaming Performance
+
+Assert How Testing Teams Can Achieve Page
+    wait until page contains  How Testing Teams Can Achieve End-to-End Traceability
+    page should contain image  .attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Why Traceability
+    page should contain  Making traceability a partnership
+    page should contain  Kanban board
+    page should contain  Mind Maps
+
+Assert The Ultimate Mobile Performance Page
+    wait until page contains  The Ultimate Mobile Performance Testing Checklist
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
+    page should contain  Don’t Skimp on Mobile Performance Testing
+
 Assert Banking and Finance Case Study Page
     wait until page contains  BANKING AND FINANCE
     page should contain  The Opportunit
@@ -421,3 +466,4 @@ Assert Insurance Case Study Page
     page should contain  The Opportunity
     page should contain  The Risk
     page should contain  The iLAB Solution
+
