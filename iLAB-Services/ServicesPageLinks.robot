@@ -267,7 +267,7 @@ Assert Testing Streaming Media Page
 
 Assert How Testing Teams Can Achieve Page
     wait until page contains  How Testing Teams Can Achieve End-to-End Traceability
-    page should contain image  .attachment-creatify-single-post.size-creatify-single-post
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
     page should contain  Why Traceability
     page should contain  Making traceability a partnership
     page should contain  Kanban board

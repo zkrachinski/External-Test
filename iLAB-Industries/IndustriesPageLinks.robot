@@ -371,17 +371,17 @@ Fill Out Form
 Click First Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
-    click element  xpath=html/body/section/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/div[3]/a
+    click element  xpath=html/body/section/div[2]/div/div/div/div[4]/div/div/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/div[3]/a
 
 Click Second Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
-    click element  xpath=html/body/section/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div[3]/a
+    click element  xpath=html/body/section/div[2]/div/div/div/div[4]/div/div/div/div/div/div/div[1]/div[2]/div[1]/div[2]/div/div/div/div[3]/a
 
 Click Third Read More
     wait until page contains element  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
     mouse down  css=.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink
-    click element  xpath=html/body/section/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div[3]/div[1]/div[2]/div/div/div/div[3]/a
+    click element  xpath=html/body/section/div[2]/div/div/div/div[4]/div/div/div/div/div/div/div[1]/div[3]/div[1]/div[2]/div/div/div/div[3]/a
 
 Click Case Study Link
     wait until page contains element  css=.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-outline-custom
@@ -438,7 +438,7 @@ Assert Testing Streaming Media Page
 
 Assert How Testing Teams Can Achieve Page
     wait until page contains  How Testing Teams Can Achieve End-to-End Traceability
-    page should contain image  .attachment-creatify-single-post.size-creatify-single-post
+    page should contain image  css=.attachment-creatify-single-post.size-creatify-single-post
     page should contain  Why Traceability
     page should contain  Making traceability a partnership
     page should contain  Kanban board
